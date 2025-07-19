@@ -1,0 +1,706 @@
+2025-07-19T13:21:02: (node:24354) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+2025-07-19T13:21:02: (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-07-19T13:21:03: (node:24354) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T13:21:03: (node:24354) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T13:30:05: (node:28201) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+2025-07-19T13:30:05: (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-07-19T13:30:06: (node:28201) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T13:30:06: (node:28201) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T13:32:56: (node:28981) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+2025-07-19T13:32:56: (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-07-19T13:32:56: (node:28981) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T13:32:56: (node:28981) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T13:39:36: ERROR in src/components/Layout/Layout.tsx:117:30
+2025-07-19T13:39:36: TS2554: Expected 2 arguments, but got 1.
+2025-07-19T13:39:36:     115 |             <ListItemButton
+2025-07-19T13:39:36:     116 |               selected={location.pathname === item.path}
+2025-07-19T13:39:36:   > 117 |               onClick={() => handleNavigation(item.path)}
+2025-07-19T13:39:36:         |                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:39:36:     118 |               sx={{
+2025-07-19T13:39:36:     119 |                 '&.Mui-selected': {
+2025-07-19T13:39:36:     120 |                   backgroundColor: theme.palette.primary.main + '20',
+2025-07-19T13:39:36: 
+2025-07-19T13:41:41: (node:30631) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+2025-07-19T13:41:41: (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-07-19T13:41:42: (node:30631) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T13:41:42: (node:30631) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T13:48:47: ERROR in src/pages/Results.tsx:225:9
+2025-07-19T13:48:47: TS2769: No overload matches this call.
+2025-07-19T13:48:47:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; sm: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:48:47:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Type '{ children: Element; item: true; xs: number; sm: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:     223 |       {/* Quick Stats */}
+2025-07-19T13:48:47:     224 |       <Grid container spacing={3} sx={{ mb: 4 }}>
+2025-07-19T13:48:47:   > 225 |         <Grid item xs={12} sm={6} md={3}>
+2025-07-19T13:48:47:         |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:48:47:     226 |           <StatCard
+2025-07-19T13:48:47:     227 |             title="Total Backtests"
+2025-07-19T13:48:47:     228 |             value={results.length}
+2025-07-19T13:48:47: 
+2025-07-19T13:48:47: ERROR in src/pages/Results.tsx:233:9
+2025-07-19T13:48:47: TS2769: No overload matches this call.
+2025-07-19T13:48:47:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; sm: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:48:47:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Type '{ children: Element; item: true; xs: number; sm: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:     231 |           />
+2025-07-19T13:48:47:     232 |         </Grid>
+2025-07-19T13:48:47:   > 233 |         <Grid item xs={12} sm={6} md={3}>
+2025-07-19T13:48:47:         |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:48:47:     234 |           <StatCard
+2025-07-19T13:48:47:     235 |             title="Total Signals"
+2025-07-19T13:48:47:     236 |             value={totalSignals.toLocaleString()}
+2025-07-19T13:48:47: 
+2025-07-19T13:48:47: ERROR in src/pages/Results.tsx:242:9
+2025-07-19T13:48:47: TS2769: No overload matches this call.
+2025-07-19T13:48:47:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; sm: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:48:47:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Type '{ children: Element; item: true; xs: number; sm: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:     240 |           />
+2025-07-19T13:48:47:     241 |         </Grid>
+2025-07-19T13:48:47:   > 242 |         <Grid item xs={12} sm={6} md={3}>
+2025-07-19T13:48:47:         |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:48:47:     243 |           <StatCard
+2025-07-19T13:48:47:     244 |             title="Average Success Rate"
+2025-07-19T13:48:47:     245 |             value={formatPercentage(avgSuccessRate)}
+2025-07-19T13:48:47: 
+2025-07-19T13:48:47: ERROR in src/pages/Results.tsx:250:9
+2025-07-19T13:48:47: TS2769: No overload matches this call.
+2025-07-19T13:48:47:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; sm: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:48:47:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Type '{ children: Element; item: true; xs: number; sm: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:     248 |           />
+2025-07-19T13:48:47:     249 |         </Grid>
+2025-07-19T13:48:47:   > 250 |         <Grid item xs={12} sm={6} md={3}>
+2025-07-19T13:48:47:         |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:48:47:     251 |           <StatCard
+2025-07-19T13:48:47:     252 |             title="Running Backtests"
+2025-07-19T13:48:47:     253 |             value={results.filter(r => r.status === 'RUNNING').length}
+2025-07-19T13:48:47: 
+2025-07-19T13:48:47: ERROR in src/pages/Results.tsx:417:17
+2025-07-19T13:48:47: TS2769: No overload matches this call.
+2025-07-19T13:48:47:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:48:47:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:     415 |               {/* Summary Stats */}
+2025-07-19T13:48:47:     416 |               <Grid container spacing={2} sx={{ mb: 3 }}>
+2025-07-19T13:48:47:   > 417 |                 <Grid item xs={6} md={3}>
+2025-07-19T13:48:47:         |                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:48:47:     418 |                   <StatCard
+2025-07-19T13:48:47:     419 |                     title="Total Signals"
+2025-07-19T13:48:47:     420 |                     value={detailedResult.summary.totalSignals}
+2025-07-19T13:48:47: 
+2025-07-19T13:48:47: ERROR in src/pages/Results.tsx:424:17
+2025-07-19T13:48:47: TS2769: No overload matches this call.
+2025-07-19T13:48:47:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:48:47:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:     422 |                   />
+2025-07-19T13:48:47:     423 |                 </Grid>
+2025-07-19T13:48:47:   > 424 |                 <Grid item xs={6} md={3}>
+2025-07-19T13:48:47:         |                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:48:47:     425 |                   <StatCard
+2025-07-19T13:48:47:     426 |                     title="Success Rate"
+2025-07-19T13:48:47:     427 |                     value={formatPercentage(detailedResult.summary.successRate)}
+2025-07-19T13:48:47: 
+2025-07-19T13:48:47: ERROR in src/pages/Results.tsx:432:17
+2025-07-19T13:48:47: TS2769: No overload matches this call.
+2025-07-19T13:48:47:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:48:47:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:     430 |                   />
+2025-07-19T13:48:47:     431 |                 </Grid>
+2025-07-19T13:48:47:   > 432 |                 <Grid item xs={6} md={3}>
+2025-07-19T13:48:47:         |                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:48:47:     433 |                   <StatCard
+2025-07-19T13:48:47:     434 |                     title="Avg Risk/Reward"
+2025-07-19T13:48:47:     435 |                     value={formatNumber(detailedResult.summary.avgRiskReward, 2)}
+2025-07-19T13:48:47: 
+2025-07-19T13:48:47: ERROR in src/pages/Results.tsx:439:17
+2025-07-19T13:48:47: TS2769: No overload matches this call.
+2025-07-19T13:48:47:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:48:47:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:     437 |                   />
+2025-07-19T13:48:47:     438 |                 </Grid>
+2025-07-19T13:48:47:   > 439 |                 <Grid item xs={6} md={3}>
+2025-07-19T13:48:47:         |                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:48:47:     440 |                   <StatCard
+2025-07-19T13:48:47:     441 |                     title="Avg Drawdown"
+2025-07-19T13:48:47:     442 |                     value={formatPercentage(detailedResult.summary.avgDrawdown)}
+2025-07-19T13:48:47: 
+2025-07-19T13:48:47: ERROR in src/pages/Results.tsx:457:23
+2025-07-19T13:48:47: TS2769: No overload matches this call.
+2025-07-19T13:48:47:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:48:47:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:     455 |                     </Typography>
+2025-07-19T13:48:47:     456 |                     <Grid container spacing={2}>
+2025-07-19T13:48:47:   > 457 |                       <Grid item xs={12} md={3}>
+2025-07-19T13:48:47:         |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:48:47:     458 |                         <FormControl fullWidth size="small">
+2025-07-19T13:48:47:     459 |                           <InputLabel>Signal Type</InputLabel>
+2025-07-19T13:48:47:     460 |                           <Select
+2025-07-19T13:48:47: 
+2025-07-19T13:48:47: ERROR in src/pages/Results.tsx:472:23
+2025-07-19T13:48:47: TS2769: No overload matches this call.
+2025-07-19T13:48:47:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:48:47:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:     470 |                         </FormControl>
+2025-07-19T13:48:47:     471 |                       </Grid>
+2025-07-19T13:48:47:   > 472 |                       <Grid item xs={12} md={3}>
+2025-07-19T13:48:47:         |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:48:47:     473 |                         <FormControl fullWidth size="small">
+2025-07-19T13:48:47:     474 |                           <InputLabel>Symbol</InputLabel>
+2025-07-19T13:48:47:     475 |                           <Select
+2025-07-19T13:48:47: 
+2025-07-19T13:48:47: ERROR in src/pages/Results.tsx:486:23
+2025-07-19T13:48:47: TS2769: No overload matches this call.
+2025-07-19T13:48:47:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:48:47:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:     484 |                         </FormControl>
+2025-07-19T13:48:47:     485 |                       </Grid>
+2025-07-19T13:48:47:   > 486 |                       <Grid item xs={12} md={3}>
+2025-07-19T13:48:47:         |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:48:47:     487 |                         <FormControl fullWidth size="small">
+2025-07-19T13:48:47:     488 |                           <InputLabel>Timeframe</InputLabel>
+2025-07-19T13:48:47:     489 |                           <Select
+2025-07-19T13:48:47: 
+2025-07-19T13:48:47: ERROR in src/pages/Results.tsx:500:23
+2025-07-19T13:48:47: TS2769: No overload matches this call.
+2025-07-19T13:48:47:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:48:47:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:48:47:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:48:47:     498 |                         </FormControl>
+2025-07-19T13:48:47:     499 |                       </Grid>
+2025-07-19T13:48:47:   > 500 |                       <Grid item xs={12} md={3}>
+2025-07-19T13:48:47:         |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:48:47:     501 |                         <FormControl fullWidth size="small">
+2025-07-19T13:48:47:     502 |                           <InputLabel>Success Only</InputLabel>
+2025-07-19T13:48:47:     503 |                           <Select
+2025-07-19T13:48:47: 
+2025-07-19T13:49:05: ERROR in src/pages/Results.tsx:7:3
+2025-07-19T13:49:05: TS2724: '"@mui/material"' has no exported member named 'Grid2'. Did you mean 'Grid'?
+2025-07-19T13:49:05:      5 |   Card,
+2025-07-19T13:49:05:      6 |   CardContent,
+2025-07-19T13:49:05:   >  7 |   Grid2 as Grid,
+2025-07-19T13:49:05:        |   ^^^^^
+2025-07-19T13:49:05:      8 |   Button,
+2025-07-19T13:49:05:      9 |   Table,
+2025-07-19T13:49:05:     10 |   TableBody,
+2025-07-19T13:49:05: 
+2025-07-19T13:49:23: ERROR in src/pages/Results.tsx:225:9
+2025-07-19T13:49:23: TS2769: No overload matches this call.
+2025-07-19T13:49:23:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; sm: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:49:23:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Type '{ children: Element; item: true; xs: number; sm: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:     223 |       {/* Quick Stats */}
+2025-07-19T13:49:23:     224 |       <Grid container spacing={3} sx={{ mb: 4 }}>
+2025-07-19T13:49:23:   > 225 |         <Grid item xs={12} sm={6} md={3}>
+2025-07-19T13:49:23:         |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:49:23:     226 |           <StatCard
+2025-07-19T13:49:23:     227 |             title="Total Backtests"
+2025-07-19T13:49:23:     228 |             value={results.length}
+2025-07-19T13:49:23: 
+2025-07-19T13:49:23: ERROR in src/pages/Results.tsx:233:9
+2025-07-19T13:49:23: TS2769: No overload matches this call.
+2025-07-19T13:49:23:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; sm: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:49:23:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Type '{ children: Element; item: true; xs: number; sm: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:     231 |           />
+2025-07-19T13:49:23:     232 |         </Grid>
+2025-07-19T13:49:23:   > 233 |         <Grid item xs={12} sm={6} md={3}>
+2025-07-19T13:49:23:         |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:49:23:     234 |           <StatCard
+2025-07-19T13:49:23:     235 |             title="Total Signals"
+2025-07-19T13:49:23:     236 |             value={totalSignals.toLocaleString()}
+2025-07-19T13:49:23: 
+2025-07-19T13:49:23: ERROR in src/pages/Results.tsx:242:9
+2025-07-19T13:49:23: TS2769: No overload matches this call.
+2025-07-19T13:49:23:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; sm: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:49:23:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Type '{ children: Element; item: true; xs: number; sm: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:     240 |           />
+2025-07-19T13:49:23:     241 |         </Grid>
+2025-07-19T13:49:23:   > 242 |         <Grid item xs={12} sm={6} md={3}>
+2025-07-19T13:49:23:         |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:49:23:     243 |           <StatCard
+2025-07-19T13:49:23:     244 |             title="Average Success Rate"
+2025-07-19T13:49:23:     245 |             value={formatPercentage(avgSuccessRate)}
+2025-07-19T13:49:23: 
+2025-07-19T13:49:23: ERROR in src/pages/Results.tsx:250:9
+2025-07-19T13:49:23: TS2769: No overload matches this call.
+2025-07-19T13:49:23:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; sm: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:49:23:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Type '{ children: Element; item: true; xs: number; sm: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:     248 |           />
+2025-07-19T13:49:23:     249 |         </Grid>
+2025-07-19T13:49:23:   > 250 |         <Grid item xs={12} sm={6} md={3}>
+2025-07-19T13:49:23:         |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:49:23:     251 |           <StatCard
+2025-07-19T13:49:23:     252 |             title="Running Backtests"
+2025-07-19T13:49:23:     253 |             value={results.filter(r => r.status === 'RUNNING').length}
+2025-07-19T13:49:23: 
+2025-07-19T13:49:23: ERROR in src/pages/Results.tsx:417:17
+2025-07-19T13:49:23: TS2769: No overload matches this call.
+2025-07-19T13:49:23:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:49:23:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:     415 |               {/* Summary Stats */}
+2025-07-19T13:49:23:     416 |               <Grid container spacing={2} sx={{ mb: 3 }}>
+2025-07-19T13:49:23:   > 417 |                 <Grid item xs={6} md={3}>
+2025-07-19T13:49:23:         |                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:49:23:     418 |                   <StatCard
+2025-07-19T13:49:23:     419 |                     title="Total Signals"
+2025-07-19T13:49:23:     420 |                     value={detailedResult.summary.totalSignals}
+2025-07-19T13:49:23: 
+2025-07-19T13:49:23: ERROR in src/pages/Results.tsx:424:17
+2025-07-19T13:49:23: TS2769: No overload matches this call.
+2025-07-19T13:49:23:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:49:23:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:     422 |                   />
+2025-07-19T13:49:23:     423 |                 </Grid>
+2025-07-19T13:49:23:   > 424 |                 <Grid item xs={6} md={3}>
+2025-07-19T13:49:23:         |                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:49:23:     425 |                   <StatCard
+2025-07-19T13:49:23:     426 |                     title="Success Rate"
+2025-07-19T13:49:23:     427 |                     value={formatPercentage(detailedResult.summary.successRate)}
+2025-07-19T13:49:23: 
+2025-07-19T13:49:23: ERROR in src/pages/Results.tsx:432:17
+2025-07-19T13:49:23: TS2769: No overload matches this call.
+2025-07-19T13:49:23:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:49:23:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:     430 |                   />
+2025-07-19T13:49:23:     431 |                 </Grid>
+2025-07-19T13:49:23:   > 432 |                 <Grid item xs={6} md={3}>
+2025-07-19T13:49:23:         |                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:49:23:     433 |                   <StatCard
+2025-07-19T13:49:23:     434 |                     title="Avg Risk/Reward"
+2025-07-19T13:49:23:     435 |                     value={formatNumber(detailedResult.summary.avgRiskReward, 2)}
+2025-07-19T13:49:23: 
+2025-07-19T13:49:23: ERROR in src/pages/Results.tsx:439:17
+2025-07-19T13:49:23: TS2769: No overload matches this call.
+2025-07-19T13:49:23:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:49:23:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:     437 |                   />
+2025-07-19T13:49:23:     438 |                 </Grid>
+2025-07-19T13:49:23:   > 439 |                 <Grid item xs={6} md={3}>
+2025-07-19T13:49:23:         |                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:49:23:     440 |                   <StatCard
+2025-07-19T13:49:23:     441 |                     title="Avg Drawdown"
+2025-07-19T13:49:23:     442 |                     value={formatPercentage(detailedResult.summary.avgDrawdown)}
+2025-07-19T13:49:23: 
+2025-07-19T13:49:23: ERROR in src/pages/Results.tsx:457:23
+2025-07-19T13:49:23: TS2769: No overload matches this call.
+2025-07-19T13:49:23:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:49:23:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:     455 |                     </Typography>
+2025-07-19T13:49:23:     456 |                     <Grid container spacing={2}>
+2025-07-19T13:49:23:   > 457 |                       <Grid item xs={12} md={3}>
+2025-07-19T13:49:23:         |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:49:23:     458 |                         <FormControl fullWidth size="small">
+2025-07-19T13:49:23:     459 |                           <InputLabel>Signal Type</InputLabel>
+2025-07-19T13:49:23:     460 |                           <Select
+2025-07-19T13:49:23: 
+2025-07-19T13:49:23: ERROR in src/pages/Results.tsx:472:23
+2025-07-19T13:49:23: TS2769: No overload matches this call.
+2025-07-19T13:49:23:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:49:23:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:     470 |                         </FormControl>
+2025-07-19T13:49:23:     471 |                       </Grid>
+2025-07-19T13:49:23:   > 472 |                       <Grid item xs={12} md={3}>
+2025-07-19T13:49:23:         |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:49:23:     473 |                         <FormControl fullWidth size="small">
+2025-07-19T13:49:23:     474 |                           <InputLabel>Symbol</InputLabel>
+2025-07-19T13:49:23:     475 |                           <Select
+2025-07-19T13:49:23: 
+2025-07-19T13:49:23: ERROR in src/pages/Results.tsx:486:23
+2025-07-19T13:49:23: TS2769: No overload matches this call.
+2025-07-19T13:49:23:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:49:23:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:     484 |                         </FormControl>
+2025-07-19T13:49:23:     485 |                       </Grid>
+2025-07-19T13:49:23:   > 486 |                       <Grid item xs={12} md={3}>
+2025-07-19T13:49:23:         |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:49:23:     487 |                         <FormControl fullWidth size="small">
+2025-07-19T13:49:23:     488 |                           <InputLabel>Timeframe</InputLabel>
+2025-07-19T13:49:23:     489 |                           <Select
+2025-07-19T13:49:23: 
+2025-07-19T13:49:23: ERROR in src/pages/Results.tsx:500:23
+2025-07-19T13:49:23: TS2769: No overload matches this call.
+2025-07-19T13:49:23:   Overload 1 of 2, '(props: { component: ElementType<any, keyof IntrinsicElements>; } & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<...> & Omit<...>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Property 'component' is missing in type '{ children: Element; item: true; xs: number; md: number; }' but required in type '{ component: ElementType<any, keyof IntrinsicElements>; }'.
+2025-07-19T13:49:23:   Overload 2 of 2, '(props: DefaultComponentProps<GridTypeMap<{}, "div">>): Element | null', gave the following error.
+2025-07-19T13:49:23:     Type '{ children: Element; item: true; xs: number; md: number; }' is not assignable to type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:       Property 'item' does not exist on type 'IntrinsicAttributes & GridBaseProps & { sx?: SxProps<Theme> | undefined; } & SystemProps<Theme> & Omit<...>'.
+2025-07-19T13:49:23:     498 |                         </FormControl>
+2025-07-19T13:49:23:     499 |                       </Grid>
+2025-07-19T13:49:23:   > 500 |                       <Grid item xs={12} md={3}>
+2025-07-19T13:49:23:         |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:49:23:     501 |                         <FormControl fullWidth size="small">
+2025-07-19T13:49:23:     502 |                           <InputLabel>Success Only</InputLabel>
+2025-07-19T13:49:23:     503 |                           <Select
+2025-07-19T13:49:23: 
+2025-07-19T13:51:33: (node:32171) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+2025-07-19T13:51:33: (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-07-19T13:51:33: (node:32171) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T13:51:33: (node:32171) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T13:58:22: ERROR in src/App.tsx:13:8
+2025-07-19T13:58:22: TS1192: Module '"/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/src/pages/Results"' has no default export.
+2025-07-19T13:58:22:     11 | import Dashboard from './pages/Dashboard';
+2025-07-19T13:58:22:     12 | import Configuration from './pages/Configuration';
+2025-07-19T13:58:22:   > 13 | import Results from './pages/Results';
+2025-07-19T13:58:22:        |        ^^^^^^^
+2025-07-19T13:58:22:     14 | import BacktestManager from './pages/BacktestManager';
+2025-07-19T13:58:22:     15 | import Settings from './pages/Settings';
+2025-07-19T13:58:22:     16 |
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx
+2025-07-19T13:58:22: TS1005: '}' expected.
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx
+2025-07-19T13:58:22: TS1005: '</' expected.
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:307:6
+2025-07-19T13:58:22: TS17008: JSX element 'Box' has no corresponding closing tag.
+2025-07-19T13:58:22:     305 |
+2025-07-19T13:58:22:     306 |   return (
+2025-07-19T13:58:22:   > 307 |     <Box>
+2025-07-19T13:58:22:         |      ^^^
+2025-07-19T13:58:22:     308 |       {/* Header */}
+2025-07-19T13:58:22:     309 |       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
+2025-07-19T13:58:22:     310 |         <Typography variant="h4" gutterBottom>
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:467:8
+2025-07-19T13:58:22: TS17008: JSX element 'Dialog' has no corresponding closing tag.
+2025-07-19T13:58:22:     465 |
+2025-07-19T13:58:22:     466 |       {/* Enhanced Analytics Dialog */}
+2025-07-19T13:58:22:   > 467 |       <Dialog
+2025-07-19T13:58:22:         |        ^^^^^^
+2025-07-19T13:58:22:     468 |         open={detailsOpen}
+2025-07-19T13:58:22:     469 |         onClose={() => setDetailsOpen(false)}
+2025-07-19T13:58:22:     470 |         maxWidth="xl"
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:489:10
+2025-07-19T13:58:22: TS17008: JSX element 'DialogContent' has no corresponding closing tag.
+2025-07-19T13:58:22:     487 |         </DialogTitle>
+2025-07-19T13:58:22:     488 |         
+2025-07-19T13:58:22:   > 489 |         <DialogContent dividers>
+2025-07-19T13:58:22:         |          ^^^^^^^^^^^^^
+2025-07-19T13:58:22:     490 |           {detailLoading ? (
+2025-07-19T13:58:22:     491 |             <Box sx={{ display: 'flex', justifyContent: 'center', p: 4 }}>
+2025-07-19T13:58:22:     492 |               <CircularProgress />
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:495:14
+2025-07-19T13:58:22: TS17008: JSX element 'Box' has no corresponding closing tag.
+2025-07-19T13:58:22:     493 |             </Box>
+2025-07-19T13:58:22:     494 |           ) : detailedResult && (
+2025-07-19T13:58:22:   > 495 |             <Box>
+2025-07-19T13:58:22:         |              ^^^
+2025-07-19T13:58:22:     496 |               {/* Summary Stats */}
+2025-07-19T13:58:22:     497 |               <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 2, mb: 3 }}>
+2025-07-19T13:58:22:     498 |                 <StatCard
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:583:16
+2025-07-19T13:58:22: TS17008: JSX element 'Paper' has no corresponding closing tag.
+2025-07-19T13:58:22:     581 |
+2025-07-19T13:58:22:     582 |               {/* Analytics Tabs */}
+2025-07-19T13:58:22:   > 583 |               <Paper sx={{ width: '100%' }}>
+2025-07-19T13:58:22:         |                ^^^^^
+2025-07-19T13:58:22:     584 |                 <Tabs 
+2025-07-19T13:58:22:     585 |                   value={analyticsTab} 
+2025-07-19T13:58:22:     586 |                   onChange={(_, newValue) => setAnalyticsTab(newValue)}
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:610:87
+2025-07-19T13:58:22: TS18048: 'percent' is possibly 'undefined'.
+2025-07-19T13:58:22:     608 |                           cy="50%"
+2025-07-19T13:58:22:     609 |                           labelLine={false}
+2025-07-19T13:58:22:   > 610 |                           label={({ name, value, percent }) => `${name}: ${value} (${(percent * 100).toFixed(1)}%)`}
+2025-07-19T13:58:22:         |                                                                                       ^^^^^^^
+2025-07-19T13:58:22:     611 |                           outerRadius={120}
+2025-07-19T13:58:22:     612 |                           fill="#8884d8"
+2025-07-19T13:58:22:     613 |                           dataKey="value"
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:674:65
+2025-07-19T13:58:22: TS2339: Property 'toFixed' does not exist on type 'ValueType'.
+2025-07-19T13:58:22:   Property 'toFixed' does not exist on type 'string'.
+2025-07-19T13:58:22:     672 |                         <YAxis dataKey="symbol" type="category" width={80} />
+2025-07-19T13:58:22:     673 |                         <RechartsTooltip 
+2025-07-19T13:58:22:   > 674 |                           formatter={(value, name) => [`${value.toFixed(1)}%`, 'Success Rate']}
+2025-07-19T13:58:22:         |                                                                 ^^^^^^^
+2025-07-19T13:58:22:     675 |                           labelFormatter={(label) => `Symbol: ${label}`}
+2025-07-19T13:58:22:     676 |                         />
+2025-07-19T13:58:22:     677 |                         <Bar dataKey="successRate" fill="#4caf50" />
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:706:38
+2025-07-19T13:58:22: TS2339: Property 'toFixed' does not exist on type 'ValueType'.
+2025-07-19T13:58:22:   Property 'toFixed' does not exist on type 'string'.
+2025-07-19T13:58:22:     704 |                         <RechartsTooltip 
+2025-07-19T13:58:22:     705 |                           formatter={(value, name) => [
+2025-07-19T13:58:22:   > 706 |                             `${value.toFixed(2)}%`, 
+2025-07-19T13:58:22:         |                                      ^^^^^^^
+2025-07-19T13:58:22:     707 |                             name === 'x' ? 'Risk (Drawdown)' : 'Reward (Drawup)'
+2025-07-19T13:58:22:     708 |                           ]}
+2025-07-19T13:58:22:     709 |                         />
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:719:18
+2025-07-19T13:58:22: TS17008: JSX element 'TabPanel' has no corresponding closing tag.
+2025-07-19T13:58:22:     717 |
+2025-07-19T13:58:22:     718 |                 {/* Tab 5: Signal Details Table */}
+2025-07-19T13:58:22:   > 719 |                 <TabPanel value={analyticsTab} index={4}>
+2025-07-19T13:58:22:         |                  ^^^^^^^^
+2025-07-19T13:58:22:     720 |                   <Typography variant="h6" gutterBottom>
+2025-07-19T13:58:22:     721 |                     📋 Detailed Signal Analysis
+2025-07-19T13:58:22:     722 |                   </Typography>
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:728:43
+2025-07-19T13:58:22: TS17014: JSX fragment has no corresponding closing tag.
+2025-07-19T13:58:22:     726 |                       <CircularProgress />
+2025-07-19T13:58:22:     727 |                     </Box>
+2025-07-19T13:58:22:   > 728 |                   ) : filteredSignals && (
+2025-07-19T13:58:22:         |                                           ^
+2025-07-19T13:58:22:   > 729 |                     <>
+2025-07-19T13:58:22:         | ^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T13:58:22:     730 |                       <TableContainer sx={{ maxHeight: 400 }}>
+2025-07-19T13:58:22:     731 |                         <Table stickyHeader size="small">
+2025-07-19T13:58:22:     732 |                           <TableHead>
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:730:24
+2025-07-19T13:58:22: TS17008: JSX element 'TableContainer' has no corresponding closing tag.
+2025-07-19T13:58:22:     728 |                   ) : filteredSignals && (
+2025-07-19T13:58:22:     729 |                     <>
+2025-07-19T13:58:22:   > 730 |                       <TableContainer sx={{ maxHeight: 400 }}>
+2025-07-19T13:58:22:         |                        ^^^^^^^^^^^^^^
+2025-07-19T13:58:22:     731 |                         <Table stickyHeader size="small">
+2025-07-19T13:58:22:     732 |                           <TableHead>
+2025-07-19T13:58:22:     733 |                             <TableRow>
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:731:26
+2025-07-19T13:58:22: TS17008: JSX element 'Table' has no corresponding closing tag.
+2025-07-19T13:58:22:     729 |                     <>
+2025-07-19T13:58:22:     730 |                       <TableContainer sx={{ maxHeight: 400 }}>
+2025-07-19T13:58:22:   > 731 |                         <Table stickyHeader size="small">
+2025-07-19T13:58:22:         |                          ^^^^^
+2025-07-19T13:58:22:     732 |                           <TableHead>
+2025-07-19T13:58:22:     733 |                             <TableRow>
+2025-07-19T13:58:22:     734 |                               <TableCell>Type</TableCell>
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:745:28
+2025-07-19T13:58:22: TS17008: JSX element 'TableBody' has no corresponding closing tag.
+2025-07-19T13:58:22:     743 |                             </TableRow>
+2025-07-19T13:58:22:     744 |                           </TableHead>
+2025-07-19T13:58:22:   > 745 |                           <TableBody>
+2025-07-19T13:58:22:         |                            ^^^^^^^^^
+2025-07-19T13:58:22:     746 |                             {filteredSignals.signals
+2025-07-19T13:58:22:     747 |                               .slice(signalPage * signalRowsPerPage, signalPage * signalRowsPerPage + signalRowsPerPage)
+2025-07-19T13:58:22:     748 |                               .map((signal, index) => {
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:753:36
+2025-07-19T13:58:22: TS17008: JSX element 'TableRow' has no corresponding closing tag.
+2025-07-19T13:58:22:     751 |                                 );
+2025-07-19T13:58:22:     752 |                                 return (
+2025-07-19T13:58:22:   > 753 |                                   <TableRow key={index} hover>
+2025-07-19T13:58:22:         |                                    ^^^^^^^^
+2025-07-19T13:58:22:     754 |                                     <TableCell>
+2025-07-19T13:58:22:     755 |                                       <Chip
+2025-07-19T13:58:22:     756 |                                         label={`${getSignalTypeIcon(signal.type)} ${signal.type.replace('_', ' ')}`}
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:786:38
+2025-07-19T13:58:22: TS17008: JSX element 'TableCell' has no corresponding closing tag.
+2025-07-19T13:58:22:     784 |                                       {performance ? formatNumber(performance.riskRewardRatio, 2) : 'N/A'}
+2025-07-19T13:58:22:     785 |                                     </TableCell>
+2025-07-19T13:58:22:   > 786 |                                     <TableCell>
+2025-07-19T13:58:22:         |                                      ^^^^^^^^^
+2025-07-19T13:58:22:     787 |                                       {performance && (
+2025-07-19T13:58:22:     788 |                                         <Chip
+2025-07-19T13:58:22:     789 |                                           label={performance.isSuccessful ? 'Success' : 'Failed'}
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in src/pages/Results.tsx:790:62
+2025-07-19T13:58:22: TS2339: Property 'is' does not exist on type 'SignalPerformance'.
+2025-07-19T13:58:22:     788 |                                         <Chip
+2025-07-19T13:58:22:     789 |                                           label={performance.isSuccessful ? 'Success' : 'Failed'}
+2025-07-19T13:58:22:   > 790 |                                           color={performance.is
+2025-07-19T13:58:22:         |                                                              ^^
+2025-07-19T13:58:22:     791 |
+2025-07-19T13:58:22: 
+2025-07-19T14:00:40: ERROR in src/App.tsx:13:8
+2025-07-19T14:00:40: TS1192: Module '"/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/src/pages/Results"' has no default export.
+2025-07-19T14:00:40:     11 | import Dashboard from './pages/Dashboard';
+2025-07-19T14:00:40:     12 | import Configuration from './pages/Configuration';
+2025-07-19T14:00:40:   > 13 | import Results from './pages/Results';
+2025-07-19T14:00:40:        |        ^^^^^^^
+2025-07-19T14:00:40:     14 | import BacktestManager from './pages/BacktestManager';
+2025-07-19T14:00:40:     15 | import Settings from './pages/Settings';
+2025-07-19T14:00:40:     16 |
+2025-07-19T14:00:40: 
+2025-07-19T14:00:40: ERROR in src/pages/Results.tsx
+2025-07-19T14:00:40: TS1005: '/' expected.
+2025-07-19T14:00:40: 
+2025-07-19T14:00:40: ERROR in src/pages/Results.tsx
+2025-07-19T14:00:40: TS1005: '</' expected.
+2025-07-19T14:00:40: 
+2025-07-19T14:00:40: ERROR in src/pages/Results.tsx:302:6
+2025-07-19T14:00:40: TS17008: JSX element 'Box' has no corresponding closing tag.
+2025-07-19T14:00:40:     300 |
+2025-07-19T14:00:40:     301 |   return (
+2025-07-19T14:00:40:   > 302 |     <Box>
+2025-07-19T14:00:40:         |      ^^^
+2025-07-19T14:00:40:     303 |       {/* Header */}
+2025-07-19T14:00:40:     304 |       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
+2025-07-19T14:00:40:     305 |         <Typography variant="h4" gutterBottom>
+2025-07-19T14:00:40: 
+2025-07-19T14:00:40: ERROR in src/pages/Results.tsx:462:8
+2025-07-19T14:00:40: TS17008: JSX element 'Dialog' has no corresponding closing tag.
+2025-07-19T14:00:40:     460 |
+2025-07-19T14:00:40:     461 |       {/* Enhanced Analytics Dialog */}
+2025-07-19T14:00:40:   > 462 |       <Dialog
+2025-07-19T14:00:40:         |        ^^^^^^
+2025-07-19T14:00:40:     463 |         open={detailsOpen}
+2025-07-19T14:00:40:     464 |         onClose={() => setDetailsOpen(false)}
+2025-07-19T14:00:40:     465 |         maxWidth="xl"
+2025-07-19T14:00:40: 
+2025-07-19T14:00:40: ERROR in src/pages/Results.tsx:484:10
+2025-07-19T14:00:40: TS17008: JSX element 'DialogContent' has no corresponding closing tag.
+2025-07-19T14:00:40:     482 |         </DialogTitle>
+2025-07-19T14:00:40:     483 |         
+2025-07-19T14:00:40:   > 484 |         <DialogContent dividers>
+2025-07-19T14:00:40:         |          ^^^^^^^^^^^^^
+2025-07-19T14:00:40:     485 |           {detailLoading ? (
+2025-07-19T14:00:40:     486 |             <Box sx={{ display: 'flex', justifyContent: 'center', p: 4 }}>
+2025-07-19T14:00:40:     487 |               <CircularProgress />
+2025-07-19T14:00:40: 
+2025-07-19T14:00:40: ERROR in src/pages/Results.tsx:490:14
+2025-07-19T14:00:40: TS17008: JSX element 'Box' has no corresponding closing tag.
+2025-07-19T14:00:40:     488 |             </Box>
+2025-07-19T14:00:40:     489 |           ) : detailedResult && (
+2025-07-19T14:00:40:   > 490 |             <Box>
+2025-07-19T14:00:40:         |              ^^^
+2025-07-19T14:00:40:     491 |               {/* Summary Stats */}
+2025-07-19T14:00:40:     492 |               <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 2, mb: 3 }}>
+2025-07-19T14:00:40:     493 |                 <StatCard
+2025-07-19T14:00:40: 
+2025-07-19T14:00:40: ERROR in src/pages/Results.tsx:578:16
+2025-07-19T14:00:40: TS17008: JSX element 'Paper' has no corresponding closing tag.
+2025-07-19T14:00:40:     576 |
+2025-07-19T14:00:40:     577 |               {/* Analytics Tabs */}
+2025-07-19T14:00:40:   > 578 |               <Paper sx={{ width: '100%' }}>
+2025-07-19T14:00:40:         |                ^^^^^
+2025-07-19T14:00:40:     579 |                 <Tabs 
+2025-07-19T14:00:40:     580 |                   value={analyticsTab} 
+2025-07-19T14:00:40:     581 |                   onChange={(_, newValue) => setAnalyticsTab(newValue)}
+2025-07-19T14:00:40: 
+2025-07-19T14:00:40: ERROR in src/pages/Results.tsx:711:18
+2025-07-19T14:00:40: TS17008: JSX element 'TabPanel' has no corresponding closing tag.
+2025-07-19T14:00:40:     709 |
+2025-07-19T14:00:40:     710 |                 {/* Tab 5: Signal Details Table */}
+2025-07-19T14:00:40:   > 711 |                 <TabPanel value={analyticsTab} index={4}>
+2025-07-19T14:00:40:         |                  ^^^^^^^^
+2025-07-19T14:00:40:     712 |                   <Typography variant="h6" gutterBottom>
+2025-07-19T14:00:40:     713 |                     📋 Detailed Signal Analysis
+2025-07-19T14:00:40:     714 |                   </Typography>
+2025-07-19T14:00:40: 
+2025-07-19T14:00:40: ERROR in src/pages/Results.tsx:720:43
+2025-07-19T14:00:40: TS17014: JSX fragment has no corresponding closing tag.
+2025-07-19T14:00:40:     718 |                       <CircularProgress />
+2025-07-19T14:00:40:     719 |                     </Box>
+2025-07-19T14:00:40:   > 720 |                   ) : filteredSignals && (
+2025-07-19T14:00:40:         |                                           ^
+2025-07-19T14:00:40:   > 721 |                     <>
+2025-07-19T14:00:40:         | ^^^^^^^^^^^^^^^^^^^^^^^
+2025-07-19T14:00:40:     722 |                       <TableContainer sx={{ maxHeight: 400 }}>
+2025-07-19T14:00:40:     723 |                         <Table stickyHeader size="small">
+2025-07-19T14:00:40:     724 |                           <TableHead>
+2025-07-19T14:00:40: 
+2025-07-19T14:00:40: ERROR in src/pages/Results.tsx:797:25
+2025-07-19T14:00:40: TS2769: No overload matches this call.
+2025-07-19T14:00:40:   Overload 1 of 2, '(props: { component: "div"; } & TablePaginationOwnProps & TablePaginationSlotsAndSlotProps & CommonProps & Omit<...>): Element | null', gave the following error.
+2025-07-19T14:00:40:     Type 'boolean' is not assignable to type 'number'.
+2025-07-19T14:00:40:   Overload 2 of 2, '(props: DefaultComponentProps<TablePaginationTypeMap<{}, JSXElementConstructor<TablePaginationBaseProps>>>): Element | null', gave the following error.
+2025-07-19T14:00:40:     Type 'boolean' is not assignable to type 'number'.
+2025-07-19T14:00:40:     795 |                         component="div"
+2025-07-19T14:00:40:     796 |                         count={filteredSignals.totalSignals}
+2025-07-19T14:00:40:   > 797 |                         page
+2025-07-19T14:00:40:         |                         ^^^^
+2025-07-19T14:00:40:     798 |
+2025-07-19T14:00:40: 
+2025-07-19T14:01:40: (node:33744) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+2025-07-19T14:01:40: (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-07-19T14:01:40: (node:33744) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T14:01:40: (node:33744) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T14:16:05: (node:35283) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+2025-07-19T14:16:05: (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-07-19T14:16:05: (node:35283) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T14:16:05: (node:35283) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T14:22:28: (node:36441) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+2025-07-19T14:22:28: (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-07-19T14:22:28: (node:36441) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T14:22:28: (node:36441) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T14:27:02: (node:37451) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+2025-07-19T14:27:02: (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-07-19T14:27:03: (node:37451) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T14:27:03: (node:37451) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T14:57:11: (node:43054) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+2025-07-19T14:57:11: (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-07-19T14:57:11: (node:43054) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T14:57:11: (node:43054) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T15:00:41: (node:44055) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+2025-07-19T15:00:41: (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-07-19T15:00:41: (node:44055) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T15:00:41: (node:44055) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T15:14:49: (node:46861) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+2025-07-19T15:14:49: (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-07-19T15:14:49: (node:46861) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+2025-07-19T15:14:49: (node:46861) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.

@@ -1,0 +1,1012 @@
+2025-07-19T13:21:02: 
+2025-07-19T13:21:02: > frontend@0.1.0 start
+2025-07-19T13:21:02: > react-scripts start
+2025-07-19T13:21:02: 
+2025-07-19T13:21:03: Starting the development server...
+2025-07-19T13:21:03: 
+2025-07-19T13:21:17: Compiled successfully!
+2025-07-19T13:21:17: 
+2025-07-19T13:21:17: You can now view frontend in the browser.
+2025-07-19T13:21:17: 
+2025-07-19T13:21:17:   Local:            http://localhost:3000
+2025-07-19T13:21:17:   On Your Network:  http://192.168.1.119:3000
+2025-07-19T13:21:17: 
+2025-07-19T13:21:17: Note that the development build is not optimized.
+2025-07-19T13:21:17: To create a production build, use npm run build.
+2025-07-19T13:21:17: 
+2025-07-19T13:21:17: webpack compiled successfully
+2025-07-19T13:21:17: No issues found.
+2025-07-19T13:30:05: 
+2025-07-19T13:30:05: > frontend@0.1.0 start
+2025-07-19T13:30:05: > react-scripts start
+2025-07-19T13:30:05: 
+2025-07-19T13:30:06: Starting the development server...
+2025-07-19T13:30:06: 
+2025-07-19T13:30:11: Compiled successfully!
+2025-07-19T13:30:11: 
+2025-07-19T13:30:11: You can now view frontend in the browser.
+2025-07-19T13:30:11: 
+2025-07-19T13:30:11:   Local:            http://localhost:3000
+2025-07-19T13:30:11:   On Your Network:  http://192.168.1.119:3000
+2025-07-19T13:30:11: 
+2025-07-19T13:30:11: Note that the development build is not optimized.
+2025-07-19T13:30:11: To create a production build, use npm run build.
+2025-07-19T13:30:11: 
+2025-07-19T13:30:11: webpack compiled successfully
+2025-07-19T13:30:11: No issues found.
+2025-07-19T13:32:55: 
+2025-07-19T13:32:55: > frontend@0.1.0 start
+2025-07-19T13:32:55: > react-scripts start
+2025-07-19T13:32:55: 
+2025-07-19T13:32:57: Starting the development server...
+2025-07-19T13:32:57: 
+2025-07-19T13:33:04: Compiled successfully!
+2025-07-19T13:33:04: 
+2025-07-19T13:33:04: You can now view frontend in the browser.
+2025-07-19T13:33:04: 
+2025-07-19T13:33:04:   Local:            http://localhost:3000
+2025-07-19T13:33:04:   On Your Network:  http://192.168.1.119:3000
+2025-07-19T13:33:04: 
+2025-07-19T13:33:04: Note that the development build is not optimized.
+2025-07-19T13:33:04: To create a production build, use npm run build.
+2025-07-19T13:33:04: 
+2025-07-19T13:33:04: webpack compiled successfully
+2025-07-19T13:33:04: No issues found.
+2025-07-19T13:38:05: Compiling...
+2025-07-19T13:38:07: Compiled successfully!
+2025-07-19T13:38:07: webpack compiled successfully
+2025-07-19T13:38:07: No issues found.
+2025-07-19T13:38:31: Compiling...
+2025-07-19T13:38:32: Compiled with warnings.
+2025-07-19T13:38:32: 
+2025-07-19T13:38:32: [eslint] 
+2025-07-19T13:38:32: src/pages/Configuration.tsx
+2025-07-19T13:38:32:   Line 101:9:  'popularSymbols' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:38:32: 
+2025-07-19T13:38:32: Search for the keywords to learn more about each warning.
+2025-07-19T13:38:32: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T13:38:32: 
+2025-07-19T13:38:32: WARNING in [eslint] 
+2025-07-19T13:38:32: src/pages/Configuration.tsx
+2025-07-19T13:38:32:   Line 101:9:  'popularSymbols' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:38:32: 
+2025-07-19T13:38:32: webpack compiled with 1 warning
+2025-07-19T13:38:32: No issues found.
+2025-07-19T13:39:05: Compiling...
+2025-07-19T13:39:06: Compiled with warnings.
+2025-07-19T13:39:06: 
+2025-07-19T13:39:06: [eslint] 
+2025-07-19T13:39:06: src/pages/Configuration.tsx
+2025-07-19T13:39:06:   Line 12:3:   'Slider' is defined but never used                                @typescript-eslint/no-unused-vars
+2025-07-19T13:39:06:   Line 101:9:  'popularSymbols' is assigned a value but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:39:06:   Line 140:9:  'handleVolumeThresholdChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:39:06:   Line 152:9:  'handleParameterChange' is assigned a value but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:39:06: 
+2025-07-19T13:39:06: Search for the keywords to learn more about each warning.
+2025-07-19T13:39:06: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T13:39:06: 
+2025-07-19T13:39:06: WARNING in [eslint] 
+2025-07-19T13:39:06: src/pages/Configuration.tsx
+2025-07-19T13:39:06:   Line 12:3:   'Slider' is defined but never used                                @typescript-eslint/no-unused-vars
+2025-07-19T13:39:06:   Line 101:9:  'popularSymbols' is assigned a value but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:39:06:   Line 140:9:  'handleVolumeThresholdChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:39:06:   Line 152:9:  'handleParameterChange' is assigned a value but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:39:06: 
+2025-07-19T13:39:06: webpack compiled with 1 warning
+2025-07-19T13:39:06: No issues found.
+2025-07-19T13:39:24: Compiling...
+2025-07-19T13:39:26: Compiled with warnings.
+2025-07-19T13:39:26: 
+2025-07-19T13:39:26: [eslint] 
+2025-07-19T13:39:26: src/pages/Configuration.tsx
+2025-07-19T13:39:26:   Line 12:3:   'Slider' is defined but never used                                @typescript-eslint/no-unused-vars
+2025-07-19T13:39:26:   Line 101:9:  'popularSymbols' is assigned a value but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:39:26:   Line 140:9:  'handleVolumeThresholdChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:39:26:   Line 152:9:  'handleParameterChange' is assigned a value but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:39:26: 
+2025-07-19T13:39:26: Search for the keywords to learn more about each warning.
+2025-07-19T13:39:26: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T13:39:26: 
+2025-07-19T13:39:26: WARNING in [eslint] 
+2025-07-19T13:39:26: src/pages/Configuration.tsx
+2025-07-19T13:39:26:   Line 12:3:   'Slider' is defined but never used                                @typescript-eslint/no-unused-vars
+2025-07-19T13:39:26:   Line 101:9:  'popularSymbols' is assigned a value but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:39:26:   Line 140:9:  'handleVolumeThresholdChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:39:26:   Line 152:9:  'handleParameterChange' is assigned a value but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:39:26: 
+2025-07-19T13:39:26: webpack compiled with 1 warning
+2025-07-19T13:39:26: No issues found.
+2025-07-19T13:39:35: Compiling...
+2025-07-19T13:39:36: Compiled with warnings.
+2025-07-19T13:39:36: 
+2025-07-19T13:39:36: [eslint] 
+2025-07-19T13:39:36: src/pages/Configuration.tsx
+2025-07-19T13:39:36:   Line 12:3:   'Slider' is defined but never used                                @typescript-eslint/no-unused-vars
+2025-07-19T13:39:36:   Line 101:9:  'popularSymbols' is assigned a value but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:39:36:   Line 140:9:  'handleVolumeThresholdChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:39:36:   Line 152:9:  'handleParameterChange' is assigned a value but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:39:36: 
+2025-07-19T13:39:36: Search for the keywords to learn more about each warning.
+2025-07-19T13:39:36: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T13:39:36: 
+2025-07-19T13:39:36: WARNING in [eslint] 
+2025-07-19T13:39:36: src/pages/Configuration.tsx
+2025-07-19T13:39:36:   Line 12:3:   'Slider' is defined but never used                                @typescript-eslint/no-unused-vars
+2025-07-19T13:39:36:   Line 101:9:  'popularSymbols' is assigned a value but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:39:36:   Line 140:9:  'handleVolumeThresholdChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:39:36:   Line 152:9:  'handleParameterChange' is assigned a value but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:39:36: 
+2025-07-19T13:39:36: webpack compiled with 1 warning
+2025-07-19T13:39:57: Compiling...
+2025-07-19T13:39:58: Compiled with warnings.
+2025-07-19T13:39:58: 
+2025-07-19T13:39:58: [eslint] 
+2025-07-19T13:39:58: src/pages/Configuration.tsx
+2025-07-19T13:39:58:   Line 12:3:   'Slider' is defined but never used                                @typescript-eslint/no-unused-vars
+2025-07-19T13:39:58:   Line 101:9:  'popularSymbols' is assigned a value but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:39:58:   Line 140:9:  'handleVolumeThresholdChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:39:58:   Line 152:9:  'handleParameterChange' is assigned a value but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:39:58: 
+2025-07-19T13:39:58: Search for the keywords to learn more about each warning.
+2025-07-19T13:39:58: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T13:39:58: 
+2025-07-19T13:39:58: WARNING in [eslint] 
+2025-07-19T13:39:58: src/pages/Configuration.tsx
+2025-07-19T13:39:58:   Line 12:3:   'Slider' is defined but never used                                @typescript-eslint/no-unused-vars
+2025-07-19T13:39:58:   Line 101:9:  'popularSymbols' is assigned a value but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:39:58:   Line 140:9:  'handleVolumeThresholdChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:39:58:   Line 152:9:  'handleParameterChange' is assigned a value but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:39:58: 
+2025-07-19T13:39:58: webpack compiled with 1 warning
+2025-07-19T13:39:58: No issues found.
+2025-07-19T13:40:15: Compiling...
+2025-07-19T13:40:16: Compiled with warnings.
+2025-07-19T13:40:16: 
+2025-07-19T13:40:16: [eslint] 
+2025-07-19T13:40:16: src/pages/Configuration.tsx
+2025-07-19T13:40:16:   Line 12:3:   'Slider' is defined but never used                                @typescript-eslint/no-unused-vars
+2025-07-19T13:40:16:   Line 101:9:  'popularSymbols' is assigned a value but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:40:16:   Line 140:9:  'handleVolumeThresholdChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:40:16:   Line 152:9:  'handleParameterChange' is assigned a value but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:40:16: 
+2025-07-19T13:40:16: Search for the keywords to learn more about each warning.
+2025-07-19T13:40:16: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T13:40:16: 
+2025-07-19T13:40:16: WARNING in [eslint] 
+2025-07-19T13:40:16: src/pages/Configuration.tsx
+2025-07-19T13:40:16:   Line 12:3:   'Slider' is defined but never used                                @typescript-eslint/no-unused-vars
+2025-07-19T13:40:16:   Line 101:9:  'popularSymbols' is assigned a value but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:40:16:   Line 140:9:  'handleVolumeThresholdChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:40:16:   Line 152:9:  'handleParameterChange' is assigned a value but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:40:16: 
+2025-07-19T13:40:16: webpack compiled with 1 warning
+2025-07-19T13:40:16: No issues found.
+2025-07-19T13:40:49: Compiling...
+2025-07-19T13:40:51: Compiled with warnings.
+2025-07-19T13:40:51: 
+2025-07-19T13:40:51: [eslint] 
+2025-07-19T13:40:51: src/pages/Configuration.tsx
+2025-07-19T13:40:51:   Line 100:9:  'popularSymbols' is assigned a value but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:40:51:   Line 139:9:  'handleVolumeThresholdChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:40:51:   Line 151:9:  'handleParameterChange' is assigned a value but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:40:51: 
+2025-07-19T13:40:51: Search for the keywords to learn more about each warning.
+2025-07-19T13:40:51: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T13:40:51: 
+2025-07-19T13:40:51: WARNING in [eslint] 
+2025-07-19T13:40:51: src/pages/Configuration.tsx
+2025-07-19T13:40:51:   Line 100:9:  'popularSymbols' is assigned a value but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:40:51:   Line 139:9:  'handleVolumeThresholdChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:40:51:   Line 151:9:  'handleParameterChange' is assigned a value but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:40:51: 
+2025-07-19T13:40:51: webpack compiled with 1 warning
+2025-07-19T13:40:51: No issues found.
+2025-07-19T13:41:01: Compiling...
+2025-07-19T13:41:02: Compiled with warnings.
+2025-07-19T13:41:02: 
+2025-07-19T13:41:02: [eslint] 
+2025-07-19T13:41:02: src/pages/Configuration.tsx
+2025-07-19T13:41:02:   Line 135:9:  'handleVolumeThresholdChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:41:02:   Line 147:9:  'handleParameterChange' is assigned a value but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:41:02: 
+2025-07-19T13:41:02: Search for the keywords to learn more about each warning.
+2025-07-19T13:41:02: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T13:41:02: 
+2025-07-19T13:41:02: WARNING in [eslint] 
+2025-07-19T13:41:02: src/pages/Configuration.tsx
+2025-07-19T13:41:02:   Line 135:9:  'handleVolumeThresholdChange' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:41:02:   Line 147:9:  'handleParameterChange' is assigned a value but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:41:02: 
+2025-07-19T13:41:02: webpack compiled with 1 warning
+2025-07-19T13:41:02: No issues found.
+2025-07-19T13:41:13: Compiling...
+2025-07-19T13:41:14: Compiled successfully!
+2025-07-19T13:41:14: webpack compiled successfully
+2025-07-19T13:41:14: No issues found.
+2025-07-19T13:41:41: 
+2025-07-19T13:41:41: > frontend@0.1.0 start
+2025-07-19T13:41:41: > react-scripts start
+2025-07-19T13:41:41: 
+2025-07-19T13:41:42: Starting the development server...
+2025-07-19T13:41:42: 
+2025-07-19T13:41:45: Compiled successfully!
+2025-07-19T13:41:45: 
+2025-07-19T13:41:45: You can now view frontend in the browser.
+2025-07-19T13:41:45: 
+2025-07-19T13:41:45:   Local:            http://localhost:3000
+2025-07-19T13:41:45:   On Your Network:  http://192.168.1.119:3000
+2025-07-19T13:41:45: 
+2025-07-19T13:41:45: Note that the development build is not optimized.
+2025-07-19T13:41:45: To create a production build, use npm run build.
+2025-07-19T13:41:45: 
+2025-07-19T13:41:45: webpack compiled successfully
+2025-07-19T13:41:45: No issues found.
+2025-07-19T13:46:26: Compiling...
+2025-07-19T13:46:27: Compiled successfully!
+2025-07-19T13:46:27: webpack compiled successfully
+2025-07-19T13:46:28: No issues found.
+2025-07-19T13:48:45: Compiling...
+2025-07-19T13:48:47: Compiled with warnings.
+2025-07-19T13:48:47: 
+2025-07-19T13:48:47: [eslint] 
+2025-07-19T13:48:47: src/pages/Results.tsx
+2025-07-19T13:48:47:   Line 15:3:   'Paper' is defined but never used                 @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47:   Line 22:3:   'TextField' is defined but never used             @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47:   Line 32:3:   'Divider' is defined but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47:   Line 41:17:  'ExpandMoreIcon' is defined but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47:   Line 42:17:  'ExpandLessIcon' is defined but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47:   Line 58:26:  'SignalDetection' is defined but never used       @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47:   Line 58:43:  'SignalPerformance' is defined but never used     @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47:   Line 61:9:   'queryClient' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47: 
+2025-07-19T13:48:47: Search for the keywords to learn more about each warning.
+2025-07-19T13:48:47: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T13:48:47: 
+2025-07-19T13:48:47: WARNING in [eslint] 
+2025-07-19T13:48:47: src/pages/Results.tsx
+2025-07-19T13:48:47:   Line 15:3:   'Paper' is defined but never used                 @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47:   Line 22:3:   'TextField' is defined but never used             @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47:   Line 32:3:   'Divider' is defined but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47:   Line 41:17:  'ExpandMoreIcon' is defined but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47:   Line 42:17:  'ExpandLessIcon' is defined but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47:   Line 58:26:  'SignalDetection' is defined but never used       @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47:   Line 58:43:  'SignalPerformance' is defined but never used     @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47:   Line 61:9:   'queryClient' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:48:47: 
+2025-07-19T13:48:47: webpack compiled with 1 warning
+2025-07-19T13:49:03: Compiling...
+2025-07-19T13:49:05: Failed to compile.
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: Attempted import error: 'Grid2' is not exported from '@mui/material' (imported as 'Grid').
+2025-07-19T13:49:05: WARNING in [eslint] 
+2025-07-19T13:49:05: src/pages/Results.tsx
+2025-07-19T13:49:05:   Line 15:3:   'Paper' is defined but never used                 @typescript-eslint/no-unused-vars
+2025-07-19T13:49:05:   Line 22:3:   'TextField' is defined but never used             @typescript-eslint/no-unused-vars
+2025-07-19T13:49:05:   Line 32:3:   'Divider' is defined but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:49:05:   Line 41:17:  'ExpandMoreIcon' is defined but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:49:05:   Line 42:17:  'ExpandLessIcon' is defined but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:49:05:   Line 58:26:  'SignalDetection' is defined but never used       @typescript-eslint/no-unused-vars
+2025-07-19T13:49:05:   Line 58:43:  'SignalPerformance' is defined but never used     @typescript-eslint/no-unused-vars
+2025-07-19T13:49:05:   Line 61:9:   'queryClient' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: ERROR in ./src/pages/Results.tsx 264:35-39
+2025-07-19T13:49:05: export 'Grid2' (imported as 'Grid') was not found in '@mui/material' (possible exports: Accordion, AccordionActions, AccordionDetails, AccordionSummary, Alert, AlertTitle, AppBar, Autocomplete, Avatar, AvatarGroup, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, ButtonGroupButtonContext, ButtonGroupContext, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, CssVarsProvider, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, Experimental_CssVarsProvider, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, FormLabelRoot, GlobalStyles, Grid, GridLegacy, Grow, Icon, IconButton, ImageList, ImageListItem, ImageListItemBar, InitColorSchemeScript, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Pagination, PaginationItem, Paper, Popover, PopoverPaper, PopoverRoot, Popper, Portal, Radio, RadioGroup, Rating, ScopedCssBaseline, Select, Skeleton, Slide, Slider, SliderMark, SliderMarkLabel, SliderRail, SliderRoot, SliderThumb, SliderTrack, SliderValueLabel, Snackbar, SnackbarContent, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, Step, StepButton, StepConnector, StepContent, StepContext, StepIcon, StepLabel, Stepper, StepperContext, StyledEngineProvider, SvgIcon, SwipeableDrawer, Switch, THEME_ID, Tab, TabScrollButton, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, ThemeProvider, ToggleButton, ToggleButtonGroup, Toolbar, Tooltip, Typography, Unstable_TrapFocus, Zoom, accordionActionsClasses, accordionClasses, accordionDetailsClasses, accordionSummaryClasses, adaptV4Theme, alertClasses, alertTitleClasses, alpha, appBarClasses, autocompleteClasses, avatarClasses, avatarGroupClasses, backdropClasses, badgeClasses, bottomNavigationActionClasses, bottomNavigationClasses, boxClasses, breadcrumbsClasses, buttonBaseClasses, buttonClasses, buttonGroupClasses, capitalize, cardActionAreaClasses, cardActionsClasses, cardClasses, cardContentClasses, cardHeaderClasses, cardMediaClasses, checkboxClasses, chipClasses, circularProgressClasses, collapseClasses, colors, containerClasses, createChainedFunction, createColorScheme, createFilterOptions, createStyles, createSvgIcon, createTheme, createTransitions, css, darkScrollbar, darken, debounce, decomposeColor, deprecatedPropType, dialogActionsClasses, dialogClasses, dialogContentClasses, dialogContentTextClasses, dialogTitleClasses, dividerClasses, drawerClasses, duration, easing, emphasize, experimental_extendTheme, experimental_sx, extendTheme, fabClasses, filledInputClasses, formControlClasses, formControlLabelClasses, formGroupClasses, formHelperTextClasses, formLabelClasses, generateUtilityClass, generateUtilityClasses, getAccordionActionsUtilityClass, getAccordionDetailsUtilityClass, getAccordionSummaryUtilityClass, getAccordionUtilityClass, getAlertTitleUtilityClass, getAlertUtilityClass, getAppBarUtilityClass, getAutocompleteUtilityClass, getAvatarGroupUtilityClass, getAvatarUtilityClass, getBackdropUtilityClass, getBadgeUtilityClass, getBottomNavigationActionUtilityClass, getBottomNavigationUtilityClass, getBreadcrumbsUtilityClass, getButtonBaseUtilityClass, getButtonGroupUtilityClass, getButtonUtilityClass, getCardActionAreaUtilityClass, getCardActionsUtilityClass, getCardContentUtilityClass, getCardHeaderUtilityClass, getCardMediaUtilityClass, getCardUtilityClass, getCheckboxUtilityClass, getChipUtilityClass, getCircularProgressUtilityClass, getCollapseUtilityClass, getContainerUtilityClass, getContrastRatio, getDialogActionsUtilityClass, getDialogContentTextUtilityClass, getDialogContentUtilityClass, getDialogTitleUtilityClass, getDialogUtilityClass, getDividerUtilityClass, getDrawerUtilityClass, getFabUtilityClass, getFilledInputUtilityClass, getFormControlLabelUtilityClasses, getFormControlUtilityClasses, getFormGroupUtilityClass, getFormHelperTextUtilityClasses, getFormLabelUtilityClasses, getGridUtilityClass, getIconButtonUtilityClass, getIconUtilityClass, getImageListItemBarUtilityClass, getImageListItemUtilityClass, getImageListUtilityClass, getInitColorSchemeScript, getInputAdornmentUtilityClass, getInputBaseUtilityClass, getInputLabelUtilityClasses, getInputUtilityClass, getLinearProgressUtilityClass, getLinkUtilityClass, getListItemAvatarUtilityClass, getListItemButtonUtilityClass, getListItemIconUtilityClass, getListItemSecondaryActionClassesUtilityClass, getListItemTextUtilityClass, getListItemUtilityClass, getListSubheaderUtilityClass, getListUtilityClass, getLuminance, getMenuItemUtilityClass, getMenuUtilityClass, getMobileStepperUtilityClass, getModalUtilityClass, getNativeSelectUtilityClasses, getOffsetLeft, getOffsetTop, getOutlinedInputUtilityClass, getOverlayAlpha, getPaginationItemUtilityClass, getPaginationUtilityClass, getPaperUtilityClass, getPopoverUtilityClass, getPopperUtilityClass, getRadioGroupUtilityClass, getRadioUtilityClass, getRatingUtilityClass, getScopedCssBaselineUtilityClass, getSelectUtilityClasses, getSkeletonUtilityClass, getSliderUtilityClass, getSnackbarContentUtilityClass, getSnackbarUtilityClass, getSpeedDialActionUtilityClass, getSpeedDialIconUtilityClass, getSpeedDialUtilityClass, getStepButtonUtilityClass, getStepConnectorUtilityClass, getStepContentUtilityClass, getStepIconUtilityClass, getStepLabelUtilityClass, getStepUtilityClass, getStepperUtilityClass, getSvgIconUtilityClass, getSwitchUtilityClass, getTabScrollButtonUtilityClass, getTabUtilityClass, getTableBodyUtilityClass, getTableCellUtilityClass, getTableContainerUtilityClass, getTableFooterUtilityClass, getTableHeadUtilityClass, getTablePaginationUtilityClass, getTableRowUtilityClass, getTableSortLabelUtilityClass, getTableUtilityClass, getTabsUtilityClass, getTextFieldUtilityClass, getToggleButtonGroupUtilityClass, getToggleButtonUtilityClass, getToolbarUtilityClass, getTooltipUtilityClass, getTouchRippleUtilityClass, getTypographyUtilityClass, gridClasses, hexToRgb, hslToRgb, iconButtonClasses, iconClasses, imageListClasses, imageListItemBarClasses, imageListItemClasses, inputAdornmentClasses, inputBaseClasses, inputClasses, inputLabelClasses, isMuiElement, keyframes, lighten, linearProgressClasses, linkClasses, listClasses, listItemAvatarClasses, listItemButtonClasses, listItemClasses, listItemIconClasses, listItemSecondaryActionClasses, listItemTextClasses, listSubheaderClasses, major, makeStyles, menuClasses, menuItemClasses, mergeSlotProps, minor, mobileStepperClasses, modalClasses, nativeSelectClasses, outlinedInputClasses, ownerDocument, ownerWindow, paginationClasses, paginationItemClasses, paperClasses, patch, popoverClasses, prerelease, private_createMixins, private_createTypography, private_excludeVariablesFromRoot, radioClasses, radioGroupClasses, ratingClasses, recomposeColor, requirePropFactory, responsiveFontSizes, rgbToHex, scopedCssBaselineClasses, selectClasses, setRef, shouldSkipGeneratingVar, skeletonClasses, sliderClasses, snackbarClasses, snackbarContentClasses, speedDialActionClasses, speedDialClasses, speedDialIconClasses, stackClasses, stepButtonClasses, stepClasses, stepConnectorClasses, stepContentClasses, stepIconClasses, stepLabelClasses, stepperClasses, styled, svgIconClasses, switchClasses, tabClasses, tabScrollButtonClasses, tableBodyClasses, tableCellClasses, tableClasses, tableContainerClasses, tableFooterClasses, tableHeadClasses, tablePaginationActionsClasses, tablePaginationClasses, tableRowClasses, tableSortLabelClasses, tabsClasses, textFieldClasses, toggleButtonClasses, toggleButtonGroupClasses, toolbarClasses, tooltipClasses, touchRippleClasses, typographyClasses, unstable_ClassNameGenerator, unstable_composeClasses, unstable_createBreakpoints, unstable_createMuiStrictModeTheme, unstable_getUnit, unstable_memoTheme, unstable_toUnitless, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useAutocomplete, useColorScheme, useControlled, useEventCallback, useForkRef, useFormControl, useMediaQuery, usePagination, useRadioGroup, useScrollTrigger, useStepContext, useStepperContext, useTheme, useThemeProps, version, withStyles, withTheme)
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: ERROR in ./src/pages/Results.tsx 270:38-42
+2025-07-19T13:49:05: export 'Grid2' (imported as 'Grid') was not found in '@mui/material' (possible exports: Accordion, AccordionActions, AccordionDetails, AccordionSummary, Alert, AlertTitle, AppBar, Autocomplete, Avatar, AvatarGroup, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, ButtonGroupButtonContext, ButtonGroupContext, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, CssVarsProvider, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, Experimental_CssVarsProvider, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, FormLabelRoot, GlobalStyles, Grid, GridLegacy, Grow, Icon, IconButton, ImageList, ImageListItem, ImageListItemBar, InitColorSchemeScript, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Pagination, PaginationItem, Paper, Popover, PopoverPaper, PopoverRoot, Popper, Portal, Radio, RadioGroup, Rating, ScopedCssBaseline, Select, Skeleton, Slide, Slider, SliderMark, SliderMarkLabel, SliderRail, SliderRoot, SliderThumb, SliderTrack, SliderValueLabel, Snackbar, SnackbarContent, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, Step, StepButton, StepConnector, StepContent, StepContext, StepIcon, StepLabel, Stepper, StepperContext, StyledEngineProvider, SvgIcon, SwipeableDrawer, Switch, THEME_ID, Tab, TabScrollButton, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, ThemeProvider, ToggleButton, ToggleButtonGroup, Toolbar, Tooltip, Typography, Unstable_TrapFocus, Zoom, accordionActionsClasses, accordionClasses, accordionDetailsClasses, accordionSummaryClasses, adaptV4Theme, alertClasses, alertTitleClasses, alpha, appBarClasses, autocompleteClasses, avatarClasses, avatarGroupClasses, backdropClasses, badgeClasses, bottomNavigationActionClasses, bottomNavigationClasses, boxClasses, breadcrumbsClasses, buttonBaseClasses, buttonClasses, buttonGroupClasses, capitalize, cardActionAreaClasses, cardActionsClasses, cardClasses, cardContentClasses, cardHeaderClasses, cardMediaClasses, checkboxClasses, chipClasses, circularProgressClasses, collapseClasses, colors, containerClasses, createChainedFunction, createColorScheme, createFilterOptions, createStyles, createSvgIcon, createTheme, createTransitions, css, darkScrollbar, darken, debounce, decomposeColor, deprecatedPropType, dialogActionsClasses, dialogClasses, dialogContentClasses, dialogContentTextClasses, dialogTitleClasses, dividerClasses, drawerClasses, duration, easing, emphasize, experimental_extendTheme, experimental_sx, extendTheme, fabClasses, filledInputClasses, formControlClasses, formControlLabelClasses, formGroupClasses, formHelperTextClasses, formLabelClasses, generateUtilityClass, generateUtilityClasses, getAccordionActionsUtilityClass, getAccordionDetailsUtilityClass, getAccordionSummaryUtilityClass, getAccordionUtilityClass, getAlertTitleUtilityClass, getAlertUtilityClass, getAppBarUtilityClass, getAutocompleteUtilityClass, getAvatarGroupUtilityClass, getAvatarUtilityClass, getBackdropUtilityClass, getBadgeUtilityClass, getBottomNavigationActionUtilityClass, getBottomNavigationUtilityClass, getBreadcrumbsUtilityClass, getButtonBaseUtilityClass, getButtonGroupUtilityClass, getButtonUtilityClass, getCardActionAreaUtilityClass, getCardActionsUtilityClass, getCardContentUtilityClass, getCardHeaderUtilityClass, getCardMediaUtilityClass, getCardUtilityClass, getCheckboxUtilityClass, getChipUtilityClass, getCircularProgressUtilityClass, getCollapseUtilityClass, getContainerUtilityClass, getContrastRatio, getDialogActionsUtilityClass, getDialogContentTextUtilityClass, getDialogContentUtilityClass, getDialogTitleUtilityClass, getDialogUtilityClass, getDividerUtilityClass, getDrawerUtilityClass, getFabUtilityClass, getFilledInputUtilityClass, getFormControlLabelUtilityClasses, getFormControlUtilityClasses, getFormGroupUtilityClass, getFormHelperTextUtilityClasses, getFormLabelUtilityClasses, getGridUtilityClass, getIconButtonUtilityClass, getIconUtilityClass, getImageListItemBarUtilityClass, getImageListItemUtilityClass, getImageListUtilityClass, getInitColorSchemeScript, getInputAdornmentUtilityClass, getInputBaseUtilityClass, getInputLabelUtilityClasses, getInputUtilityClass, getLinearProgressUtilityClass, getLinkUtilityClass, getListItemAvatarUtilityClass, getListItemButtonUtilityClass, getListItemIconUtilityClass, getListItemSecondaryActionClassesUtilityClass, getListItemTextUtilityClass, getListItemUtilityClass, getListSubheaderUtilityClass, getListUtilityClass, getLuminance, getMenuItemUtilityClass, getMenuUtilityClass, getMobileStepperUtilityClass, getModalUtilityClass, getNativeSelectUtilityClasses, getOffsetLeft, getOffsetTop, getOutlinedInputUtilityClass, getOverlayAlpha, getPaginationItemUtilityClass, getPaginationUtilityClass, getPaperUtilityClass, getPopoverUtilityClass, getPopperUtilityClass, getRadioGroupUtilityClass, getRadioUtilityClass, getRatingUtilityClass, getScopedCssBaselineUtilityClass, getSelectUtilityClasses, getSkeletonUtilityClass, getSliderUtilityClass, getSnackbarContentUtilityClass, getSnackbarUtilityClass, getSpeedDialActionUtilityClass, getSpeedDialIconUtilityClass, getSpeedDialUtilityClass, getStepButtonUtilityClass, getStepConnectorUtilityClass, getStepContentUtilityClass, getStepIconUtilityClass, getStepLabelUtilityClass, getStepUtilityClass, getStepperUtilityClass, getSvgIconUtilityClass, getSwitchUtilityClass, getTabScrollButtonUtilityClass, getTabUtilityClass, getTableBodyUtilityClass, getTableCellUtilityClass, getTableContainerUtilityClass, getTableFooterUtilityClass, getTableHeadUtilityClass, getTablePaginationUtilityClass, getTableRowUtilityClass, getTableSortLabelUtilityClass, getTableUtilityClass, getTabsUtilityClass, getTextFieldUtilityClass, getToggleButtonGroupUtilityClass, getToggleButtonUtilityClass, getToolbarUtilityClass, getTooltipUtilityClass, getTouchRippleUtilityClass, getTypographyUtilityClass, gridClasses, hexToRgb, hslToRgb, iconButtonClasses, iconClasses, imageListClasses, imageListItemBarClasses, imageListItemClasses, inputAdornmentClasses, inputBaseClasses, inputClasses, inputLabelClasses, isMuiElement, keyframes, lighten, linearProgressClasses, linkClasses, listClasses, listItemAvatarClasses, listItemButtonClasses, listItemClasses, listItemIconClasses, listItemSecondaryActionClasses, listItemTextClasses, listSubheaderClasses, major, makeStyles, menuClasses, menuItemClasses, mergeSlotProps, minor, mobileStepperClasses, modalClasses, nativeSelectClasses, outlinedInputClasses, ownerDocument, ownerWindow, paginationClasses, paginationItemClasses, paperClasses, patch, popoverClasses, prerelease, private_createMixins, private_createTypography, private_excludeVariablesFromRoot, radioClasses, radioGroupClasses, ratingClasses, recomposeColor, requirePropFactory, responsiveFontSizes, rgbToHex, scopedCssBaselineClasses, selectClasses, setRef, shouldSkipGeneratingVar, skeletonClasses, sliderClasses, snackbarClasses, snackbarContentClasses, speedDialActionClasses, speedDialClasses, speedDialIconClasses, stackClasses, stepButtonClasses, stepClasses, stepConnectorClasses, stepContentClasses, stepIconClasses, stepLabelClasses, stepperClasses, styled, svgIconClasses, switchClasses, tabClasses, tabScrollButtonClasses, tableBodyClasses, tableCellClasses, tableClasses, tableContainerClasses, tableFooterClasses, tableHeadClasses, tablePaginationActionsClasses, tablePaginationClasses, tableRowClasses, tableSortLabelClasses, tabsClasses, textFieldClasses, toggleButtonClasses, toggleButtonGroupClasses, toolbarClasses, tooltipClasses, touchRippleClasses, typographyClasses, unstable_ClassNameGenerator, unstable_composeClasses, unstable_createBreakpoints, unstable_createMuiStrictModeTheme, unstable_getUnit, unstable_memoTheme, unstable_toUnitless, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useAutocomplete, useColorScheme, useControlled, useEventCallback, useForkRef, useFormControl, useMediaQuery, usePagination, useRadioGroup, useScrollTrigger, useStepContext, useStepperContext, useTheme, useThemeProps, version, withStyles, withTheme)
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: ERROR in ./src/pages/Results.tsx 297:37-41
+2025-07-19T13:49:05: export 'Grid2' (imported as 'Grid') was not found in '@mui/material' (possible exports: Accordion, AccordionActions, AccordionDetails, AccordionSummary, Alert, AlertTitle, AppBar, Autocomplete, Avatar, AvatarGroup, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, ButtonGroupButtonContext, ButtonGroupContext, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, CssVarsProvider, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, Experimental_CssVarsProvider, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, FormLabelRoot, GlobalStyles, Grid, GridLegacy, Grow, Icon, IconButton, ImageList, ImageListItem, ImageListItemBar, InitColorSchemeScript, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Pagination, PaginationItem, Paper, Popover, PopoverPaper, PopoverRoot, Popper, Portal, Radio, RadioGroup, Rating, ScopedCssBaseline, Select, Skeleton, Slide, Slider, SliderMark, SliderMarkLabel, SliderRail, SliderRoot, SliderThumb, SliderTrack, SliderValueLabel, Snackbar, SnackbarContent, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, Step, StepButton, StepConnector, StepContent, StepContext, StepIcon, StepLabel, Stepper, StepperContext, StyledEngineProvider, SvgIcon, SwipeableDrawer, Switch, THEME_ID, Tab, TabScrollButton, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, ThemeProvider, ToggleButton, ToggleButtonGroup, Toolbar, Tooltip, Typography, Unstable_TrapFocus, Zoom, accordionActionsClasses, accordionClasses, accordionDetailsClasses, accordionSummaryClasses, adaptV4Theme, alertClasses, alertTitleClasses, alpha, appBarClasses, autocompleteClasses, avatarClasses, avatarGroupClasses, backdropClasses, badgeClasses, bottomNavigationActionClasses, bottomNavigationClasses, boxClasses, breadcrumbsClasses, buttonBaseClasses, buttonClasses, buttonGroupClasses, capitalize, cardActionAreaClasses, cardActionsClasses, cardClasses, cardContentClasses, cardHeaderClasses, cardMediaClasses, checkboxClasses, chipClasses, circularProgressClasses, collapseClasses, colors, containerClasses, createChainedFunction, createColorScheme, createFilterOptions, createStyles, createSvgIcon, createTheme, createTransitions, css, darkScrollbar, darken, debounce, decomposeColor, deprecatedPropType, dialogActionsClasses, dialogClasses, dialogContentClasses, dialogContentTextClasses, dialogTitleClasses, dividerClasses, drawerClasses, duration, easing, emphasize, experimental_extendTheme, experimental_sx, extendTheme, fabClasses, filledInputClasses, formControlClasses, formControlLabelClasses, formGroupClasses, formHelperTextClasses, formLabelClasses, generateUtilityClass, generateUtilityClasses, getAccordionActionsUtilityClass, getAccordionDetailsUtilityClass, getAccordionSummaryUtilityClass, getAccordionUtilityClass, getAlertTitleUtilityClass, getAlertUtilityClass, getAppBarUtilityClass, getAutocompleteUtilityClass, getAvatarGroupUtilityClass, getAvatarUtilityClass, getBackdropUtilityClass, getBadgeUtilityClass, getBottomNavigationActionUtilityClass, getBottomNavigationUtilityClass, getBreadcrumbsUtilityClass, getButtonBaseUtilityClass, getButtonGroupUtilityClass, getButtonUtilityClass, getCardActionAreaUtilityClass, getCardActionsUtilityClass, getCardContentUtilityClass, getCardHeaderUtilityClass, getCardMediaUtilityClass, getCardUtilityClass, getCheckboxUtilityClass, getChipUtilityClass, getCircularProgressUtilityClass, getCollapseUtilityClass, getContainerUtilityClass, getContrastRatio, getDialogActionsUtilityClass, getDialogContentTextUtilityClass, getDialogContentUtilityClass, getDialogTitleUtilityClass, getDialogUtilityClass, getDividerUtilityClass, getDrawerUtilityClass, getFabUtilityClass, getFilledInputUtilityClass, getFormControlLabelUtilityClasses, getFormControlUtilityClasses, getFormGroupUtilityClass, getFormHelperTextUtilityClasses, getFormLabelUtilityClasses, getGridUtilityClass, getIconButtonUtilityClass, getIconUtilityClass, getImageListItemBarUtilityClass, getImageListItemUtilityClass, getImageListUtilityClass, getInitColorSchemeScript, getInputAdornmentUtilityClass, getInputBaseUtilityClass, getInputLabelUtilityClasses, getInputUtilityClass, getLinearProgressUtilityClass, getLinkUtilityClass, getListItemAvatarUtilityClass, getListItemButtonUtilityClass, getListItemIconUtilityClass, getListItemSecondaryActionClassesUtilityClass, getListItemTextUtilityClass, getListItemUtilityClass, getListSubheaderUtilityClass, getListUtilityClass, getLuminance, getMenuItemUtilityClass, getMenuUtilityClass, getMobileStepperUtilityClass, getModalUtilityClass, getNativeSelectUtilityClasses, getOffsetLeft, getOffsetTop, getOutlinedInputUtilityClass, getOverlayAlpha, getPaginationItemUtilityClass, getPaginationUtilityClass, getPaperUtilityClass, getPopoverUtilityClass, getPopperUtilityClass, getRadioGroupUtilityClass, getRadioUtilityClass, getRatingUtilityClass, getScopedCssBaselineUtilityClass, getSelectUtilityClasses, getSkeletonUtilityClass, getSliderUtilityClass, getSnackbarContentUtilityClass, getSnackbarUtilityClass, getSpeedDialActionUtilityClass, getSpeedDialIconUtilityClass, getSpeedDialUtilityClass, getStepButtonUtilityClass, getStepConnectorUtilityClass, getStepContentUtilityClass, getStepIconUtilityClass, getStepLabelUtilityClass, getStepUtilityClass, getStepperUtilityClass, getSvgIconUtilityClass, getSwitchUtilityClass, getTabScrollButtonUtilityClass, getTabUtilityClass, getTableBodyUtilityClass, getTableCellUtilityClass, getTableContainerUtilityClass, getTableFooterUtilityClass, getTableHeadUtilityClass, getTablePaginationUtilityClass, getTableRowUtilityClass, getTableSortLabelUtilityClass, getTableUtilityClass, getTabsUtilityClass, getTextFieldUtilityClass, getToggleButtonGroupUtilityClass, getToggleButtonUtilityClass, getToolbarUtilityClass, getTooltipUtilityClass, getTouchRippleUtilityClass, getTypographyUtilityClass, gridClasses, hexToRgb, hslToRgb, iconButtonClasses, iconClasses, imageListClasses, imageListItemBarClasses, imageListItemClasses, inputAdornmentClasses, inputBaseClasses, inputClasses, inputLabelClasses, isMuiElement, keyframes, lighten, linearProgressClasses, linkClasses, listClasses, listItemAvatarClasses, listItemButtonClasses, listItemClasses, listItemIconClasses, listItemSecondaryActionClasses, listItemTextClasses, listSubheaderClasses, major, makeStyles, menuClasses, menuItemClasses, mergeSlotProps, minor, mobileStepperClasses, modalClasses, nativeSelectClasses, outlinedInputClasses, ownerDocument, ownerWindow, paginationClasses, paginationItemClasses, paperClasses, patch, popoverClasses, prerelease, private_createMixins, private_createTypography, private_excludeVariablesFromRoot, radioClasses, radioGroupClasses, ratingClasses, recomposeColor, requirePropFactory, responsiveFontSizes, rgbToHex, scopedCssBaselineClasses, selectClasses, setRef, shouldSkipGeneratingVar, skeletonClasses, sliderClasses, snackbarClasses, snackbarContentClasses, speedDialActionClasses, speedDialClasses, speedDialIconClasses, stackClasses, stepButtonClasses, stepClasses, stepConnectorClasses, stepContentClasses, stepIconClasses, stepLabelClasses, stepperClasses, styled, svgIconClasses, switchClasses, tabClasses, tabScrollButtonClasses, tableBodyClasses, tableCellClasses, tableClasses, tableContainerClasses, tableFooterClasses, tableHeadClasses, tablePaginationActionsClasses, tablePaginationClasses, tableRowClasses, tableSortLabelClasses, tabsClasses, textFieldClasses, toggleButtonClasses, toggleButtonGroupClasses, toolbarClasses, tooltipClasses, touchRippleClasses, typographyClasses, unstable_ClassNameGenerator, unstable_composeClasses, unstable_createBreakpoints, unstable_createMuiStrictModeTheme, unstable_getUnit, unstable_memoTheme, unstable_toUnitless, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useAutocomplete, useColorScheme, useControlled, useEventCallback, useForkRef, useFormControl, useMediaQuery, usePagination, useRadioGroup, useScrollTrigger, useStepContext, useStepperContext, useTheme, useThemeProps, version, withStyles, withTheme)
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: ERROR in ./src/pages/Results.tsx 325:37-41
+2025-07-19T13:49:05: export 'Grid2' (imported as 'Grid') was not found in '@mui/material' (possible exports: Accordion, AccordionActions, AccordionDetails, AccordionSummary, Alert, AlertTitle, AppBar, Autocomplete, Avatar, AvatarGroup, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, ButtonGroupButtonContext, ButtonGroupContext, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, CssVarsProvider, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, Experimental_CssVarsProvider, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, FormLabelRoot, GlobalStyles, Grid, GridLegacy, Grow, Icon, IconButton, ImageList, ImageListItem, ImageListItemBar, InitColorSchemeScript, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Pagination, PaginationItem, Paper, Popover, PopoverPaper, PopoverRoot, Popper, Portal, Radio, RadioGroup, Rating, ScopedCssBaseline, Select, Skeleton, Slide, Slider, SliderMark, SliderMarkLabel, SliderRail, SliderRoot, SliderThumb, SliderTrack, SliderValueLabel, Snackbar, SnackbarContent, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, Step, StepButton, StepConnector, StepContent, StepContext, StepIcon, StepLabel, Stepper, StepperContext, StyledEngineProvider, SvgIcon, SwipeableDrawer, Switch, THEME_ID, Tab, TabScrollButton, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, ThemeProvider, ToggleButton, ToggleButtonGroup, Toolbar, Tooltip, Typography, Unstable_TrapFocus, Zoom, accordionActionsClasses, accordionClasses, accordionDetailsClasses, accordionSummaryClasses, adaptV4Theme, alertClasses, alertTitleClasses, alpha, appBarClasses, autocompleteClasses, avatarClasses, avatarGroupClasses, backdropClasses, badgeClasses, bottomNavigationActionClasses, bottomNavigationClasses, boxClasses, breadcrumbsClasses, buttonBaseClasses, buttonClasses, buttonGroupClasses, capitalize, cardActionAreaClasses, cardActionsClasses, cardClasses, cardContentClasses, cardHeaderClasses, cardMediaClasses, checkboxClasses, chipClasses, circularProgressClasses, collapseClasses, colors, containerClasses, createChainedFunction, createColorScheme, createFilterOptions, createStyles, createSvgIcon, createTheme, createTransitions, css, darkScrollbar, darken, debounce, decomposeColor, deprecatedPropType, dialogActionsClasses, dialogClasses, dialogContentClasses, dialogContentTextClasses, dialogTitleClasses, dividerClasses, drawerClasses, duration, easing, emphasize, experimental_extendTheme, experimental_sx, extendTheme, fabClasses, filledInputClasses, formControlClasses, formControlLabelClasses, formGroupClasses, formHelperTextClasses, formLabelClasses, generateUtilityClass, generateUtilityClasses, getAccordionActionsUtilityClass, getAccordionDetailsUtilityClass, getAccordionSummaryUtilityClass, getAccordionUtilityClass, getAlertTitleUtilityClass, getAlertUtilityClass, getAppBarUtilityClass, getAutocompleteUtilityClass, getAvatarGroupUtilityClass, getAvatarUtilityClass, getBackdropUtilityClass, getBadgeUtilityClass, getBottomNavigationActionUtilityClass, getBottomNavigationUtilityClass, getBreadcrumbsUtilityClass, getButtonBaseUtilityClass, getButtonGroupUtilityClass, getButtonUtilityClass, getCardActionAreaUtilityClass, getCardActionsUtilityClass, getCardContentUtilityClass, getCardHeaderUtilityClass, getCardMediaUtilityClass, getCardUtilityClass, getCheckboxUtilityClass, getChipUtilityClass, getCircularProgressUtilityClass, getCollapseUtilityClass, getContainerUtilityClass, getContrastRatio, getDialogActionsUtilityClass, getDialogContentTextUtilityClass, getDialogContentUtilityClass, getDialogTitleUtilityClass, getDialogUtilityClass, getDividerUtilityClass, getDrawerUtilityClass, getFabUtilityClass, getFilledInputUtilityClass, getFormControlLabelUtilityClasses, getFormControlUtilityClasses, getFormGroupUtilityClass, getFormHelperTextUtilityClasses, getFormLabelUtilityClasses, getGridUtilityClass, getIconButtonUtilityClass, getIconUtilityClass, getImageListItemBarUtilityClass, getImageListItemUtilityClass, getImageListUtilityClass, getInitColorSchemeScript, getInputAdornmentUtilityClass, getInputBaseUtilityClass, getInputLabelUtilityClasses, getInputUtilityClass, getLinearProgressUtilityClass, getLinkUtilityClass, getListItemAvatarUtilityClass, getListItemButtonUtilityClass, getListItemIconUtilityClass, getListItemSecondaryActionClassesUtilityClass, getListItemTextUtilityClass, getListItemUtilityClass, getListSubheaderUtilityClass, getListUtilityClass, getLuminance, getMenuItemUtilityClass, getMenuUtilityClass, getMobileStepperUtilityClass, getModalUtilityClass, getNativeSelectUtilityClasses, getOffsetLeft, getOffsetTop, getOutlinedInputUtilityClass, getOverlayAlpha, getPaginationItemUtilityClass, getPaginationUtilityClass, getPaperUtilityClass, getPopoverUtilityClass, getPopperUtilityClass, getRadioGroupUtilityClass, getRadioUtilityClass, getRatingUtilityClass, getScopedCssBaselineUtilityClass, getSelectUtilityClasses, getSkeletonUtilityClass, getSliderUtilityClass, getSnackbarContentUtilityClass, getSnackbarUtilityClass, getSpeedDialActionUtilityClass, getSpeedDialIconUtilityClass, getSpeedDialUtilityClass, getStepButtonUtilityClass, getStepConnectorUtilityClass, getStepContentUtilityClass, getStepIconUtilityClass, getStepLabelUtilityClass, getStepUtilityClass, getStepperUtilityClass, getSvgIconUtilityClass, getSwitchUtilityClass, getTabScrollButtonUtilityClass, getTabUtilityClass, getTableBodyUtilityClass, getTableCellUtilityClass, getTableContainerUtilityClass, getTableFooterUtilityClass, getTableHeadUtilityClass, getTablePaginationUtilityClass, getTableRowUtilityClass, getTableSortLabelUtilityClass, getTableUtilityClass, getTabsUtilityClass, getTextFieldUtilityClass, getToggleButtonGroupUtilityClass, getToggleButtonUtilityClass, getToolbarUtilityClass, getTooltipUtilityClass, getTouchRippleUtilityClass, getTypographyUtilityClass, gridClasses, hexToRgb, hslToRgb, iconButtonClasses, iconClasses, imageListClasses, imageListItemBarClasses, imageListItemClasses, inputAdornmentClasses, inputBaseClasses, inputClasses, inputLabelClasses, isMuiElement, keyframes, lighten, linearProgressClasses, linkClasses, listClasses, listItemAvatarClasses, listItemButtonClasses, listItemClasses, listItemIconClasses, listItemSecondaryActionClasses, listItemTextClasses, listSubheaderClasses, major, makeStyles, menuClasses, menuItemClasses, mergeSlotProps, minor, mobileStepperClasses, modalClasses, nativeSelectClasses, outlinedInputClasses, ownerDocument, ownerWindow, paginationClasses, paginationItemClasses, paperClasses, patch, popoverClasses, prerelease, private_createMixins, private_createTypography, private_excludeVariablesFromRoot, radioClasses, radioGroupClasses, ratingClasses, recomposeColor, requirePropFactory, responsiveFontSizes, rgbToHex, scopedCssBaselineClasses, selectClasses, setRef, shouldSkipGeneratingVar, skeletonClasses, sliderClasses, snackbarClasses, snackbarContentClasses, speedDialActionClasses, speedDialClasses, speedDialIconClasses, stackClasses, stepButtonClasses, stepClasses, stepConnectorClasses, stepContentClasses, stepIconClasses, stepLabelClasses, stepperClasses, styled, svgIconClasses, switchClasses, tabClasses, tabScrollButtonClasses, tableBodyClasses, tableCellClasses, tableClasses, tableContainerClasses, tableFooterClasses, tableHeadClasses, tablePaginationActionsClasses, tablePaginationClasses, tableRowClasses, tableSortLabelClasses, tabsClasses, textFieldClasses, toggleButtonClasses, toggleButtonGroupClasses, toolbarClasses, tooltipClasses, touchRippleClasses, typographyClasses, unstable_ClassNameGenerator, unstable_composeClasses, unstable_createBreakpoints, unstable_createMuiStrictModeTheme, unstable_getUnit, unstable_memoTheme, unstable_toUnitless, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useAutocomplete, useColorScheme, useControlled, useEventCallback, useForkRef, useFormControl, useMediaQuery, usePagination, useRadioGroup, useScrollTrigger, useStepContext, useStepperContext, useTheme, useThemeProps, version, withStyles, withTheme)
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: ERROR in ./src/pages/Results.tsx 352:37-41
+2025-07-19T13:49:05: export 'Grid2' (imported as 'Grid') was not found in '@mui/material' (possible exports: Accordion, AccordionActions, AccordionDetails, AccordionSummary, Alert, AlertTitle, AppBar, Autocomplete, Avatar, AvatarGroup, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, ButtonGroupButtonContext, ButtonGroupContext, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, CssVarsProvider, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, Experimental_CssVarsProvider, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, FormLabelRoot, GlobalStyles, Grid, GridLegacy, Grow, Icon, IconButton, ImageList, ImageListItem, ImageListItemBar, InitColorSchemeScript, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Pagination, PaginationItem, Paper, Popover, PopoverPaper, PopoverRoot, Popper, Portal, Radio, RadioGroup, Rating, ScopedCssBaseline, Select, Skeleton, Slide, Slider, SliderMark, SliderMarkLabel, SliderRail, SliderRoot, SliderThumb, SliderTrack, SliderValueLabel, Snackbar, SnackbarContent, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, Step, StepButton, StepConnector, StepContent, StepContext, StepIcon, StepLabel, Stepper, StepperContext, StyledEngineProvider, SvgIcon, SwipeableDrawer, Switch, THEME_ID, Tab, TabScrollButton, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, ThemeProvider, ToggleButton, ToggleButtonGroup, Toolbar, Tooltip, Typography, Unstable_TrapFocus, Zoom, accordionActionsClasses, accordionClasses, accordionDetailsClasses, accordionSummaryClasses, adaptV4Theme, alertClasses, alertTitleClasses, alpha, appBarClasses, autocompleteClasses, avatarClasses, avatarGroupClasses, backdropClasses, badgeClasses, bottomNavigationActionClasses, bottomNavigationClasses, boxClasses, breadcrumbsClasses, buttonBaseClasses, buttonClasses, buttonGroupClasses, capitalize, cardActionAreaClasses, cardActionsClasses, cardClasses, cardContentClasses, cardHeaderClasses, cardMediaClasses, checkboxClasses, chipClasses, circularProgressClasses, collapseClasses, colors, containerClasses, createChainedFunction, createColorScheme, createFilterOptions, createStyles, createSvgIcon, createTheme, createTransitions, css, darkScrollbar, darken, debounce, decomposeColor, deprecatedPropType, dialogActionsClasses, dialogClasses, dialogContentClasses, dialogContentTextClasses, dialogTitleClasses, dividerClasses, drawerClasses, duration, easing, emphasize, experimental_extendTheme, experimental_sx, extendTheme, fabClasses, filledInputClasses, formControlClasses, formControlLabelClasses, formGroupClasses, formHelperTextClasses, formLabelClasses, generateUtilityClass, generateUtilityClasses, getAccordionActionsUtilityClass, getAccordionDetailsUtilityClass, getAccordionSummaryUtilityClass, getAccordionUtilityClass, getAlertTitleUtilityClass, getAlertUtilityClass, getAppBarUtilityClass, getAutocompleteUtilityClass, getAvatarGroupUtilityClass, getAvatarUtilityClass, getBackdropUtilityClass, getBadgeUtilityClass, getBottomNavigationActionUtilityClass, getBottomNavigationUtilityClass, getBreadcrumbsUtilityClass, getButtonBaseUtilityClass, getButtonGroupUtilityClass, getButtonUtilityClass, getCardActionAreaUtilityClass, getCardActionsUtilityClass, getCardContentUtilityClass, getCardHeaderUtilityClass, getCardMediaUtilityClass, getCardUtilityClass, getCheckboxUtilityClass, getChipUtilityClass, getCircularProgressUtilityClass, getCollapseUtilityClass, getContainerUtilityClass, getContrastRatio, getDialogActionsUtilityClass, getDialogContentTextUtilityClass, getDialogContentUtilityClass, getDialogTitleUtilityClass, getDialogUtilityClass, getDividerUtilityClass, getDrawerUtilityClass, getFabUtilityClass, getFilledInputUtilityClass, getFormControlLabelUtilityClasses, getFormControlUtilityClasses, getFormGroupUtilityClass, getFormHelperTextUtilityClasses, getFormLabelUtilityClasses, getGridUtilityClass, getIconButtonUtilityClass, getIconUtilityClass, getImageListItemBarUtilityClass, getImageListItemUtilityClass, getImageListUtilityClass, getInitColorSchemeScript, getInputAdornmentUtilityClass, getInputBaseUtilityClass, getInputLabelUtilityClasses, getInputUtilityClass, getLinearProgressUtilityClass, getLinkUtilityClass, getListItemAvatarUtilityClass, getListItemButtonUtilityClass, getListItemIconUtilityClass, getListItemSecondaryActionClassesUtilityClass, getListItemTextUtilityClass, getListItemUtilityClass, getListSubheaderUtilityClass, getListUtilityClass, getLuminance, getMenuItemUtilityClass, getMenuUtilityClass, getMobileStepperUtilityClass, getModalUtilityClass, getNativeSelectUtilityClasses, getOffsetLeft, getOffsetTop, getOutlinedInputUtilityClass, getOverlayAlpha, getPaginationItemUtilityClass, getPaginationUtilityClass, getPaperUtilityClass, getPopoverUtilityClass, getPopperUtilityClass, getRadioGroupUtilityClass, getRadioUtilityClass, getRatingUtilityClass, getScopedCssBaselineUtilityClass, getSelectUtilityClasses, getSkeletonUtilityClass, getSliderUtilityClass, getSnackbarContentUtilityClass, getSnackbarUtilityClass, getSpeedDialActionUtilityClass, getSpeedDialIconUtilityClass, getSpeedDialUtilityClass, getStepButtonUtilityClass, getStepConnectorUtilityClass, getStepContentUtilityClass, getStepIconUtilityClass, getStepLabelUtilityClass, getStepUtilityClass, getStepperUtilityClass, getSvgIconUtilityClass, getSwitchUtilityClass, getTabScrollButtonUtilityClass, getTabUtilityClass, getTableBodyUtilityClass, getTableCellUtilityClass, getTableContainerUtilityClass, getTableFooterUtilityClass, getTableHeadUtilityClass, getTablePaginationUtilityClass, getTableRowUtilityClass, getTableSortLabelUtilityClass, getTableUtilityClass, getTabsUtilityClass, getTextFieldUtilityClass, getToggleButtonGroupUtilityClass, getToggleButtonUtilityClass, getToolbarUtilityClass, getTooltipUtilityClass, getTouchRippleUtilityClass, getTypographyUtilityClass, gridClasses, hexToRgb, hslToRgb, iconButtonClasses, iconClasses, imageListClasses, imageListItemBarClasses, imageListItemClasses, inputAdornmentClasses, inputBaseClasses, inputClasses, inputLabelClasses, isMuiElement, keyframes, lighten, linearProgressClasses, linkClasses, listClasses, listItemAvatarClasses, listItemButtonClasses, listItemClasses, listItemIconClasses, listItemSecondaryActionClasses, listItemTextClasses, listSubheaderClasses, major, makeStyles, menuClasses, menuItemClasses, mergeSlotProps, minor, mobileStepperClasses, modalClasses, nativeSelectClasses, outlinedInputClasses, ownerDocument, ownerWindow, paginationClasses, paginationItemClasses, paperClasses, patch, popoverClasses, prerelease, private_createMixins, private_createTypography, private_excludeVariablesFromRoot, radioClasses, radioGroupClasses, ratingClasses, recomposeColor, requirePropFactory, responsiveFontSizes, rgbToHex, scopedCssBaselineClasses, selectClasses, setRef, shouldSkipGeneratingVar, skeletonClasses, sliderClasses, snackbarClasses, snackbarContentClasses, speedDialActionClasses, speedDialClasses, speedDialIconClasses, stackClasses, stepButtonClasses, stepClasses, stepConnectorClasses, stepContentClasses, stepIconClasses, stepLabelClasses, stepperClasses, styled, svgIconClasses, switchClasses, tabClasses, tabScrollButtonClasses, tableBodyClasses, tableCellClasses, tableClasses, tableContainerClasses, tableFooterClasses, tableHeadClasses, tablePaginationActionsClasses, tablePaginationClasses, tableRowClasses, tableSortLabelClasses, tabsClasses, textFieldClasses, toggleButtonClasses, toggleButtonGroupClasses, toolbarClasses, tooltipClasses, touchRippleClasses, typographyClasses, unstable_ClassNameGenerator, unstable_composeClasses, unstable_createBreakpoints, unstable_createMuiStrictModeTheme, unstable_getUnit, unstable_memoTheme, unstable_toUnitless, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useAutocomplete, useColorScheme, useControlled, useEventCallback, useForkRef, useFormControl, useMediaQuery, usePagination, useRadioGroup, useScrollTrigger, useStepContext, useStepperContext, useTheme, useThemeProps, version, withStyles, withTheme)
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: ERROR in ./src/pages/Results.tsx 749:42-46
+2025-07-19T13:49:05: export 'Grid2' (imported as 'Grid') was not found in '@mui/material' (possible exports: Accordion, AccordionActions, AccordionDetails, AccordionSummary, Alert, AlertTitle, AppBar, Autocomplete, Avatar, AvatarGroup, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, ButtonGroupButtonContext, ButtonGroupContext, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, CssVarsProvider, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, Experimental_CssVarsProvider, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, FormLabelRoot, GlobalStyles, Grid, GridLegacy, Grow, Icon, IconButton, ImageList, ImageListItem, ImageListItemBar, InitColorSchemeScript, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Pagination, PaginationItem, Paper, Popover, PopoverPaper, PopoverRoot, Popper, Portal, Radio, RadioGroup, Rating, ScopedCssBaseline, Select, Skeleton, Slide, Slider, SliderMark, SliderMarkLabel, SliderRail, SliderRoot, SliderThumb, SliderTrack, SliderValueLabel, Snackbar, SnackbarContent, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, Step, StepButton, StepConnector, StepContent, StepContext, StepIcon, StepLabel, Stepper, StepperContext, StyledEngineProvider, SvgIcon, SwipeableDrawer, Switch, THEME_ID, Tab, TabScrollButton, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, ThemeProvider, ToggleButton, ToggleButtonGroup, Toolbar, Tooltip, Typography, Unstable_TrapFocus, Zoom, accordionActionsClasses, accordionClasses, accordionDetailsClasses, accordionSummaryClasses, adaptV4Theme, alertClasses, alertTitleClasses, alpha, appBarClasses, autocompleteClasses, avatarClasses, avatarGroupClasses, backdropClasses, badgeClasses, bottomNavigationActionClasses, bottomNavigationClasses, boxClasses, breadcrumbsClasses, buttonBaseClasses, buttonClasses, buttonGroupClasses, capitalize, cardActionAreaClasses, cardActionsClasses, cardClasses, cardContentClasses, cardHeaderClasses, cardMediaClasses, checkboxClasses, chipClasses, circularProgressClasses, collapseClasses, colors, containerClasses, createChainedFunction, createColorScheme, createFilterOptions, createStyles, createSvgIcon, createTheme, createTransitions, css, darkScrollbar, darken, debounce, decomposeColor, deprecatedPropType, dialogActionsClasses, dialogClasses, dialogContentClasses, dialogContentTextClasses, dialogTitleClasses, dividerClasses, drawerClasses, duration, easing, emphasize, experimental_extendTheme, experimental_sx, extendTheme, fabClasses, filledInputClasses, formControlClasses, formControlLabelClasses, formGroupClasses, formHelperTextClasses, formLabelClasses, generateUtilityClass, generateUtilityClasses, getAccordionActionsUtilityClass, getAccordionDetailsUtilityClass, getAccordionSummaryUtilityClass, getAccordionUtilityClass, getAlertTitleUtilityClass, getAlertUtilityClass, getAppBarUtilityClass, getAutocompleteUtilityClass, getAvatarGroupUtilityClass, getAvatarUtilityClass, getBackdropUtilityClass, getBadgeUtilityClass, getBottomNavigationActionUtilityClass, getBottomNavigationUtilityClass, getBreadcrumbsUtilityClass, getButtonBaseUtilityClass, getButtonGroupUtilityClass, getButtonUtilityClass, getCardActionAreaUtilityClass, getCardActionsUtilityClass, getCardContentUtilityClass, getCardHeaderUtilityClass, getCardMediaUtilityClass, getCardUtilityClass, getCheckboxUtilityClass, getChipUtilityClass, getCircularProgressUtilityClass, getCollapseUtilityClass, getContainerUtilityClass, getContrastRatio, getDialogActionsUtilityClass, getDialogContentTextUtilityClass, getDialogContentUtilityClass, getDialogTitleUtilityClass, getDialogUtilityClass, getDividerUtilityClass, getDrawerUtilityClass, getFabUtilityClass, getFilledInputUtilityClass, getFormControlLabelUtilityClasses, getFormControlUtilityClasses, getFormGroupUtilityClass, getFormHelperTextUtilityClasses, getFormLabelUtilityClasses, getGridUtilityClass, getIconButtonUtilityClass, getIconUtilityClass, getImageListItemBarUtilityClass, getImageListItemUtilityClass, getImageListUtilityClass, getInitColorSchemeScript, getInputAdornmentUtilityClass, getInputBaseUtilityClass, getInputLabelUtilityClasses, getInputUtilityClass, getLinearProgressUtilityClass, getLinkUtilityClass, getListItemAvatarUtilityClass, getListItemButtonUtilityClass, getListItemIconUtilityClass, getListItemSecondaryActionClassesUtilityClass, getListItemTextUtilityClass, getListItemUtilityClass, getListSubheaderUtilityClass, getListUtilityClass, getLuminance, getMenuItemUtilityClass, getMenuUtilityClass, getMobileStepperUtilityClass, getModalUtilityClass, getNativeSelectUtilityClasses, getOffsetLeft, getOffsetTop, getOutlinedInputUtilityClass, getOverlayAlpha, getPaginationItemUtilityClass, getPaginationUtilityClass, getPaperUtilityClass, getPopoverUtilityClass, getPopperUtilityClass, getRadioGroupUtilityClass, getRadioUtilityClass, getRatingUtilityClass, getScopedCssBaselineUtilityClass, getSelectUtilityClasses, getSkeletonUtilityClass, getSliderUtilityClass, getSnackbarContentUtilityClass, getSnackbarUtilityClass, getSpeedDialActionUtilityClass, getSpeedDialIconUtilityClass, getSpeedDialUtilityClass, getStepButtonUtilityClass, getStepConnectorUtilityClass, getStepContentUtilityClass, getStepIconUtilityClass, getStepLabelUtilityClass, getStepUtilityClass, getStepperUtilityClass, getSvgIconUtilityClass, getSwitchUtilityClass, getTabScrollButtonUtilityClass, getTabUtilityClass, getTableBodyUtilityClass, getTableCellUtilityClass, getTableContainerUtilityClass, getTableFooterUtilityClass, getTableHeadUtilityClass, getTablePaginationUtilityClass, getTableRowUtilityClass, getTableSortLabelUtilityClass, getTableUtilityClass, getTabsUtilityClass, getTextFieldUtilityClass, getToggleButtonGroupUtilityClass, getToggleButtonUtilityClass, getToolbarUtilityClass, getTooltipUtilityClass, getTouchRippleUtilityClass, getTypographyUtilityClass, gridClasses, hexToRgb, hslToRgb, iconButtonClasses, iconClasses, imageListClasses, imageListItemBarClasses, imageListItemClasses, inputAdornmentClasses, inputBaseClasses, inputClasses, inputLabelClasses, isMuiElement, keyframes, lighten, linearProgressClasses, linkClasses, listClasses, listItemAvatarClasses, listItemButtonClasses, listItemClasses, listItemIconClasses, listItemSecondaryActionClasses, listItemTextClasses, listSubheaderClasses, major, makeStyles, menuClasses, menuItemClasses, mergeSlotProps, minor, mobileStepperClasses, modalClasses, nativeSelectClasses, outlinedInputClasses, ownerDocument, ownerWindow, paginationClasses, paginationItemClasses, paperClasses, patch, popoverClasses, prerelease, private_createMixins, private_createTypography, private_excludeVariablesFromRoot, radioClasses, radioGroupClasses, ratingClasses, recomposeColor, requirePropFactory, responsiveFontSizes, rgbToHex, scopedCssBaselineClasses, selectClasses, setRef, shouldSkipGeneratingVar, skeletonClasses, sliderClasses, snackbarClasses, snackbarContentClasses, speedDialActionClasses, speedDialClasses, speedDialIconClasses, stackClasses, stepButtonClasses, stepClasses, stepConnectorClasses, stepContentClasses, stepIconClasses, stepLabelClasses, stepperClasses, styled, svgIconClasses, switchClasses, tabClasses, tabScrollButtonClasses, tableBodyClasses, tableCellClasses, tableClasses, tableContainerClasses, tableFooterClasses, tableHeadClasses, tablePaginationActionsClasses, tablePaginationClasses, tableRowClasses, tableSortLabelClasses, tabsClasses, textFieldClasses, toggleButtonClasses, toggleButtonGroupClasses, toolbarClasses, tooltipClasses, touchRippleClasses, typographyClasses, unstable_ClassNameGenerator, unstable_composeClasses, unstable_createBreakpoints, unstable_createMuiStrictModeTheme, unstable_getUnit, unstable_memoTheme, unstable_toUnitless, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useAutocomplete, useColorScheme, useControlled, useEventCallback, useForkRef, useFormControl, useMediaQuery, usePagination, useRadioGroup, useScrollTrigger, useStepContext, useStepperContext, useTheme, useThemeProps, version, withStyles, withTheme)
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: ERROR in ./src/pages/Results.tsx 755:44-48
+2025-07-19T13:49:05: export 'Grid2' (imported as 'Grid') was not found in '@mui/material' (possible exports: Accordion, AccordionActions, AccordionDetails, AccordionSummary, Alert, AlertTitle, AppBar, Autocomplete, Avatar, AvatarGroup, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, ButtonGroupButtonContext, ButtonGroupContext, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, CssVarsProvider, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, Experimental_CssVarsProvider, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, FormLabelRoot, GlobalStyles, Grid, GridLegacy, Grow, Icon, IconButton, ImageList, ImageListItem, ImageListItemBar, InitColorSchemeScript, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Pagination, PaginationItem, Paper, Popover, PopoverPaper, PopoverRoot, Popper, Portal, Radio, RadioGroup, Rating, ScopedCssBaseline, Select, Skeleton, Slide, Slider, SliderMark, SliderMarkLabel, SliderRail, SliderRoot, SliderThumb, SliderTrack, SliderValueLabel, Snackbar, SnackbarContent, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, Step, StepButton, StepConnector, StepContent, StepContext, StepIcon, StepLabel, Stepper, StepperContext, StyledEngineProvider, SvgIcon, SwipeableDrawer, Switch, THEME_ID, Tab, TabScrollButton, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, ThemeProvider, ToggleButton, ToggleButtonGroup, Toolbar, Tooltip, Typography, Unstable_TrapFocus, Zoom, accordionActionsClasses, accordionClasses, accordionDetailsClasses, accordionSummaryClasses, adaptV4Theme, alertClasses, alertTitleClasses, alpha, appBarClasses, autocompleteClasses, avatarClasses, avatarGroupClasses, backdropClasses, badgeClasses, bottomNavigationActionClasses, bottomNavigationClasses, boxClasses, breadcrumbsClasses, buttonBaseClasses, buttonClasses, buttonGroupClasses, capitalize, cardActionAreaClasses, cardActionsClasses, cardClasses, cardContentClasses, cardHeaderClasses, cardMediaClasses, checkboxClasses, chipClasses, circularProgressClasses, collapseClasses, colors, containerClasses, createChainedFunction, createColorScheme, createFilterOptions, createStyles, createSvgIcon, createTheme, createTransitions, css, darkScrollbar, darken, debounce, decomposeColor, deprecatedPropType, dialogActionsClasses, dialogClasses, dialogContentClasses, dialogContentTextClasses, dialogTitleClasses, dividerClasses, drawerClasses, duration, easing, emphasize, experimental_extendTheme, experimental_sx, extendTheme, fabClasses, filledInputClasses, formControlClasses, formControlLabelClasses, formGroupClasses, formHelperTextClasses, formLabelClasses, generateUtilityClass, generateUtilityClasses, getAccordionActionsUtilityClass, getAccordionDetailsUtilityClass, getAccordionSummaryUtilityClass, getAccordionUtilityClass, getAlertTitleUtilityClass, getAlertUtilityClass, getAppBarUtilityClass, getAutocompleteUtilityClass, getAvatarGroupUtilityClass, getAvatarUtilityClass, getBackdropUtilityClass, getBadgeUtilityClass, getBottomNavigationActionUtilityClass, getBottomNavigationUtilityClass, getBreadcrumbsUtilityClass, getButtonBaseUtilityClass, getButtonGroupUtilityClass, getButtonUtilityClass, getCardActionAreaUtilityClass, getCardActionsUtilityClass, getCardContentUtilityClass, getCardHeaderUtilityClass, getCardMediaUtilityClass, getCardUtilityClass, getCheckboxUtilityClass, getChipUtilityClass, getCircularProgressUtilityClass, getCollapseUtilityClass, getContainerUtilityClass, getContrastRatio, getDialogActionsUtilityClass, getDialogContentTextUtilityClass, getDialogContentUtilityClass, getDialogTitleUtilityClass, getDialogUtilityClass, getDividerUtilityClass, getDrawerUtilityClass, getFabUtilityClass, getFilledInputUtilityClass, getFormControlLabelUtilityClasses, getFormControlUtilityClasses, getFormGroupUtilityClass, getFormHelperTextUtilityClasses, getFormLabelUtilityClasses, getGridUtilityClass, getIconButtonUtilityClass, getIconUtilityClass, getImageListItemBarUtilityClass, getImageListItemUtilityClass, getImageListUtilityClass, getInitColorSchemeScript, getInputAdornmentUtilityClass, getInputBaseUtilityClass, getInputLabelUtilityClasses, getInputUtilityClass, getLinearProgressUtilityClass, getLinkUtilityClass, getListItemAvatarUtilityClass, getListItemButtonUtilityClass, getListItemIconUtilityClass, getListItemSecondaryActionClassesUtilityClass, getListItemTextUtilityClass, getListItemUtilityClass, getListSubheaderUtilityClass, getListUtilityClass, getLuminance, getMenuItemUtilityClass, getMenuUtilityClass, getMobileStepperUtilityClass, getModalUtilityClass, getNativeSelectUtilityClasses, getOffsetLeft, getOffsetTop, getOutlinedInputUtilityClass, getOverlayAlpha, getPaginationItemUtilityClass, getPaginationUtilityClass, getPaperUtilityClass, getPopoverUtilityClass, getPopperUtilityClass, getRadioGroupUtilityClass, getRadioUtilityClass, getRatingUtilityClass, getScopedCssBaselineUtilityClass, getSelectUtilityClasses, getSkeletonUtilityClass, getSliderUtilityClass, getSnackbarContentUtilityClass, getSnackbarUtilityClass, getSpeedDialActionUtilityClass, getSpeedDialIconUtilityClass, getSpeedDialUtilityClass, getStepButtonUtilityClass, getStepConnectorUtilityClass, getStepContentUtilityClass, getStepIconUtilityClass, getStepLabelUtilityClass, getStepUtilityClass, getStepperUtilityClass, getSvgIconUtilityClass, getSwitchUtilityClass, getTabScrollButtonUtilityClass, getTabUtilityClass, getTableBodyUtilityClass, getTableCellUtilityClass, getTableContainerUtilityClass, getTableFooterUtilityClass, getTableHeadUtilityClass, getTablePaginationUtilityClass, getTableRowUtilityClass, getTableSortLabelUtilityClass, getTableUtilityClass, getTabsUtilityClass, getTextFieldUtilityClass, getToggleButtonGroupUtilityClass, getToggleButtonUtilityClass, getToolbarUtilityClass, getTooltipUtilityClass, getTouchRippleUtilityClass, getTypographyUtilityClass, gridClasses, hexToRgb, hslToRgb, iconButtonClasses, iconClasses, imageListClasses, imageListItemBarClasses, imageListItemClasses, inputAdornmentClasses, inputBaseClasses, inputClasses, inputLabelClasses, isMuiElement, keyframes, lighten, linearProgressClasses, linkClasses, listClasses, listItemAvatarClasses, listItemButtonClasses, listItemClasses, listItemIconClasses, listItemSecondaryActionClasses, listItemTextClasses, listSubheaderClasses, major, makeStyles, menuClasses, menuItemClasses, mergeSlotProps, minor, mobileStepperClasses, modalClasses, nativeSelectClasses, outlinedInputClasses, ownerDocument, ownerWindow, paginationClasses, paginationItemClasses, paperClasses, patch, popoverClasses, prerelease, private_createMixins, private_createTypography, private_excludeVariablesFromRoot, radioClasses, radioGroupClasses, ratingClasses, recomposeColor, requirePropFactory, responsiveFontSizes, rgbToHex, scopedCssBaselineClasses, selectClasses, setRef, shouldSkipGeneratingVar, skeletonClasses, sliderClasses, snackbarClasses, snackbarContentClasses, speedDialActionClasses, speedDialClasses, speedDialIconClasses, stackClasses, stepButtonClasses, stepClasses, stepConnectorClasses, stepContentClasses, stepIconClasses, stepLabelClasses, stepperClasses, styled, svgIconClasses, switchClasses, tabClasses, tabScrollButtonClasses, tableBodyClasses, tableCellClasses, tableClasses, tableContainerClasses, tableFooterClasses, tableHeadClasses, tablePaginationActionsClasses, tablePaginationClasses, tableRowClasses, tableSortLabelClasses, tabsClasses, textFieldClasses, toggleButtonClasses, toggleButtonGroupClasses, toolbarClasses, tooltipClasses, touchRippleClasses, typographyClasses, unstable_ClassNameGenerator, unstable_composeClasses, unstable_createBreakpoints, unstable_createMuiStrictModeTheme, unstable_getUnit, unstable_memoTheme, unstable_toUnitless, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useAutocomplete, useColorScheme, useControlled, useEventCallback, useForkRef, useFormControl, useMediaQuery, usePagination, useRadioGroup, useScrollTrigger, useStepContext, useStepperContext, useTheme, useThemeProps, version, withStyles, withTheme)
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: ERROR in ./src/pages/Results.tsx 776:43-47
+2025-07-19T13:49:05: ityClasses, getFormGroupUtilityClass, getFormHelperTextUtilityClasses, getFormLabelUtilityClasses, getGridUtilityClass, getIconButtonUtilityClass, getIconUtilityClass, getImageListItemBarUtilityClass, getImageListItemUtilityClass, getImageListUtilityClass, getInitColorSchemeScript, getInputAdornmentUtilityClass, getInputBaseUtilityClass, getInputLabelUtilityClasses, getInputUtilityClass, getLinearProgressUtilityClass, getLinkUtilityClass, getListItemAvatarUtilityClass, getListItemButtonUtilityClass, getListItemIconUtilityClass, getListItemSecondaryActionClassesUtilityClass, getListItemTextUtilityClass, getListItemUtilityClass, getListSubheaderUtilityClass, getListUtilityClass, getLuminance, getMenuItemUtilityClass, getMenuUtilityClass, getMobileStepperUtilityClass, getModalUtilityClass, getNativeSelectUtilityClasses, getOffsetLeft, getOffsetTop, getOutlinedInputUtilityClass, getOverlayAlpha, getPaginationItemUtilityClass, getPaginationUtilityClass, getPaperUtilityClass, getPopoverUtilityClass, getPopperUtilityClass, getRadioGroupUtilityClass, getRadioUtilityClass, getRatingUtilityClass, getScopedCssBaselineUtilityClass, getSelectUtilityClasses, getSkeletonUtilityClass, getSliderUtilityClass, getSnackbarContentUtilityClass, getSnackbarUtilityClass, getSpeedDialActionUtilityClass, getSpeedDialIconUtilityClass, getSpeedDialUtilityClass, getStepButtonUtilityClass, getStepConnectorUtilityClass, getStepContentUtilityClass, getStepIconUtilityClass, getStepLabelUtilityClass, getStepUtilityClass, getStepperUtilityClass, getSvgIconUtilityClass, getSwitchUtilityClass, getTabScrollButtonUtilityClass, getTabUtilityClass, getTableBodyUtilityClass, getTableCellUtilityClass, getTableContainerUtilityClass, getTableFooterUtilityClass, getTableHeadUtilityClass, getTablePaginationUtilityClass, getTableRowUtilityClass, getTableSortLabelUtilityClass, getTableUtilityClass, getTabsUtilityClass, getTextFieldUtilityClass, getToggleButtonGroupUtilityClass, getToggleButtonUtilityClass, getToolbarUtilityClass, getTooltipUtilityClass, getTouchRippleUtilityClass, getTypographyUtilityClass, gridClasses, hexToRgb, hslToRgb, iconButtonClasses, iconClasses, imageListClasses, imageListItemBarClasses, imageListItemClasses, inputAdornmentClasses, inputBaseClasses, inputClasses, inputLabelClasses, isMuiElement, keyframes, lighten, linearProgressClasses, linkClasses, listClasses, listItemAvatarClasses, listItemButtonClasses, listItemClasses, listItemIconClasses, listItemSecondaryActionClasses, listItemTextClasses, listSubheaderClasses, major, makeStyles, menuClasses, menuItemClasses, mergeSlotProps, minor, mobileStepperClasses, modalClasses, nativeSelectClasses, outlinedInputClasses, ownerDocument, ownerWindow, paginationClasses, paginationItemClasses, paperClasses, patch, popoverClasses, prerelease, private_createMixins, private_createTypography, private_excludeVariablesFromRoot, radioClasses, radioGroupClasses, ratingClasses, recomposeColor, requirePropFactory, responsiveFontSizes, rgbToHex, scopedCssBaselineClasses, selectClasses, setRef, shouldSkipGeneratingVar, skeletonClasses, sliderClasses, snackbarClasses, snackbarContentClasses, speedDialActionClasses, speedDialClasses, speedDialIconClasses, stackClasses, stepButtonClasses, stepClasses, stepConnectorClasses, stepContentClasses, stepIconClasses, stepLabelClasses, stepperClasses, styled, svgIconClasses, switchClasses, tabClasses, tabScrollButtonClasses, tableBodyClasses, tableCellClasses, tableClasses, tableContainerClasses, tableFooterClasses, tableHeadClasses, tablePaginationActionsClasses, tablePaginationClasses, tableRowClasses, tableSortLabelClasses, tabsClasses, textFieldClasses, toggleButtonClasses, toggleButtonGroupClasses, toolbarClasses, tooltipClasses, touchRippleClasses, typographyClasses, unstable_ClassNameGenerator, unstable_composeClasses, unstable_createBreakpoints, unstable_createMuiStrictModeTheme, unstable_getUnit, unstable_memoTheme, unstable_toUnitless, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useAutocomplete, useColorScheme, useControlled, useEventCallback, useForkRef, useFormControl, useMediaQuery, usePagination, useRadioGroup, useScrollTrigger, useStepContext, useStepperContext, useTheme, useThemeProps, version, withStyles, withTheme)
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: ERROR in ./src/pages/Results.tsx 798:43-47
+2025-07-19T13:49:05: export 'Grid2' (imported as 'Grid') was not found in '@mui/material' (possible exports: Accordion, AccordionActions, AccordionDetails, AccordionSummary, Alert, AlertTitle, AppBar, Autocomplete, Avatar, AvatarGroup, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, ButtonGroupButtonContext, ButtonGroupContext, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, CssVarsProvider, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, Experimental_CssVarsProvider, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, FormLabelRoot, GlobalStyles, Grid, GridLegacy, Grow, Icon, IconButton, ImageList, ImageListItem, ImageListItemBar, InitColorSchemeScript, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Pagination, PaginationItem, Paper, Popover, PopoverPaper, PopoverRoot, Popper, Portal, Radio, RadioGroup, Rating, ScopedCssBaseline, Select, Skeleton, Slide, Slider, SliderMark, SliderMarkLabel, SliderRail, SliderRoot, SliderThumb, SliderTrack, SliderValueLabel, Snackbar, SnackbarContent, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, Step, StepButton, StepConnector, StepContent, StepContext, StepIcon, StepLabel, Stepper, StepperContext, StyledEngineProvider, SvgIcon, SwipeableDrawer, Switch, THEME_ID, Tab, TabScrollButton, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, ThemeProvider, ToggleButton, ToggleButtonGroup, Toolbar, Tooltip, Typography, Unstable_TrapFocus, Zoom, accordionActionsClasses, accordionClasses, accordionDetailsClasses, accordionSummaryClasses, adaptV4Theme, alertClasses, alertTitleClasses, alpha, appBarClasses, autocompleteClasses, avatarClasses, avatarGroupClasses, backdropClasses, badgeClasses, bottomNavigationActionClasses, bottomNavigationClasses, boxClasses, breadcrumbsClasses, buttonBaseClasses, buttonClasses, buttonGroupClasses, capitalize, cardActionAreaClasses, cardActionsClasses, cardClasses, cardContentClasses, cardHeaderClasses, cardMediaClasses, checkboxClasses, chipClasses, circularProgressClasses, collapseClasses, colors, containerClasses, createChainedFunction, createColorScheme, createFilterOptions, createStyles, createSvgIcon, createTheme, createTransitions, css, darkScrollbar, darken, debounce, decomposeColor, deprecatedPropType, dialogActionsClasses, dialogClasses, dialogContentClasses, dialogContentTextClasses, dialogTitleClasses, dividerClasses, drawerClasses, duration, easing, emphasize, experimental_extendTheme, experimental_sx, extendTheme, fabClasses, filledInputClasses, formControlClasses, formControlLabelClasses, formGroupClasses, formHelperTextClasses, formLabelClasses, generateUtilityClass, generateUtilityClasses, getAccordionActionsUtilityClass, getAccordionDetailsUtilityClass, getAccordionSummaryUtilityClass, getAccordionUtilityClass, getAlertTitleUtilityClass, getAlertUtilityClass, getAppBarUtilityClass, getAutocompleteUtilityClass, getAvatarGroupUtilityClass, getAvatarUtilityClass, getBackdropUtilityClass, getBadgeUtilityClass, getBottomNavigationActionUtilityClass, getBottomNavigationUtilityClass, getBreadcrumbsUtilityClass, getButtonBaseUtilityClass, getButtonGroupUtilityClass, getButtonUtilityClass, getCardActionAreaUtilityClass, getCardActionsUtilityClass, getCardContentUtilityClass, getCardHeaderUtilityClass, getCardMediaUtilityClass, getCardUtilityClass, getCheckboxUtilityClass, getChipUtilityClass, getCircularProgressUtilityClass, getCollapseUtilityClass, getContainerUtilityClass, getContrastRatio, getDialogActionsUtilityClass, getDialogContentTextUtilityClass, getDialogContentUtilityClass, getDialogTitleUtilityClass, getDialogUtilityClass, getDividerUtilityClass, getDrawerUtilityClass, getFabUtilityClass, getFilledInputUtilityClass, getFormControlLabelUtilityClasses, getFormControlUtilityClasses, getFormGroupUtilityClass, getFormHelperTextUtilityClasses, getFormLabelUtilityClasses, getGridUtilityClass, getIconButtonUtilityClass, getIconUtilityClass, getImageListItemBarUtilityClass, getImageListItemUtilityClass, getImageListUtilityClass, getInitColorSchemeScript, getInputAdornmentUtilityClass, getInputBaseUtilityClass, getInputLabelUtilityClasses, getInputUtilityClass, getLinearProgressUtilityClass, getLinkUtilityClass, getListItemAvatarUtilityClass, getListItemButtonUtilityClass, getListItemIconUtilityClass, getListItemSecondaryActionClassesUtilityClass, getListItemTextUtilityClass, getListItemUtilityClass, getListSubheaderUtilityClass, getListUtilityClass, getLuminance, getMenuItemUtilityClass, getMenuUtilityClass, getMobileStepperUtilityClass, getModalUtilityClass, getNativeSelectUtilityClasses, getOffsetLeft, getOffsetTop, getOutlinedInputUtilityClass, getOverlayAlpha, getPaginationItemUtilityClass, getPaginationUtilityClass, getPaperUtilityClass, getPopoverUtilityClass, getPopperUtilityClass, getRadioGroupUtilityClass, getRadioUtilityClass, getRatingUtilityClass, getScopedCssBaselineUtilityClass, getSelectUtilityClasses, getSkeletonUtilityClass, getSliderUtilityClass, getSnackbarContentUtilityClass, getSnackbarUtilityClass, getSpeedDialActionUtilityClass, getSpeedDialIconUtilityClass, getSpeedDialUtilityClass, getStepButtonUtilityClass, getStepConnectorUtilityClass, getStepContentUtilityClass, getStepIconUtilityClass, getStepLabelUtilityClass, getStepUtilityClass, getStepperUtilityClass, getSvgIconUtilityClass, getSwitchUtilityClass, getTabScrollButtonUtilityClass, getTabUtilityClass, getTableBodyUtilityClass, getTableCellUtilityClass, getTableContainerUtilityClass, getTableFooterUtilityClass, getTableHeadUtilityClass, getTablePaginationUtilityClass, getTableRowUtilityClass, getTableSortLabelUtilityClass, getTableUtilityClass, getTabsUtilityClass, getTextFieldUtilityClass, getToggleButtonGroupUtilityClass, getToggleButtonUtilityClass, getToolbarUtilityClass, getTooltipUtilityClass, getTouchRippleUtilityClass, getTypographyUtilityClass, gridClasses, hexToRgb, hslToRgb, iconButtonClasses, iconClasses, imageListClasses, imageListItemBarClasses, imageListItemClasses, inputAdornmentClasses, inputBaseClasses, inputClasses, inputLabelClasses, isMuiElement, keyframes, lighten, linearProgressClasses, linkClasses, listClasses, listItemAvatarClasses, listItemButtonClasses, listItemClasses, listItemIconClasses, listItemSecondaryActionClasses, listItemTextClasses, listSubheaderClasses, major, makeStyles, menuClasses, menuItemClasses, mergeSlotProps, minor, mobileStepperClasses, modalClasses, nativeSelectClasses, outlinedInputClasses, ownerDocument, ownerWindow, paginationClasses, paginationItemClasses, paperClasses, patch, popoverClasses, prerelease, private_createMixins, private_createTypography, private_excludeVariablesFromRoot, radioClasses, radioGroupClasses, ratingClasses, recomposeColor, requirePropFactory, responsiveFontSizes, rgbToHex, scopedCssBaselineClasses, selectClasses, setRef, shouldSkipGeneratingVar, skeletonClasses, sliderClasses, snackbarClasses, snackbarContentClasses, speedDialActionClasses, speedDialClasses, speedDialIconClasses, stackClasses, stepButtonClasses, stepClasses, stepConnectorClasses, stepContentClasses, stepIconClasses, stepLabelClasses, stepperClasses, styled, svgIconClasses, switchClasses, tabClasses, tabScrollButtonClasses, tableBodyClasses, tableCellClasses, tableClasses, tableContainerClasses, tableFooterClasses, tableHeadClasses, tablePaginationActionsClasses, tablePaginationClasses, tableRowClasses, tableSortLabelClasses, tabsClasses, textFieldClasses, toggleButtonClasses, toggleButtonGroupClasses, toolbarClasses, tooltipClasses, touchRippleClasses, typographyClasses, unstable_ClassNameGenerator, unstable_composeClasses, unstable_createBreakpoints, unstable_createMuiStrictModeTheme, unstable_getUnit, unstable_memoTheme, unstable_toUnitless, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useAutocomplete, useColorScheme, useControlled, useEventCallback, useForkRef, useFormControl, useMediaQuery, usePagination, useRadioGroup, useScrollTrigger, useStepContext, useStepperContext, useTheme, useThemeProps, version, withStyles, withTheme)
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: ERROR in ./src/pages/Results.tsx 819:43-47
+2025-07-19T13:49:05: export 'Grid2' (imported as 'Grid') was not found in '@mui/material' (possible exports: Accordion, AccordionActions, AccordionDetails, AccordionSummary, Alert, AlertTitle, AppBar, Autocomplete, Avatar, AvatarGroup, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, ButtonGroupButtonContext, ButtonGroupContext, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, CssVarsProvider, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, Experimental_CssVarsProvider, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, FormLabelRoot, GlobalStyles, Grid, GridLegacy, Grow, Icon, IconButton, ImageList, ImageListItem, ImageListItemBar, InitColorSchemeScript, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Pagination, PaginationItem, Paper, Popover, PopoverPaper, PopoverRoot, Popper, Portal, Radio, RadioGroup, Rating, ScopedCssBaseline, Select, Skeleton, Slide, Slider, SliderMark, SliderMarkLabel, SliderRail, SliderRoot, SliderThumb, SliderTrack, SliderValueLabel, Snackbar, SnackbarContent, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, Step, StepButton, StepConnector, StepContent, StepContext, StepIcon, StepLabel, Stepper, StepperContext, StyledEngineProvider, SvgIcon, SwipeableDrawer, Switch, THEME_ID, Tab, TabScrollButton, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, ThemeProvider, ToggleButton, ToggleButtonGroup, Toolbar, Tooltip, Typography, Unstable_TrapFocus, Zoom, accordionActionsClasses, accordionClasses, accordionDetailsClasses, accordionSummaryClasses, adaptV4Theme, alertClasses, alertTitleClasses, alpha, appBarClasses, autocompleteClasses, avatarClasses, avatarGroupClasses, backdropClasses, badgeClasses, bottomNavigationActionClasses, bottomNavigationClasses, boxClasses, breadcrumbsClasses, buttonBaseClasses, buttonClasses, buttonGroupClasses, capitalize, cardActionAreaClasses, cardActionsClasses, cardClasses, cardContentClasses, cardHeaderClasses, cardMediaClasses, checkboxClasses, chipClasses, circularProgressClasses, collapseClasses, colors, containerClasses, createChainedFunction, createColorScheme, createFilterOptions, createStyles, createSvgIcon, createTheme, createTransitions, css, darkScrollbar, darken, debounce, decomposeColor, deprecatedPropType, dialogActionsClasses, dialogClasses, dialogContentClasses, dialogContentTextClasses, dialogTitleClasses, dividerClasses, drawerClasses, duration, easing, emphasize, experimental_extendTheme, experimental_sx, extendTheme, fabClasses, filledInputClasses, formControlClasses, formControlLabelClasses, formGroupClasses, formHelperTextClasses, formLabelClasses, generateUtilityClass, generateUtilityClasses, getAccordionActionsUtilityClass, getAccordionDetailsUtilityClass, getAccordionSummaryUtilityClass, getAccordionUtilityClass, getAlertTitleUtilityClass, getAlertUtilityClass, getAppBarUtilityClass, getAutocompleteUtilityClass, getAvatarGroupUtilityClass, getAvatarUtilityClass, getBackdropUtilityClass, getBadgeUtilityClass, getBottomNavigationActionUtilityClass, getBottomNavigationUtilityClass, getBreadcrumbsUtilityClass, getButtonBaseUtilityClass, getButtonGroupUtilityClass, getButtonUtilityClass, getCardActionAreaUtilityClass, getCardActionsUtilityClass, getCardContentUtilityClass, getCardHeaderUtilityClass, getCardMediaUtilityClass, getCardUtilityClass, getCheckboxUtilityClass, getChipUtilityClass, getCircularProgressUtilityClass, getCollapseUtilityClass, getContainerUtilityClass, getContrastRatio, getDialogActionsUtilityClass, getDialogContentTextUtilityClass, getDialogContentUtilityClass, getDialogTitleUtilityClass, getDialogUtilityClass, getDividerUtilityClass, getDrawerUtilityClass, getFabUtilityClass, getFilledInputUtilityClass, getFormControlLabelUtilityClasses, getFormControlUtilityClasses, getFormGroupUtilityClass, getFormHelperTextUtilityClasses, getFormLabelUtilityClasses, getGridUtilityClass, getIconButtonUtilityClass, getIconUtilityClass, getImageListItemBarUtilityClass, getImageListItemUtilityClass, getImageListUtilityClass, getInitColorSchemeScript, getInputAdornmentUtilityClass, getInputBaseUtilityClass, getInputLabelUtilityClasses, getInputUtilityClass, getLinearProgressUtilityClass, getLinkUtilityClass, getListItemAvatarUtilityClass, getListItemButtonUtilityClass, getListItemIconUtilityClass, getListItemSecondaryActionClassesUtilityClass, getListItemTextUtilityClass, getListItemUtilityClass, getListSubheaderUtilityClass, getListUtilityClass, getLuminance, getMenuItemUtilityClass, getMenuUtilityClass, getMobileStepperUtilityClass, getModalUtilityClass, getNativeSelectUtilityClasses, getOffsetLeft, getOffsetTop, getOutlinedInputUtilityClass, getOverlayAlpha, getPaginationItemUtilityClass, getPaginationUtilityClass, getPaperUtilityClass, getPopoverUtilityClass, getPopperUtilityClass, getRadioGroupUtilityClass, getRadioUtilityClass, getRatingUtilityClass, getScopedCssBaselineUtilityClass, getSelectUtilityClasses, getSkeletonUtilityClass, getSliderUtilityClass, getSnackbarContentUtilityClass, getSnackbarUtilityClass, getSpeedDialActionUtilityClass, getSpeedDialIconUtilityClass, getSpeedDialUtilityClass, getStepButtonUtilityClass, getStepConnectorUtilityClass, getStepContentUtilityClass, getStepIconUtilityClass, getStepLabelUtilityClass, getStepUtilityClass, getStepperUtilityClass, getSvgIconUtilityClass, getSwitchUtilityClass, getTabScrollButtonUtilityClass, getTabUtilityClass, getTableBodyUtilityClass, getTableCellUtilityClass, getTableContainerUtilityClass, getTableFooterUtilityClass, getTableHeadUtilityClass, getTablePaginationUtilityClass, getTableRowUtilityClass, getTableSortLabelUtilityClass, getTableUtilityClass, getTabsUtilityClass, getTextFieldUtilityClass, getToggleButtonGroupUtilityClass, getToggleButtonUtilityClass, getToolbarUtilityClass, getTooltipUtilityClass, getTouchRippleUtilityClass, getTypographyUtilityClass, gridClasses, hexToRgb, hslToRgb, iconButtonClasses, iconClasses, imageListClasses, imageListItemBarClasses, imageListItemClasses, inputAdornmentClasses, inputBaseClasses, inputClasses, inputLabelClasses, isMuiElement, keyframes, lighten, linearProgressClasses, linkClasses, listClasses, listItemAvatarClasses, listItemButtonClasses, listItemClasses, listItemIconClasses, listItemSecondaryActionClasses, listItemTextClasses, listSubheaderClasses, major, makeStyles, menuClasses, menuItemClasses, mergeSlotProps, minor, mobileStepperClasses, modalClasses, nativeSelectClasses, outlinedInputClasses, ownerDocument, ownerWindow, paginationClasses, paginationItemClasses, paperClasses, patch, popoverClasses, prerelease, private_createMixins, private_createTypography, private_excludeVariablesFromRoot, radioClasses, radioGroupClasses, ratingClasses, recomposeColor, requirePropFactory, responsiveFontSizes, rgbToHex, scopedCssBaselineClasses, selectClasses, setRef, shouldSkipGeneratingVar, skeletonClasses, sliderClasses, snackbarClasses, snackbarContentClasses, speedDialActionClasses, speedDialClasses, speedDialIconClasses, stackClasses, stepButtonClasses, stepClasses, stepConnectorClasses, stepContentClasses, stepIconClasses, stepLabelClasses, stepperClasses, styled, svgIconClasses, switchClasses, tabClasses, tabScrollButtonClasses, tableBodyClasses, tableCellClasses, tableClasses, tableContainerClasses, tableFooterClasses, tableHeadClasses, tablePaginationActionsClasses, tablePaginationClasses, tableRowClasses, tableSortLabelClasses, tabsClasses, textFieldClasses, toggleButtonClasses, toggleButtonGroupClasses, toolbarClasses, tooltipClasses, touchRippleClasses, typographyClasses, unstable_ClassNameGenerator, unstable_composeClasses, unstable_createBreakpoints, unstable_createMuiStrictModeTheme, unstable_getUnit, unstable_memoTheme, unstable_toUnitless, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useAutocomplete, useColorScheme, useControlled, useEventCallback, useForkRef, useFormControl, useMediaQuery, usePagination, useRadioGroup, useScrollTrigger, useStepContext, useStepperContext, useTheme, useThemeProps, version, withStyles, withTheme)
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: ERROR in ./src/pages/Results.tsx 861:47-51
+2025-07-19T13:49:05: export 'Grid2' (imported as 'Grid') was not found in '@mui/material' (possible exports: Accordion, AccordionActions, AccordionDetails, AccordionSummary, Alert, AlertTitle, AppBar, Autocomplete, Avatar, AvatarGroup, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, ButtonGroupButtonContext, ButtonGroupContext, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, CssVarsProvider, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, Experimental_CssVarsProvider, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, FormLabelRoot, GlobalStyles, Grid, GridLegacy, Grow, Icon, IconButton, ImageList, ImageListItem, ImageListItemBar, InitColorSchemeScript, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Pagination, PaginationItem, Paper, Popover, PopoverPaper, PopoverRoot, Popper, Portal, Radio, RadioGroup, Rating, ScopedCssBaseline, Select, Skeleton, Slide, Slider, SliderMark, SliderMarkLabel, SliderRail, SliderRoot, SliderThumb, SliderTrack, SliderValueLabel, Snackbar, SnackbarContent, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, Step, StepButton, StepConnector, StepContent, StepContext, StepIcon, StepLabel, Stepper, StepperContext, StyledEngineProvider, SvgIcon, SwipeableDrawer, Switch, THEME_ID, Tab, TabScrollButton, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, ThemeProvider, ToggleButton, ToggleButtonGroup, Toolbar, Tooltip, Typography, Unstable_TrapFocus, Zoom, accordionActionsClasses, accordionClasses, accordionDetailsClasses, accordionSummaryClasses, adaptV4Theme, alertClasses, alertTitleClasses, alpha, appBarClasses, autocompleteClasses, avatarClasses, avatarGroupClasses, backdropClasses, badgeClasses, bottomNavigationActionClasses, bottomNavigationClasses, boxClasses, breadcrumbsClasses, buttonBaseClasses, buttonClasses, buttonGroupClasses, capitalize, cardActionAreaClasses, cardActionsClasses, cardClasses, cardContentClasses, cardHeaderClasses, cardMediaClasses, checkboxClasses, chipClasses, circularProgressClasses, collapseClasses, colors, containerClasses, createChainedFunction, createColorScheme, createFilterOptions, createStyles, createSvgIcon, createTheme, createTransitions, css, darkScrollbar, darken, debounce, decomposeColor, deprecatedPropType, dialogActionsClasses, dialogClasses, dialogContentClasses, dialogContentTextClasses, dialogTitleClasses, dividerClasses, drawerClasses, duration, easing, emphasize, experimental_extendTheme, experimental_sx, extendTheme, fabClasses, filledInputClasses, formControlClasses, formControlLabelClasses, formGroupClasses, formHelperTextClasses, formLabelClasses, generateUtilityClass, generateUtilityClasses, getAccordionActionsUtilityClass, getAccordionDetailsUtilityClass, getAccordionSummaryUtilityClass, getAccordionUtilityClass, getAlertTitleUtilityClass, getAlertUtilityClass, getAppBarUtilityClass, getAutocompleteUtilityClass, getAvatarGroupUtilityClass, getAvatarUtilityClass, getBackdropUtilityClass, getBadgeUtilityClass, getBottomNavigationActionUtilityClass, getBottomNavigationUtilityClass, getBreadcrumbsUtilityClass, getButtonBaseUtilityClass, getButtonGroupUtilityClass, getButtonUtilityClass, getCardActionAreaUtilityClass, getCardActionsUtilityClass, getCardContentUtilityClass, getCardHeaderUtilityClass, getCardMediaUtilityClass, getCardUtilityClass, getCheckboxUtilityClass, getChipUtilityClass, getCircularProgressUtilityClass, getCollapseUtilityClass, getContainerUtilityClass, getContrastRatio, getDialogActionsUtilityClass, getDialogContentTextUtilityClass, getDialogContentUtilityClass, getDialogTitleUtilityClass, getDialogUtilityClass, getDividerUtilityClass, getDrawerUtilityClass, getFabUtilityClass, getFilledInputUtilityClass, getFormControlLabelUtilityClasses, getFormControlUtilityClasses, getFormGroupUtilityClass, getFormHelperTextUtilityClasses, getFormLabelUtilityClasses, getGridUtilityClass, getIconButtonUtilityClass, getIconUtilityClass, getImageListItemBarUtilityClass, getImageListItemUtilityClass, getImageListUtilityClass, getInitColorSchemeScript, getInputAdornmentUtilityClass, getInputBaseUtilityClass, getInputLabelUtilityClasses, getInputUtilityClass, getLinearProgressUtilityClass, getLinkUtilityClass, getListItemAvatarUtilityClass, getListItemButtonUtilityClass, getListItemIconUtilityClass, getListItemSecondaryActionClassesUtilityClass, getListItemTextUtilityClass, getListItemUtilityClass, getListSubheaderUtilityClass, getListUtilityClass, getLuminance, getMenuItemUtilityClass, getMenuUtilityClass, getMobileStepperUtilityClass, getModalUtilityClass, getNativeSelectUtilityClasses, getOffsetLeft, getOffsetTop, getOutlinedInputUtilityClass, getOverlayAlpha, getPaginationItemUtilityClass, getPaginationUtilityClass, getPaperUtilityClass, getPopoverUtilityClass, getPopperUtilityClass, getRadioGroupUtilityClass, getRadioUtilityClass, getRatingUtilityClass, getScopedCssBaselineUtilityClass, getSelectUtilityClasses, getSkeletonUtilityClass, getSliderUtilityClass, getSnackbarContentUtilityClass, getSnackbarUtilityClass, getSpeedDialActionUtilityClass, getSpeedDialIconUtilityClass, getSpeedDialUtilityClass, getStepButtonUtilityClass, getStepConnectorUtilityClass, getStepContentUtilityClass, getStepIconUtilityClass, getStepLabelUtilityClass, getStepUtilityClass, getStepperUtilityClass, getSvgIconUtilityClass, getSwitchUtilityClass, getTabScrollButtonUtilityClass, getTabUtilityClass, getTableBodyUtilityClass, getTableCellUtilityClass, getTableContainerUtilityClass, getTableFooterUtilityClass, getTableHeadUtilityClass, getTablePaginationUtilityClass, getTableRowUtilityClass, getTableSortLabelUtilityClass, getTableUtilityClass, getTabsUtilityClass, getTextFieldUtilityClass, getToggleButtonGroupUtilityClass, getToggleButtonUtilityClass, getToolbarUtilityClass, getTooltipUtilityClass, getTouchRippleUtilityClass, getTypographyUtilityClass, gridClasses, hexToRgb, hslToRgb, iconButtonClasses, iconClasses, imageListClasses, imageListItemBarClasses, imageListItemClasses, inputAdornmentClasses, inputBaseClasses, inputClasses, inputLabelClasses, isMuiElement, keyframes, lighten, linearProgressClasses, linkClasses, listClasses, listItemAvatarClasses, listItemButtonClasses, listItemClasses, listItemIconClasses, listItemSecondaryActionClasses, listItemTextClasses, listSubheaderClasses, major, makeStyles, menuClasses, menuItemClasses, mergeSlotProps, minor, mobileStepperClasses, modalClasses, nativeSelectClasses, outlinedInputClasses, ownerDocument, ownerWindow, paginationClasses, paginationItemClasses, paperClasses, patch, popoverClasses, prerelease, private_createMixins, private_createTypography, private_excludeVariablesFromRoot, radioClasses, radioGroupClasses, ratingClasses, recomposeColor, requirePropFactory, responsiveFontSizes, rgbToHex, scopedCssBaselineClasses, selectClasses, setRef, shouldSkipGeneratingVar, skeletonClasses, sliderClasses, snackbarClasses, snackbarContentClasses, speedDialActionClasses, speedDialClasses, speedDialIconClasses, stackClasses, stepButtonClasses, stepClasses, stepConnectorClasses, stepContentClasses, stepIconClasses, stepLabelClasses, stepperClasses, styled, svgIconClasses, switchClasses, tabClasses, tabScrollButtonClasses, tableBodyClasses, tableCellClasses, tableClasses, tableContainerClasses, tableFooterClasses, tableHeadClasses, tablePaginationActionsClasses, tablePaginationClasses, tableRowClasses, tableSortLabelClasses, tabsClasses, textFieldClasses, toggleButtonClasses, toggleButtonGroupClasses, toolbarClasses, tooltipClasses, touchRippleClasses, typographyClasses, unstable_ClassNameGenerator, unstable_composeClasses, unstable_createBreakpoints, unstable_createMuiStrictModeTheme, unstable_getUnit, unstable_memoTheme, unstable_toUnitless, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useAutocomplete, useColorScheme, useControlled, useEventCallback, useForkRef, useFormControl, useMediaQuery, usePagination, useRadioGroup, useScrollTrigger, useStepContext, useStepperContext, useTheme, useThemeProps, version, withStyles, withTheme)
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: ERROR in ./src/pages/Results.tsx 864:50-54
+2025-07-19T13:49:05: export 'Grid2' (imported as 'Grid') was not found in '@mui/material' (possible exports: Accordion, AccordionActions, AccordionDetails, AccordionSummary, Alert, AlertTitle, AppBar, Autocomplete, Avatar, AvatarGroup, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, ButtonGroupButtonContext, ButtonGroupContext, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, CssVarsProvider, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, Experimental_CssVarsProvider, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, FormLabelRoot, GlobalStyles, Grid, GridLegacy, Grow, Icon, IconButton, ImageList, ImageListItem, ImageListItemBar, InitColorSchemeScript, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Pagination, PaginationItem, Paper, Popover, PopoverPaper, PopoverRoot, Popper, Portal, Radio, RadioGroup, Rating, ScopedCssBaseline, Select, Skeleton, Slide, Slider, SliderMark, SliderMarkLabel, SliderRail, SliderRoot, SliderThumb, SliderTrack, SliderValueLabel, Snackbar, SnackbarContent, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, Step, StepButton, StepConnector, StepContent, StepContext, StepIcon, StepLabel, Stepper, StepperContext, StyledEngineProvider, SvgIcon, SwipeableDrawer, Switch, THEME_ID, Tab, TabScrollButton, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, ThemeProvider, ToggleButton, ToggleButtonGroup, Toolbar, Tooltip, Typography, Unstable_TrapFocus, Zoom, accordionActionsClasses, accordionClasses, accordionDetailsClasses, accordionSummaryClasses, adaptV4Theme, alertClasses, alertTitleClasses, alpha, appBarClasses, autocompleteClasses, avatarClasses, avatarGroupClasses, backdropClasses, badgeClasses, bottomNavigationActionClasses, bottomNavigationClasses, boxClasses, breadcrumbsClasses, buttonBaseClasses, buttonClasses, buttonGroupClasses, capitalize, cardActionAreaClasses, cardActionsClasses, cardClasses, cardContentClasses, cardHeaderClasses, cardMediaClasses, checkboxClasses, chipClasses, circularProgressClasses, collapseClasses, colors, containerClasses, createChainedFunction, createColorScheme, createFilterOptions, createStyles, createSvgIcon, createTheme, createTransitions, css, darkScrollbar, darken, debounce, decomposeColor, deprecatedPropType, dialogActionsClasses, dialogClasses, dialogContentClasses, dialogContentTextClasses, dialogTitleClasses, dividerClasses, drawerClasses, duration, easing, emphasize, experimental_extendTheme, experimental_sx, extendTheme, fabClasses, filledInputClasses, formControlClasses, formControlLabelClasses, formGroupClasses, formHelperTextClasses, formLabelClasses, generateUtilityClass, generateUtilityClasses, getAccordionActionsUtilityClass, getAccordionDetailsUtilityClass, getAccordionSummaryUtilityClass, getAccordionUtilityClass, getAlertTitleUtilityClass, getAlertUtilityClass, getAppBarUtilityClass, getAutocompleteUtilityClass, getAvatarGroupUtilityClass, getAvatarUtilityClass, getBackdropUtilityClass, getBadgeUtilityClass, getBottomNavigationActionUtilityClass, getBottomNavigationUtilityClass, getBreadcrumbsUtilityClass, getButtonBaseUtilityClass, getButtonGroupUtilityClass, getButtonUtilityClass, getCardActionAreaUtilityClass, getCardActionsUtilityClass, getCardContentUtilityClass, getCardHeaderUtilityClass, getCardMediaUtilityClass, getCardUtilityClass, getCheckboxUtilityClass, getChipUtilityClass, getCircularProgressUtilityClass, getCollapseUtilityClass, getContainerUtilityClass, getContrastRatio, getDialogActionsUtilityClass, getDialogContentTextUtilityClass, getDialogContentUtilityClass, getDialogTitleUtilityClass, getDialogUtilityClass, getDividerUtilityClass, getDrawerUtilityClass, getFabUtilityClass, getFilledInputUtilityClass, getFormControlLabelUtilityClasses, getFormControlUtilityClasses, getFormGroupUtilityClass, getFormHelperTextUtilityClasses, getFormLabelUtilityClasses, getGridUtilityClass, getIconButtonUtilityClass, getIconUtilityClass, getImageListItemBarUtilityClass, getImageListItemUtilityClass, getImageListUtilityClass, getInitColorSchemeScript, getInputAdornmentUtilityClass, getInputBaseUtilityClass, getInputLabelUtilityClasses, getInputUtilityClass, getLinearProgressUtilityClass, getLinkUtilityClass, getListItemAvatarUtilityClass, getListItemButtonUtilityClass, getListItemIconUtilityClass, getListItemSecondaryActionClassesUtilityClass, getListItemTextUtilityClass, getListItemUtilityClass, getListSubheaderUtilityClass, getListUtilityClass, getLuminance, getMenuItemUtilityClass, getMenuUtilityClass, getMobileStepperUtilityClass, getModalUtilityClass, getNativeSelectUtilityClasses, getOffsetLeft, getOffsetTop, getOutlinedInputUtilityClass, getOverlayAlpha, getPaginationItemUtilityClass, getPaginationUtilityClass, getPaperUtilityClass, getPopoverUtilityClass, getPopperUtilityClass, getRadioGroupUtilityClass, getRadioUtilityClass, getRatingUtilityClass, getScopedCssBaselineUtilityClass, getSelectUtilityClasses, getSkeletonUtilityClass, getSliderUtilityClass, getSnackbarContentUtilityClass, getSnackbarUtilityClass, getSpeedDialActionUtilityClass, getSpeedDialIconUtilityClass, getSpeedDialUtilityClass, getStepButtonUtilityClass, getStepConnectorUtilityClass, getStepContentUtilityClass, getStepIconUtilityClass, getStepLabelUtilityClass, getStepUtilityClass, getStepperUtilityClass, getSvgIconUtilityClass, getSwitchUtilityClass, getTabScrollButtonUtilityClass, getTabUtilityClass, getTableBodyUtilityClass, getTableCellUtilityClass, getTableContainerUtilityClass, getTableFooterUtilityClass, getTableHeadUtilityClass, getTablePaginationUtilityClass, getTableRowUtilityClass, getTableSortLabelUtilityClass, getTableUtilityClass, getTabsUtilityClass, getTextFieldUtilityClass, getToggleButtonGroupUtilityClass, getToggleButtonUtilityClass, getToolbarUtilityClass, getTooltipUtilityClass, getTouchRippleUtilityClass, getTypographyUtilityClass, gridClasses, hexToRgb, hslToRgb, iconButtonClasses, iconClasses, imageListClasses, imageListItemBarClasses, imageListItemClasses, inputAdornmentClasses, inputBaseClasses, inputClasses, inputLabelClasses, isMuiElement, keyframes, lighten, linearProgressClasses, linkClasses, listClasses, listItemAvatarClasses, listItemButtonClasses, listItemClasses, listItemIconClasses, listItemSecondaryActionClasses, listItemTextClasses, listSubheaderClasses, major, makeStyles, menuClasses, menuItemClasses, mergeSlotProps, minor, mobileStepperClasses, modalClasses, nativeSelectClasses, outlinedInputClasses, ownerDocument, ownerWindow, paginationClasses, paginationItemClasses, paperClasses, patch, popoverClasses, prerelease, private_createMixins, private_createTypography, private_excludeVariablesFromRoot, radioClasses, radioGroupClasses, ratingClasses, recomposeColor, requirePropFactory, responsiveFontSizes, rgbToHex, scopedCssBaselineClasses, selectClasses, setRef, shouldSkipGeneratingVar, skeletonClasses, sliderClasses, snackbarClasses, snackbarContentClasses, speedDialActionClasses, speedDialClasses, speedDialIconClasses, stackClasses, stepButtonClasses, stepClasses, stepConnectorClasses, stepContentClasses, stepIconClasses, stepLabelClasses, stepperClasses, styled, svgIconClasses, switchClasses, tabClasses, tabScrollButtonClasses, tableBodyClasses, tableCellClasses, tableClasses, tableContainerClasses, tableFooterClasses, tableHeadClasses, tablePaginationActionsClasses, tablePaginationClasses, tableRowClasses, tableSortLabelClasses, tabsClasses, textFieldClasses, toggleButtonClasses, toggleButtonGroupClasses, toolbarClasses, tooltipClasses, touchRippleClasses, typographyClasses, unstable_ClassNameGenerator, unstable_composeClasses, unstable_createBreakpoints, unstable_createMuiStrictModeTheme, unstable_getUnit, unstable_memoTheme, unstable_toUnitless, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useAutocomplete, useColorScheme, useControlled, useEventCallback, useForkRef, useFormControl, useMediaQuery, usePagination, useRadioGroup, useScrollTrigger, useStepContext, useStepperContext, useTheme, useThemeProps, version, withStyles, withTheme)
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: ERROR in ./src/pages/Results.tsx 930:49-53
+2025-07-19T13:49:05: export 'Grid2' (imported as 'Grid') was not found in '@mui/material' (possible exports: Accordion, AccordionActions, AccordionDetails, AccordionSummary, Alert, AlertTitle, AppBar, Autocomplete, Avatar, AvatarGroup, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, ButtonGroupButtonContext, ButtonGroupContext, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, CssVarsProvider, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, Experimental_CssVarsProvider, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, FormLabelRoot, GlobalStyles, Grid, GridLegacy, Grow, Icon, IconButton, ImageList, ImageListItem, ImageListItemBar, InitColorSchemeScript, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Pagination, PaginationItem, Paper, Popover, PopoverPaper, PopoverRoot, Popper, Portal, Radio, RadioGroup, Rating, ScopedCssBaseline, Select, Skeleton, Slide, Slider, SliderMark, SliderMarkLabel, SliderRail, SliderRoot, SliderThumb, SliderTrack, SliderValueLabel, Snackbar, SnackbarContent, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, Step, StepButton, StepConnector, StepContent, StepContext, StepIcon, StepLabel, Stepper, StepperContext, StyledEngineProvider, SvgIcon, SwipeableDrawer, Switch, THEME_ID, Tab, TabScrollButton, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, ThemeProvider, ToggleButton, ToggleButtonGroup, Toolbar, Tooltip, Typography, Unstable_TrapFocus, Zoom, accordionActionsClasses, accordionClasses, accordionDetailsClasses, accordionSummaryClasses, adaptV4Theme, alertClasses, alertTitleClasses, alpha, appBarClasses, autocompleteClasses, avatarClasses, avatarGroupClasses, backdropClasses, badgeClasses, bottomNavigationActionClasses, bottomNavigationClasses, boxClasses, breadcrumbsClasses, buttonBaseClasses, buttonClasses, buttonGroupClasses, capitalize, cardActionAreaClasses, cardActionsClasses, cardClasses, cardContentClasses, cardHeaderClasses, cardMediaClasses, checkboxClasses, chipClasses, circularProgressClasses, collapseClasses, colors, containerClasses, createChainedFunction, createColorScheme, createFilterOptions, createStyles, createSvgIcon, createTheme, createTransitions, css, darkScrollbar, darken, debounce, decomposeColor, deprecatedPropType, dialogActionsClasses, dialogClasses, dialogContentClasses, dialogContentTextClasses, dialogTitleClasses, dividerClasses, drawerClasses, duration, easing, emphasize, experimental_extendTheme, experimental_sx, extendTheme, fabClasses, filledInputClasses, formControlClasses, formControlLabelClasses, formGroupClasses, formHelperTextClasses, formLabelClasses, generateUtilityClass, generateUtilityClasses, getAccordionActionsUtilityClass, getAccordionDetailsUtilityClass, getAccordionSummaryUtilityClass, getAccordionUtilityClass, getAlertTitleUtilityClass, getAlertUtilityClass, getAppBarUtilityClass, getAutocompleteUtilityClass, getAvatarGroupUtilityClass, getAvatarUtilityClass, getBackdropUtilityClass, getBadgeUtilityClass, getBottomNavigationActionUtilityClass, getBottomNavigationUtilityClass, getBreadcrumbsUtilityClass, getButtonBaseUtilityClass, getButtonGroupUtilityClass, getButtonUtilityClass, getCardActionAreaUtilityClass, getCardActionsUtilityClass, getCardContentUtilityClass, getCardHeaderUtilityClass, getCardMediaUtilityClass, getCardUtilityClass, getCheckboxUtilityClass, getChipUtilityClass, getCircularProgressUtilityClass, getCollapseUtilityClass, getContainerUtilityClass, getContrastRatio, getDialogActionsUtilityClass, getDialogContentTextUtilityClass, getDialogContentUtilityClass, getDialogTitleUtilityClass, getDialogUtilityClass, getDividerUtilityClass, getDrawerUtilityClass, getFabUtilityClass, getFilledInputUtilityClass, getFormControlLabelUtilityClasses, getFormControlUtilityClasses, getFormGroupUtilityClass, getFormHelperTextUtilityClasses, getFormLabelUtilityClasses, getGridUtilityClass, getIconButtonUtilityClass, getIconUtilityClass, getImageListItemBarUtilityClass, getImageListItemUtilityClass, getImageListUtilityClass, getInitColorSchemeScript, getInputAdornmentUtilityClass, getInputBaseUtilityClass, getInputLabelUtilityClasses, getInputUtilityClass, getLinearProgressUtilityClass, getLinkUtilityClass, getListItemAvatarUtilityClass, getListItemButtonUtilityClass, getListItemIconUtilityClass, getListItemSecondaryActionClassesUtilityClass, getListItemTextUtilityClass, getListItemUtilityClass, getListSubheaderUtilityClass, getListUtilityClass, getLuminance, getMenuItemUtilityClass, getMenuUtilityClass, getMobileStepperUtilityClass, getModalUtilityClass, getNativeSelectUtilityClasses, getOffsetLeft, getOffsetTop, getOutlinedInputUtilityClass, getOverlayAlpha, getPaginationItemUtilityClass, getPaginationUtilityClass, getPaperUtilityClass, getPopoverUtilityClass, getPopperUtilityClass, getRadioGroupUtilityClass, getRadioUtilityClass, getRatingUtilityClass, getScopedCssBaselineUtilityClass, getSelectUtilityClasses, getSkeletonUtilityClass, getSliderUtilityClass, getSnackbarContentUtilityClass, getSnackbarUtilityClass, getSpeedDialActionUtilityClass, getSpeedDialIconUtilityClass, getSpeedDialUtilityClass, getStepButtonUtilityClass, getStepConnectorUtilityClass, getStepContentUtilityClass, getStepIconUtilityClass, getStepLabelUtilityClass, getStepUtilityClass, getStepperUtilityClass, getSvgIconUtilityClass, getSwitchUtilityClass, getTabScrollButtonUtilityClass, getTabUtilityClass, getTableBodyUtilityClass, getTableCellUtilityClass, getTableContainerUtilityClass, getTableFooterUtilityClass, getTableHeadUtilityClass, getTablePaginationUtilityClass, getTableRowUtilityClass, getTableSortLabelUtilityClass, getTableUtilityClass, getTabsUtilityClass, getTextFieldUtilityClass, getToggleButtonGroupUtilityClass, getToggleButtonUtilityClass, getToolbarUtilityClass, getTooltipUtilityClass, getTouchRippleUtilityClass, getTypographyUtilityClass, gridClasses, hexToRgb, hslToRgb, iconButtonClasses, iconClasses, imageListClasses, imageListItemBarClasses, imageListItemClasses, inputAdornmentClasses, inputBaseClasses, inputClasses, inputLabelClasses, isMuiElement, keyframes, lighten, linearProgressClasses, linkClasses, listClasses, listItemAvatarClasses, listItemButtonClasses, listItemClasses, listItemIconClasses, listItemSecondaryActionClasses, listItemTextClasses, listSubheaderClasses, major, makeStyles, menuClasses, menuItemClasses, mergeSlotProps, minor, mobileStepperClasses, modalClasses, nativeSelectClasses, outlinedInputClasses, ownerDocument, ownerWindow, paginationClasses, paginationItemClasses, paperClasses, patch, popoverClasses, prerelease, private_createMixins, private_createTypography, private_excludeVariablesFromRoot, radioClasses, radioGroupClasses, ratingClasses, recomposeColor, requirePropFactory, responsiveFontSizes, rgbToHex, scopedCssBaselineClasses, selectClasses, setRef, shouldSkipGeneratingVar, skeletonClasses, sliderClasses, snackbarClasses, snackbarContentClasses, speedDialActionClasses, speedDialClasses, speedDialIconClasses, stackClasses, stepButtonClasses, stepClasses, stepConnectorClasses, stepContentClasses, stepIconClasses, stepLabelClasses, stepperClasses, styled, svgIconClasses, switchClasses, tabClasses, tabScrollButtonClasses, tableBodyClasses, tableCellClasses, tableClasses, tableContainerClasses, tableFooterClasses, tableHeadClasses, tablePaginationActionsClasses, tablePaginationClasses, tableRowClasses, tableSortLabelClasses, tabsClasses, textFieldClasses, toggleButtonClasses, toggleButtonGroupClasses, toolbarClasses, tooltipClasses, touchRippleClasses, typographyClasses, unstable_ClassNameGenerator, unstable_composeClasses, unstable_createBreakpoints, unstable_createMuiStrictModeTheme, unstable_getUnit, unstable_memoTheme, unstable_toUnitless, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useAutocomplete, useColorScheme, useControlled, useEventCallback, useForkRef, useFormControl, useMediaQuery, usePagination, useRadioGroup, useScrollTrigger, useStepContext, useStepperContext, useTheme, useThemeProps, version, withStyles, withTheme)
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: ERROR in ./src/pages/Results.tsx 975:49-53
+2025-07-19T13:49:05: export 'Grid2' (imported as 'Grid') was not found in '@mui/material' (possible exports: Accordion, AccordionActions, AccordionDetails, AccordionSummary, Alert, AlertTitle, AppBar, Autocomplete, Avatar, AvatarGroup, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, ButtonGroupButtonContext, ButtonGroupContext, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, CssVarsProvider, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, Experimental_CssVarsProvider, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, FormLabelRoot, GlobalStyles, Grid, GridLegacy, Grow, Icon, IconButton, ImageList, ImageListItem, ImageListItemBar, InitColorSchemeScript, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Pagination, PaginationItem, Paper, Popover, PopoverPaper, PopoverRoot, Popper, Portal, Radio, RadioGroup, Rating, ScopedCssBaseline, Select, Skeleton, Slide, Slider, SliderMark, SliderMarkLabel, SliderRail, SliderRoot, SliderThumb, SliderTrack, SliderValueLabel, Snackbar, SnackbarContent, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, Step, StepButton, StepConnector, StepContent, StepContext, StepIcon, StepLabel, Stepper, StepperContext, StyledEngineProvider, SvgIcon, SwipeableDrawer, Switch, THEME_ID, Tab, TabScrollButton, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, ThemeProvider, ToggleButton, ToggleButtonGroup, Toolbar, Tooltip, Typography, Unstable_TrapFocus, Zoom, accordionActionsClasses, accordionClasses, accordionDetailsClasses, accordionSummaryClasses, adaptV4Theme, alertClasses, alertTitleClasses, alpha, appBarClasses, autocompleteClasses, avatarClasses, avatarGroupClasses, backdropClasses, badgeClasses, bottomNavigationActionClasses, bottomNavigationClasses, boxClasses, breadcrumbsClasses, buttonBaseClasses, buttonClasses, buttonGroupClasses, capitalize, cardActionAreaClasses, cardActionsClasses, cardClasses, cardContentClasses, cardHeaderClasses, cardMediaClasses, checkboxClasses, chipClasses, circularProgressClasses, collapseClasses, colors, containerClasses, createChainedFunction, createColorScheme, createFilterOptions, createStyles, createSvgIcon, createTheme, createTransitions, css, darkScrollbar, darken, debounce, decomposeColor, deprecatedPropType, dialogActionsClasses, dialogClasses, dialogContentClasses, dialogContentTextClasses, dialogTitleClasses, dividerClasses, drawerClasses, duration, easing, emphasize, experimental_extendTheme, experimental_sx, extendTheme, fabClasses, filledInputClasses, formControlClasses, formControlLabelClasses, formGroupClasses, formHelperTextClasses, formLabelClasses, generateUtilityClass, generateUtilityClasses, getAccordionActionsUtilityClass, getAccordionDetailsUtilityClass, getAccordionSummaryUtilityClass, getAccordionUtilityClass, getAlertTitleUtilityClass, getAlertUtilityClass, getAppBarUtilityClass, getAutocompleteUtilityClass, getAvatarGroupUtilityClass, getAvatarUtilityClass, getBackdropUtilityClass, getBadgeUtilityClass, getBottomNavigationActionUtilityClass, getBottomNavigationUtilityClass, getBreadcrumbsUtilityClass, getButtonBaseUtilityClass, getButtonGroupUtilityClass, getButtonUtilityClass, getCardActionAreaUtilityClass, getCardActionsUtilityClass, getCardContentUtilityClass, getCardHeaderUtilityClass, getCardMediaUtilityClass, getCardUtilityClass, getCheckboxUtilityClass, getChipUtilityClass, getCircularProgressUtilityClass, getCollapseUtilityClass, getContainerUtilityClass, getContrastRatio, getDialogActionsUtilityClass, getDialogContentTextUtilityClass, getDialogContentUtilityClass, getDialogTitleUtilityClass, getDialogUtilityClass, getDividerUtilityClass, getDrawerUtilityClass, getFabUtilityClass, getFilledInputUtilityClass, getFormControlLabelUtilityClasses, getFormControlUtilityClasses, getFormGroupUtilityClass, getFormHelperTextUtilityClasses, getFormLabelUtilityClasses, getGridUtilityClass, getIconButtonUtilityClass, getIconUtilityClass, getImageListItemBarUtilityClass, getImageListItemUtilityClass, getImageListUtilityClass, getInitColorSchemeScript, getInputAdornmentUtilityClass, getInputBaseUtilityClass, getInputLabelUtilityClasses, getInputUtilityClass, getLinearProgressUtilityClass, getLinkUtilityClass, getListItemAvatarUtilityClass, getListItemButtonUtilityClass, getListItemIconUtilityClass, getListItemSecondaryActionClassesUtilityClass, getListItemTextUtilityClass, getListItemUtilityClass, getListSubheaderUtilityClass, getListUtilityClass, getLuminance, getMenuItemUtilityClass, getMenuUtilityClass, getMobileStepperUtilityClass, getModalUtilityClass, getNativeSelectUtilityClasses, getOffsetLeft, getOffsetTop, getOutlinedInputUtilityClass, getOverlayAlpha, getPaginationItemUtilityClass, getPaginationUtilityClass, getPaperUtilityClass, getPopoverUtilityClass, getPopperUtilityClass, getRadioGroupUtilityClass, getRadioUtilityClass, getRatingUtilityClass, getScopedCssBaselineUtilityClass, getSelectUtilityClasses, getSkeletonUtilityClass, getSliderUtilityClass, getSnackbarContentUtilityClass, getSnackbarUtilityClass, getSpeedDialActionUtilityClass, getSpeedDialIconUtilityClass, getSpeedDialUtilityClass, getStepButtonUtilityClass, getStepConnectorUtilityClass, getStepContentUtilityClass, getStepIconUtilityClass, getStepLabelUtilityClass, getStepUtilityClass, getStepperUtilityClass, getSvgIconUtilityClass, getSwitchUtilityClass, getTabScrollButtonUtilityClass, getTabUtilityClass, getTableBodyUtilityClass, getTableCellUtilityClass, getTableContainerUtilityClass, getTableFooterUtilityClass, getTableHeadUtilityClass, getTablePaginationUtilityClass, getTableRowUtilityClass, getTableSortLabelUtilityClass, getTableUtilityClass, getTabsUtilityClass, getTextFieldUtilityClass, getToggleButtonGroupUtilityClass, getToggleButtonUtilityClass, getToolbarUtilityClass, getTooltipUtilityClass, getTouchRippleUtilityClass, getTypographyUtilityClass, gridClasses, hexToRgb, hslToRgb, iconButtonClasses, iconClasses, imageListClasses, imageListItemBarClasses, imageListItemClasses, inputAdornmentClasses, inputBaseClasses, inputClasses, inputLabelClasses, isMuiElement, keyframes, lighten, linearProgressClasses, linkClasses, listClasses, listItemAvatarClasses, listItemButtonClasses, listItemClasses, listItemIconClasses, listItemSecondaryActionClasses, listItemTextClasses, listSubheaderClasses, major, makeStyles, menuClasses, menuItemClasses, mergeSlotProps, minor, mobileStepperClasses, modalClasses, nativeSelectClasses, outlinedInputClasses, ownerDocument, ownerWindow, paginationClasses, paginationItemClasses, paperClasses, patch, popoverClasses, prerelease, private_createMixins, private_createTypography, private_excludeVariablesFromRoot, radioClasses, radioGroupClasses, ratingClasses, recomposeColor, requirePropFactory, responsiveFontSizes, rgbToHex, scopedCssBaselineClasses, selectClasses, setRef, shouldSkipGeneratingVar, skeletonClasses, sliderClasses, snackbarClasses, snackbarContentClasses, speedDialActionClasses, speedDialClasses, speedDialIconClasses, stackClasses, stepButtonClasses, stepClasses, stepConnectorClasses, stepContentClasses, stepIconClasses, stepLabelClasses, stepperClasses, styled, svgIconClasses, switchClasses, tabClasses, tabScrollButtonClasses, tableBodyClasses, tableCellClasses, tableClasses, tableContainerClasses, tableFooterClasses, tableHeadClasses, tablePaginationActionsClasses, tablePaginationClasses, tableRowClasses, tableSortLabelClasses, tabsClasses, textFieldClasses, toggleButtonClasses, toggleButtonGroupClasses, toolbarClasses, tooltipClasses, touchRippleClasses, typographyClasses, unstable_ClassNameGenerator, unstable_composeClasses, unstable_createBreakpoints, unstable_createMuiStrictModeTheme, unstable_getUnit, unstable_memoTheme, unstable_toUnitless, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useAutocomplete, useColorScheme, useControlled, useEventCallback, useForkRef, useFormControl, useMediaQuery, usePagination, useRadioGroup, useScrollTrigger, useStepContext, useStepperContext, useTheme, useThemeProps, version, withStyles, withTheme)
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: ERROR in ./src/pages/Results.tsx 1020:49-53
+2025-07-19T13:49:05: export 'Grid2' (imported as 'Grid') was not found in '@mui/material' (possible exports: Accordion, AccordionActions, AccordionDetails, AccordionSummary, Alert, AlertTitle, AppBar, Autocomplete, Avatar, AvatarGroup, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, ButtonGroupButtonContext, ButtonGroupContext, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, CssVarsProvider, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, Experimental_CssVarsProvider, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, FormLabelRoot, GlobalStyles, Grid, GridLegacy, Grow, Icon, IconButton, ImageList, ImageListItem, ImageListItemBar, InitColorSchemeScript, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, ModalManager, NativeSelect, NoSsr, OutlinedInput, Pagination, PaginationItem, Paper, Popover, PopoverPaper, PopoverRoot, Popper, Portal, Radio, RadioGroup, Rating, ScopedCssBaseline, Select, Skeleton, Slide, Slider, SliderMark, SliderMarkLabel, SliderRail, SliderRoot, SliderThumb, SliderTrack, SliderValueLabel, Snackbar, SnackbarContent, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, Step, StepButton, StepConnector, StepContent, StepContext, StepIcon, StepLabel, Stepper, StepperContext, StyledEngineProvider, SvgIcon, SwipeableDrawer, Switch, THEME_ID, Tab, TabScrollButton, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, ThemeProvider, ToggleButton, ToggleButtonGroup, Toolbar, Tooltip, Typography, Unstable_TrapFocus, Zoom, accordionActionsClasses, accordionClasses, accordionDetailsClasses, accordionSummaryClasses, adaptV4Theme, alertClasses, alertTitleClasses, alpha, appBarClasses, autocompleteClasses, avatarClasses, avatarGroupClasses, backdropClasses, badgeClasses, bottomNavigationActionClasses, bottomNavigationClasses, boxClasses, breadcrumbsClasses, buttonBaseClasses, buttonClasses, buttonGroupClasses, capitalize, cardActionAreaClasses, cardActionsClasses, cardClasses, cardContentClasses, cardHeaderClasses, cardMediaClasses, checkboxClasses, chipClasses, circularProgressClasses, collapseClasses, colors, containerClasses, createChainedFunction, createColorScheme, createFilterOptions, createStyles, createSvgIcon, createTheme, createTransitions, css, darkScrollbar, darken, debounce, decomposeColor, deprecatedPropType, dialogActionsClasses, dialogClasses, dialogContentClasses, dialogContentTextClasses, dialogTitleClasses, dividerClasses, drawerClasses, duration, easing, emphasize, experimental_extendTheme, experimental_sx, extendTheme, fabClasses, filledInputClasses, formControlClasses, formControlLabelClasses, formGroupClasses, formHelperTextClasses, formLabelClasses, generateUtilityClass, generateUtilityClasses, getAccordionActionsUtilityClass, getAccordionDetailsUtilityClass, getAccordionSummaryUtilityClass, getAccordionUtilityClass, getAlertTitleUtilityClass, getAlertUtilityClass, getAppBarUtilityClass, getAutocompleteUtilityClass, getAvatarGroupUtilityClass, getAvatarUtilityClass, getBackdropUtilityClass, getBadgeUtilityClass, getBottomNavigationActionUtilityClass, getBottomNavigationUtilityClass, getBreadcrumbsUtilityClass, getButtonBaseUtilityClass, getButtonGroupUtilityClass, getButtonUtilityClass, getCardActionAreaUtilityClass, getCardActionsUtilityClass, getCardContentUtilityClass, getCardHeaderUtilityClass, getCardMediaUtilityClass, getCardUtilityClass, getCheckboxUtilityClass, getChipUtilityClass, getCircularProgressUtilityClass, getCollapseUtilityClass, getContainerUtilityClass, getContrastRatio, getDialogActionsUtilityClass, getDialogContentTextUtilityClass, getDialogContentUtilityClass, getDialogTitleUtilityClass, getDialogUtilityClass, getDividerUtilityClass, getDrawerUtilityClass, getFabUtilityClass, getFilledInputUtilityClass, getFormControlLabelUtilityClasses, getFormControlUtilityClasses, getFormGroupUtilityClass, getFormHelperTextUtilityClasses, getFormLabelUtilityClasses, getGridUtilityClass, getIconButtonUtilityClass, getIconUtilityClass, getImageListItemBarUtilityClass, getImageListItemUtilityClass, getImageListUtilityClass, getInitColorSchemeScript, getInputAdornmentUtilityClass, getInputBaseUtilityClass, getInputLabelUtilityClasses, getInputUtilityClass, getLinearProgressUtilityClass, getLinkUtilityClass, getListItemAvatarUtilityClass, getListItemButtonUtilityClass, getListItemIconUtilityClass, getListItemSecondaryActionClassesUtilityClass, getListItemTextUtilityClass, getListItemUtilityClass, getListSubheaderUtilityClass, getListUtilityClass, getLuminance, getMenuItemUtilityClass, getMenuUtilityClass, getMobileStepperUtilityClass, getModalUtilityClass, getNativeSelectUtilityClasses, getOffsetLeft, getOffsetTop, getOutlinedInputUtilityClass, getOverlayAlpha, getPaginationItemUtilityClass, getPaginationUtilityClass, getPaperUtilityClass, getPopoverUtilityClass, getPopperUtilityClass, getRadioGroupUtilityClass, getRadioUtilityClass, getRatingUtilityClass, getScopedCssBaselineUtilityClass, getSelectUtilityClasses, getSkeletonUtilityClass, getSliderUtilityClass, getSnackbarContentUtilityClass, getSnackbarUtilityClass, getSpeedDialActionUtilityClass, getSpeedDialIconUtilityClass, getSpeedDialUtilityClass, getStepButtonUtilityClass, getStepConnectorUtilityClass, getStepContentUtilityClass, getStepIconUtilityClass, getStepLabelUtilityClass, getStepUtilityClass, getStepperUtilityClass, getSvgIconUtilityClass, getSwitchUtilityClass, getTabScrollButtonUtilityClass, getTabUtilityClass, getTableBodyUtilityClass, getTableCellUtilityClass, getTableContainerUtilityClass, getTableFooterUtilityClass, getTableHeadUtilityClass, getTablePaginationUtilityClass, getTableRowUtilityClass, getTableSortLabelUtilityClass, getTableUtilityClass, getTabsUtilityClass, getTextFieldUtilityClass, getToggleButtonGroupUtilityClass, getToggleButtonUtilityClass, getToolbarUtilityClass, getTooltipUtilityClass, getTouchRippleUtilityClass, getTypographyUtilityClass, gridClasses, hexToRgb, hslToRgb, iconButtonClasses, iconClasses, imageListClasses, imageListItemBarClasses, imageListItemClasses, inputAdornmentClasses, inputBaseClasses, inputClasses, inputLabelClasses, isMuiElement, keyframes, lighten, linearProgressClasses, linkClasses, listClasses, listItemAvatarClasses, listItemButtonClasses, listItemClasses, listItemIconClasses, listItemSecondaryActionClasses, listItemTextClasses, listSubheaderClasses, major, makeStyles, menuClasses, menuItemClasses, mergeSlotProps, minor, mobileStepperClasses, modalClasses, nativeSelectClasses, outlinedInputClasses, ownerDocument, ownerWindow, paginationClasses, paginationItemClasses, paperClasses, patch, popoverClasses, prerelease, private_createMixins, private_createTypography, private_excludeVariablesFromRoot, radioClasses, radioGroupClasses, ratingClasses, recomposeColor, requirePropFactory, responsiveFontSizes, rgbToHex, scopedCssBaselineClasses, selectClasses, setRef, shouldSkipGeneratingVar, skeletonClasses, sliderClasses, snackbarClasses, snackbarContentClasses, speedDialActionClasses, speedDialClasses, speedDialIconClasses, stackClasses, stepButtonClasses, stepClasses, stepConnectorClasses, stepContentClasses, stepIconClasses, stepLabelClasses, stepperClasses, styled, svgIconClasses, switchClasses, tabClasses, tabScrollButtonClasses, tableBodyClasses, tableCellClasses, tableClasses, tableContainerClasses, tableFooterClasses, tableHeadClasses, tablePaginationActionsClasses, tablePaginationClasses, tableRowClasses, tableSortLabelClasses, tabsClasses, textFieldClasses, toggleButtonClasses, toggleButtonGroupClasses, toolbarClasses, tooltipClasses, touchRippleClasses, typographyClasses, unstable_ClassNameGenerator, unstable_composeClasses, unstable_createBreakpoints, unstable_createMuiStrictModeTheme, unstable_getUnit, unstable_memoTheme, unstable_toUnitless, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useAutocomplete, useColorScheme, useControlled, useEventCallback, useForkRef, useFormControl, useMediaQuery, usePagination, useRadioGroup, useScrollTrigger, useStepContext, useStepperContext, useTheme, useThemeProps, version, withStyles, withTheme)
+2025-07-19T13:49:05: 
+2025-07-19T13:49:05: webpack compiled with 15 errors and 1 warning
+2025-07-19T13:49:22: Compiling...
+2025-07-19T13:49:23: Compiled with warnings.
+2025-07-19T13:49:23: 
+2025-07-19T13:49:23: [eslint] 
+2025-07-19T13:49:23: src/pages/Results.tsx
+2025-07-19T13:49:23:   Line 15:3:   'Paper' is defined but never used                 @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23:   Line 22:3:   'TextField' is defined but never used             @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23:   Line 32:3:   'Divider' is defined but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23:   Line 41:17:  'ExpandMoreIcon' is defined but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23:   Line 42:17:  'ExpandLessIcon' is defined but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23:   Line 58:26:  'SignalDetection' is defined but never used       @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23:   Line 58:43:  'SignalPerformance' is defined but never used     @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23:   Line 61:9:   'queryClient' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23: 
+2025-07-19T13:49:23: Search for the keywords to learn more about each warning.
+2025-07-19T13:49:23: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T13:49:23: 
+2025-07-19T13:49:23: WARNING in [eslint] 
+2025-07-19T13:49:23: src/pages/Results.tsx
+2025-07-19T13:49:23:   Line 15:3:   'Paper' is defined but never used                 @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23:   Line 22:3:   'TextField' is defined but never used             @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23:   Line 32:3:   'Divider' is defined but never used               @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23:   Line 41:17:  'ExpandMoreIcon' is defined but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23:   Line 42:17:  'ExpandLessIcon' is defined but never used        @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23:   Line 58:26:  'SignalDetection' is defined but never used       @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23:   Line 58:43:  'SignalPerformance' is defined but never used     @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23:   Line 61:9:   'queryClient' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T13:49:23: 
+2025-07-19T13:49:23: webpack compiled with 1 warning
+2025-07-19T13:51:04: Compiling...
+2025-07-19T13:51:05: Compiled successfully!
+2025-07-19T13:51:05: webpack compiled successfully
+2025-07-19T13:51:05: No issues found.
+2025-07-19T13:51:32: 
+2025-07-19T13:51:32: > frontend@0.1.0 start
+2025-07-19T13:51:32: > react-scripts start
+2025-07-19T13:51:32: 
+2025-07-19T13:51:33: Starting the development server...
+2025-07-19T13:51:33: 
+2025-07-19T13:51:37: Compiled successfully!
+2025-07-19T13:51:37: 
+2025-07-19T13:51:37: You can now view frontend in the browser.
+2025-07-19T13:51:37: 
+2025-07-19T13:51:37:   Local:            http://localhost:3000
+2025-07-19T13:51:37:   On Your Network:  http://192.168.1.119:3000
+2025-07-19T13:51:37: 
+2025-07-19T13:51:37: Note that the development build is not optimized.
+2025-07-19T13:51:37: To create a production build, use npm run build.
+2025-07-19T13:51:37: 
+2025-07-19T13:51:37: webpack compiled successfully
+2025-07-19T13:51:37: No issues found.
+2025-07-19T13:55:10: Compiling...
+2025-07-19T13:55:11: Compiled successfully!
+2025-07-19T13:55:11: webpack compiled successfully
+2025-07-19T13:55:11: No issues found.
+2025-07-19T13:55:38: Compiling...
+2025-07-19T13:55:39: Compiled successfully!
+2025-07-19T13:55:39: webpack compiled successfully
+2025-07-19T13:55:39: No issues found.
+2025-07-19T13:55:55: Compiling...
+2025-07-19T13:55:56: Compiled successfully!
+2025-07-19T13:55:56: webpack compiled successfully
+2025-07-19T13:55:56: No issues found.
+2025-07-19T13:56:03: Compiling...
+2025-07-19T13:56:04: Compiled successfully!
+2025-07-19T13:56:04: webpack compiled successfully
+2025-07-19T13:56:04: No issues found.
+2025-07-19T13:58:21: Compiling...
+2025-07-19T13:58:22: Failed to compile.
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: [eslint] 
+2025-07-19T13:58:22: src/pages/Results.tsx
+2025-07-19T13:58:22: Syntax error: '}' expected (791:undefined)
+2025-07-19T13:58:22: ERROR in ./src/pages/Results.tsx
+2025-07-19T13:58:22: Module build failed (from ./node_modules/babel-loader/lib/index.js):
+2025-07-19T13:58:22: SyntaxError: /Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/src/pages/Results.tsx: Unexpected token, expected "}" (791:0)
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22:   789 |                                           label={performance.isSuccessful ? 'Success' : 'Failed'}
+2025-07-19T13:58:22:   790 |                                           color={performance.is
+2025-07-19T13:58:22: > 791 |
+2025-07-19T13:58:22:       | ^
+2025-07-19T13:58:22:     at constructor (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.raise (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:6627:19)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.unexpected (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:6647:16)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.expect (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:6927:12)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.jsxParseExpressionContainer (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4667:10)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.jsxParseAttributeValue (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4634:21)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.jsxParseAttribute (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4683:38)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4697:28)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10062:18)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.jsxParseOpeningElementAt (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4692:17)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.jsxParseElementAt (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4716:33)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.jsxParseElement (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4779:17)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseExprAtom (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4789:19)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseExprSubscripts (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11076:23)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseUpdate (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11061:21)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseMaybeUnary (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11041:23)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseMaybeUnary (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:9852:18)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10894:61)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseExprOps (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10899:23)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseMaybeConditional (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10876:23)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseMaybeAssign (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10826:21)
+2025-07-19T13:58:22:     at /Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:9790:39
+2025-07-19T13:58:22:     at TypeScriptParserMixin.tryParse (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:6935:20)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseMaybeAssign (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:9790:18)
+2025-07-19T13:58:22:     at /Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10795:39
+2025-07-19T13:58:22:     at TypeScriptParserMixin.allowInAnd (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:12427:12)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10795:17)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:12494:17)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11674:28)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseExprAtom (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11326:23)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseExprAtom (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4794:20)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseExprSubscripts (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11076:23)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseUpdate (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11061:21)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseMaybeUnary (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11041:23)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseMaybeUnary (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:9852:18)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10894:61)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseExprOpBaseRightExpr (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10981:34)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseExprOpRightExpr (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10976:21)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseExprOp (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10942:27)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseExprOp (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:9389:18)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseExprOps (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10903:17)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseMaybeConditional (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10876:23)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseMaybeAssign (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10826:21)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseMaybeAssign (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:9801:20)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseExpressionBase (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10779:23)
+2025-07-19T13:58:22:     at /Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10775:39
+2025-07-19T13:58:22:     at TypeScriptParserMixin.allowInAnd (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:12427:12)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.parseExpression (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10775:17)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.jsxParseExpressionContainer (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4662:31)
+2025-07-19T13:58:22:     at TypeScriptParserMixin.jsxParseElementAt (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4741:36)
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: ERROR in [eslint] 
+2025-07-19T13:58:22: src/pages/Results.tsx
+2025-07-19T13:58:22:   Line 791:  Parsing error: '}' expected
+2025-07-19T13:58:22: 
+2025-07-19T13:58:22: webpack compiled with 2 errors
+2025-07-19T13:58:22: Files successfully emitted, waiting for typecheck results...
+2025-07-19T13:58:22: Issues checking in progress...
+2025-07-19T14:00:38: Compiling...
+2025-07-19T14:00:40: Failed to compile.
+2025-07-19T14:00:40: 
+2025-07-19T14:00:40: [eslint] 
+2025-07-19T14:00:40: src/pages/Results.tsx
+2025-07-19T14:00:40: Syntax error: '/' expected (798:undefined)
+2025-07-19T14:00:40: ERROR in ./src/pages/Results.tsx
+2025-07-19T14:00:40: Module build failed (from ./node_modules/babel-loader/lib/index.js):
+2025-07-19T14:00:40: SyntaxError: /Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/src/pages/Results.tsx: Unexpected token (798:0)
+2025-07-19T14:00:40: 
+2025-07-19T14:00:40:   796 |                         count={filteredSignals.totalSignals}
+2025-07-19T14:00:40:   797 |                         page
+2025-07-19T14:00:40: > 798 |
+2025-07-19T14:00:40:       | ^
+2025-07-19T14:00:40:     at constructor (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.raise (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:6627:19)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.unexpected (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:6647:16)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.jsxParseIdentifier (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4599:12)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.jsxParseNamespacedName (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4606:23)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.jsxParseAttribute (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4682:22)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4697:28)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10062:18)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.jsxParseOpeningElementAt (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4692:17)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.jsxParseElementAt (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4716:33)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.jsxParseElementAt (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4728:32)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.jsxParseElement (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4779:17)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseExprAtom (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4789:19)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseExprSubscripts (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11076:23)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseUpdate (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11061:21)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeUnary (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11041:23)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeUnary (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:9852:18)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10894:61)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseExprOps (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10899:23)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeConditional (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10876:23)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeAssign (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10826:21)
+2025-07-19T14:00:40:     at /Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:9790:39
+2025-07-19T14:00:40:     at TypeScriptParserMixin.tryParse (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:6935:20)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeAssign (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:9790:18)
+2025-07-19T14:00:40:     at /Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10795:39
+2025-07-19T14:00:40:     at TypeScriptParserMixin.allowInAnd (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:12427:12)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10795:17)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:12494:17)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11674:28)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseExprAtom (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11326:23)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseExprAtom (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:4794:20)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseExprSubscripts (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11076:23)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseUpdate (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11061:21)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeUnary (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:11041:23)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeUnary (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:9852:18)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10894:61)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseExprOpBaseRightExpr (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10981:34)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseExprOpRightExpr (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10976:21)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseExprOp (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10942:27)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseExprOp (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:9389:18)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseExprOps (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10903:17)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeConditional (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10876:23)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeAssign (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10826:21)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeAssign (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:9801:20)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseConditional (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10888:29)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseConditional (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:9626:18)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeConditional (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10880:17)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeAssign (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10826:21)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseMaybeAssign (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:9801:20)
+2025-07-19T14:00:40:     at TypeScriptParserMixin.parseExpressionBase (/Users/hammamsawalma/Desktop/BackTest_VolumeIndicator/frontend/node_modules/@babel/parser/lib/index.js:10779:23)
+2025-07-19T14:00:40: 
+2025-07-19T14:00:40: ERROR in [eslint] 
+2025-07-19T14:00:40: src/pages/Results.tsx
+2025-07-19T14:00:40:   Line 798:  Parsing error: '/' expected
+2025-07-19T14:00:40: 
+2025-07-19T14:00:40: webpack compiled with 2 errors
+2025-07-19T14:00:56: Compiling...
+2025-07-19T14:00:59: Compiled successfully!
+2025-07-19T14:01:00: webpack compiled successfully
+2025-07-19T14:01:00: No issues found.
+2025-07-19T14:01:39: 
+2025-07-19T14:01:39: > frontend@0.1.0 start
+2025-07-19T14:01:39: > react-scripts start
+2025-07-19T14:01:39: 
+2025-07-19T14:01:40: Starting the development server...
+2025-07-19T14:01:40: 
+2025-07-19T14:01:49: Compiled successfully!
+2025-07-19T14:01:49: 
+2025-07-19T14:01:49: You can now view frontend in the browser.
+2025-07-19T14:01:49: 
+2025-07-19T14:01:49:   Local:            http://localhost:3000
+2025-07-19T14:01:49:   On Your Network:  http://192.168.1.119:3000
+2025-07-19T14:01:49: 
+2025-07-19T14:01:49: Note that the development build is not optimized.
+2025-07-19T14:01:49: To create a production build, use npm run build.
+2025-07-19T14:01:49: 
+2025-07-19T14:01:49: webpack compiled successfully
+2025-07-19T14:01:49: No issues found.
+2025-07-19T14:13:43: Compiling...
+2025-07-19T14:13:45: Compiled successfully!
+2025-07-19T14:13:45: webpack compiled successfully
+2025-07-19T14:13:45: No issues found.
+2025-07-19T14:14:06: Compiling...
+2025-07-19T14:14:07: Compiled with warnings.
+2025-07-19T14:14:07: 
+2025-07-19T14:14:07: [eslint] 
+2025-07-19T14:14:07: src/pages/Results.tsx
+2025-07-19T14:14:07:   Line 46:18:  'ArrowUpwardIcon' is defined but never used    @typescript-eslint/no-unused-vars
+2025-07-19T14:14:07:   Line 47:20:  'ArrowDownwardIcon' is defined but never used  @typescript-eslint/no-unused-vars
+2025-07-19T14:14:07: 
+2025-07-19T14:14:07: Search for the keywords to learn more about each warning.
+2025-07-19T14:14:07: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T14:14:07: 
+2025-07-19T14:14:07: WARNING in [eslint] 
+2025-07-19T14:14:07: src/pages/Results.tsx
+2025-07-19T14:14:07:   Line 46:18:  'ArrowUpwardIcon' is defined but never used    @typescript-eslint/no-unused-vars
+2025-07-19T14:14:07:   Line 47:20:  'ArrowDownwardIcon' is defined but never used  @typescript-eslint/no-unused-vars
+2025-07-19T14:14:07: 
+2025-07-19T14:14:07: webpack compiled with 1 warning
+2025-07-19T14:14:07: No issues found.
+2025-07-19T14:14:30: Compiling...
+2025-07-19T14:14:31: Compiled with warnings.
+2025-07-19T14:14:31: 
+2025-07-19T14:14:31: [eslint] 
+2025-07-19T14:14:31: src/pages/Results.tsx
+2025-07-19T14:14:31:   Line 46:18:   'ArrowUpwardIcon' is defined but never used         @typescript-eslint/no-unused-vars
+2025-07-19T14:14:31:   Line 47:20:   'ArrowDownwardIcon' is defined but never used       @typescript-eslint/no-unused-vars
+2025-07-19T14:14:31:   Line 109:10:  'sortConfig' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T14:14:31:   Line 109:22:  'setSortConfig' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T14:14:31: 
+2025-07-19T14:14:31: Search for the keywords to learn more about each warning.
+2025-07-19T14:14:31: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T14:14:31: 
+2025-07-19T14:14:31: WARNING in [eslint] 
+2025-07-19T14:14:31: src/pages/Results.tsx
+2025-07-19T14:14:31:   Line 46:18:   'ArrowUpwardIcon' is defined but never used         @typescript-eslint/no-unused-vars
+2025-07-19T14:14:31:   Line 47:20:   'ArrowDownwardIcon' is defined but never used       @typescript-eslint/no-unused-vars
+2025-07-19T14:14:31:   Line 109:10:  'sortConfig' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T14:14:31:   Line 109:22:  'setSortConfig' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T14:14:31: 
+2025-07-19T14:14:31: webpack compiled with 1 warning
+2025-07-19T14:14:31: No issues found.
+2025-07-19T14:14:55: Compiling...
+2025-07-19T14:14:57: Compiled with warnings.
+2025-07-19T14:14:57: 
+2025-07-19T14:14:57: [eslint] 
+2025-07-19T14:14:57: src/pages/Results.tsx
+2025-07-19T14:14:57:   Line 171:9:  'getSortedSignals' is assigned a value but never used   @typescript-eslint/no-unused-vars
+2025-07-19T14:14:57:   Line 238:9:  'SortableTableCell' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T14:14:57: 
+2025-07-19T14:14:57: Search for the keywords to learn more about each warning.
+2025-07-19T14:14:57: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T14:14:57: 
+2025-07-19T14:14:57: WARNING in [eslint] 
+2025-07-19T14:14:57: src/pages/Results.tsx
+2025-07-19T14:14:57:   Line 171:9:  'getSortedSignals' is assigned a value but never used   @typescript-eslint/no-unused-vars
+2025-07-19T14:14:57:   Line 238:9:  'SortableTableCell' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T14:14:57: 
+2025-07-19T14:14:57: webpack compiled with 1 warning
+2025-07-19T14:14:57: No issues found.
+2025-07-19T14:15:30: Compiling...
+2025-07-19T14:15:32: Compiled successfully!
+2025-07-19T14:15:32: webpack compiled successfully
+2025-07-19T14:15:32: No issues found.
+2025-07-19T14:16:04: 
+2025-07-19T14:16:04: > frontend@0.1.0 start
+2025-07-19T14:16:04: > react-scripts start
+2025-07-19T14:16:04: 
+2025-07-19T14:16:05: Starting the development server...
+2025-07-19T14:16:05: 
+2025-07-19T14:16:08: Compiled successfully!
+2025-07-19T14:16:08: 
+2025-07-19T14:16:08: You can now view frontend in the browser.
+2025-07-19T14:16:08: 
+2025-07-19T14:16:08:   Local:            http://localhost:3000
+2025-07-19T14:16:08:   On Your Network:  http://192.168.1.119:3000
+2025-07-19T14:16:08: 
+2025-07-19T14:16:08: Note that the development build is not optimized.
+2025-07-19T14:16:08: To create a production build, use npm run build.
+2025-07-19T14:16:08: 
+2025-07-19T14:16:08: webpack compiled successfully
+2025-07-19T14:16:08: No issues found.
+2025-07-19T14:19:34: Compiling...
+2025-07-19T14:19:36: Compiled successfully!
+2025-07-19T14:19:36: webpack compiled successfully
+2025-07-19T14:19:36: No issues found.
+2025-07-19T14:20:02: Compiling...
+2025-07-19T14:20:03: Compiled successfully!
+2025-07-19T14:20:03: webpack compiled successfully
+2025-07-19T14:20:03: No issues found.
+2025-07-19T14:20:18: Compiling...
+2025-07-19T14:20:19: Compiled with warnings.
+2025-07-19T14:20:19: 
+2025-07-19T14:20:19: [eslint] 
+2025-07-19T14:20:19: src/pages/Results.tsx
+2025-07-19T14:20:19:   Line 48:13:  'DeleteIcon' is defined but never used      @typescript-eslint/no-unused-vars
+2025-07-19T14:20:19:   Line 50:20:  'useMutation' is defined but never used     @typescript-eslint/no-unused-vars
+2025-07-19T14:20:19:   Line 50:33:  'useQueryClient' is defined but never used  @typescript-eslint/no-unused-vars
+2025-07-19T14:20:19: 
+2025-07-19T14:20:19: Search for the keywords to learn more about each warning.
+2025-07-19T14:20:19: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T14:20:19: 
+2025-07-19T14:20:19: WARNING in [eslint] 
+2025-07-19T14:20:19: src/pages/Results.tsx
+2025-07-19T14:20:19:   Line 48:13:  'DeleteIcon' is defined but never used      @typescript-eslint/no-unused-vars
+2025-07-19T14:20:19:   Line 50:20:  'useMutation' is defined but never used     @typescript-eslint/no-unused-vars
+2025-07-19T14:20:19:   Line 50:33:  'useQueryClient' is defined but never used  @typescript-eslint/no-unused-vars
+2025-07-19T14:20:19: 
+2025-07-19T14:20:19: webpack compiled with 1 warning
+2025-07-19T14:20:19: No issues found.
+2025-07-19T14:20:36: Compiling...
+2025-07-19T14:20:37: Compiled with warnings.
+2025-07-19T14:20:37: 
+2025-07-19T14:20:37: [eslint] 
+2025-07-19T14:20:37: src/pages/Results.tsx
+2025-07-19T14:20:37:   Line 48:13:   'DeleteIcon' is defined but never used                    @typescript-eslint/no-unused-vars
+2025-07-19T14:20:37:   Line 50:20:   'useMutation' is defined but never used                   @typescript-eslint/no-unused-vars
+2025-07-19T14:20:37:   Line 117:10:  'deleteDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T14:20:37:   Line 117:28:  'setDeleteDialogOpen' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T14:20:37:   Line 118:10:  'resultToDelete' is assigned a value but never used       @typescript-eslint/no-unused-vars
+2025-07-19T14:20:37:   Line 118:26:  'setResultToDelete' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T14:20:37:   Line 120:9:   'queryClient' is assigned a value but never used          @typescript-eslint/no-unused-vars
+2025-07-19T14:20:37: 
+2025-07-19T14:20:37: Search for the keywords to learn more about each warning.
+2025-07-19T14:20:37: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T14:20:37: 
+2025-07-19T14:20:37: WARNING in [eslint] 
+2025-07-19T14:20:37: src/pages/Results.tsx
+2025-07-19T14:20:37:   Line 48:13:   'DeleteIcon' is defined but never used                    @typescript-eslint/no-unused-vars
+2025-07-19T14:20:37:   Line 50:20:   'useMutation' is defined but never used                   @typescript-eslint/no-unused-vars
+2025-07-19T14:20:37:   Line 117:10:  'deleteDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T14:20:37:   Line 117:28:  'setDeleteDialogOpen' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T14:20:37:   Line 118:10:  'resultToDelete' is assigned a value but never used       @typescript-eslint/no-unused-vars
+2025-07-19T14:20:37:   Line 118:26:  'setResultToDelete' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T14:20:37:   Line 120:9:   'queryClient' is assigned a value but never used          @typescript-eslint/no-unused-vars
+2025-07-19T14:20:37: 
+2025-07-19T14:20:37: webpack compiled with 1 warning
+2025-07-19T14:20:37: No issues found.
+2025-07-19T14:21:10: Compiling...
+2025-07-19T14:21:11: Compiled with warnings.
+2025-07-19T14:21:11: 
+2025-07-19T14:21:11: [eslint] 
+2025-07-19T14:21:11: src/pages/Results.tsx
+2025-07-19T14:21:11:   Line 48:13:   'DeleteIcon' is defined but never used                    @typescript-eslint/no-unused-vars
+2025-07-19T14:21:11:   Line 117:10:  'deleteDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T14:21:11:   Line 135:9:   'handleDeleteClick' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T14:21:11:   Line 140:9:   'handleDeleteConfirm' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T14:21:11:   Line 146:9:   'handleDeleteCancel' is assigned a value but never used   @typescript-eslint/no-unused-vars
+2025-07-19T14:21:11: 
+2025-07-19T14:21:11: Search for the keywords to learn more about each warning.
+2025-07-19T14:21:11: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T14:21:11: 
+2025-07-19T14:21:11: WARNING in [eslint] 
+2025-07-19T14:21:11: src/pages/Results.tsx
+2025-07-19T14:21:11:   Line 48:13:   'DeleteIcon' is defined but never used                    @typescript-eslint/no-unused-vars
+2025-07-19T14:21:11:   Line 117:10:  'deleteDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T14:21:11:   Line 135:9:   'handleDeleteClick' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T14:21:11:   Line 140:9:   'handleDeleteConfirm' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T14:21:11:   Line 146:9:   'handleDeleteCancel' is assigned a value but never used   @typescript-eslint/no-unused-vars
+2025-07-19T14:21:11: 
+2025-07-19T14:21:11: webpack compiled with 1 warning
+2025-07-19T14:21:11: No issues found.
+2025-07-19T14:21:29: Compiling...
+2025-07-19T14:21:30: Compiled with warnings.
+2025-07-19T14:21:30: 
+2025-07-19T14:21:30: [eslint] 
+2025-07-19T14:21:30: src/pages/Results.tsx
+2025-07-19T14:21:30:   Line 117:10:  'deleteDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T14:21:30:   Line 140:9:   'handleDeleteConfirm' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T14:21:30:   Line 146:9:   'handleDeleteCancel' is assigned a value but never used   @typescript-eslint/no-unused-vars
+2025-07-19T14:21:30: 
+2025-07-19T14:21:30: Search for the keywords to learn more about each warning.
+2025-07-19T14:21:30: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T14:21:30: 
+2025-07-19T14:21:30: WARNING in [eslint] 
+2025-07-19T14:21:30: src/pages/Results.tsx
+2025-07-19T14:21:30:   Line 117:10:  'deleteDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T14:21:30:   Line 140:9:   'handleDeleteConfirm' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T14:21:30:   Line 146:9:   'handleDeleteCancel' is assigned a value but never used   @typescript-eslint/no-unused-vars
+2025-07-19T14:21:30: 
+2025-07-19T14:21:30: webpack compiled with 1 warning
+2025-07-19T14:21:30: No issues found.
+2025-07-19T14:21:49: Compiling...
+2025-07-19T14:21:51: Compiled successfully!
+2025-07-19T14:21:51: webpack compiled successfully
+2025-07-19T14:21:51: No issues found.
+2025-07-19T14:22:27: 
+2025-07-19T14:22:27: > frontend@0.1.0 start
+2025-07-19T14:22:27: > react-scripts start
+2025-07-19T14:22:27: 
+2025-07-19T14:22:28: Starting the development server...
+2025-07-19T14:22:28: 
+2025-07-19T14:22:32: Compiled successfully!
+2025-07-19T14:22:32: 
+2025-07-19T14:22:32: You can now view frontend in the browser.
+2025-07-19T14:22:32: 
+2025-07-19T14:22:32:   Local:            http://localhost:3000
+2025-07-19T14:22:32:   On Your Network:  http://192.168.1.119:3000
+2025-07-19T14:22:32: 
+2025-07-19T14:22:32: Note that the development build is not optimized.
+2025-07-19T14:22:32: To create a production build, use npm run build.
+2025-07-19T14:22:32: 
+2025-07-19T14:22:32: webpack compiled successfully
+2025-07-19T14:22:32: No issues found.
+2025-07-19T14:26:23: Compiling...
+2025-07-19T14:26:25: Compiled successfully!
+2025-07-19T14:26:25: webpack compiled successfully
+2025-07-19T14:26:25: No issues found.
+2025-07-19T14:27:01: 
+2025-07-19T14:27:01: > frontend@0.1.0 start
+2025-07-19T14:27:01: > react-scripts start
+2025-07-19T14:27:01: 
+2025-07-19T14:27:03: Starting the development server...
+2025-07-19T14:27:03: 
+2025-07-19T14:27:06: Compiled successfully!
+2025-07-19T14:27:06: 
+2025-07-19T14:27:06: You can now view frontend in the browser.
+2025-07-19T14:27:06: 
+2025-07-19T14:27:06:   Local:            http://localhost:3000
+2025-07-19T14:27:06:   On Your Network:  http://192.168.1.119:3000
+2025-07-19T14:27:06: 
+2025-07-19T14:27:06: Note that the development build is not optimized.
+2025-07-19T14:27:06: To create a production build, use npm run build.
+2025-07-19T14:27:06: 
+2025-07-19T14:27:06: webpack compiled successfully
+2025-07-19T14:27:06: No issues found.
+2025-07-19T14:55:34: Compiling...
+2025-07-19T14:55:37: Compiled successfully!
+2025-07-19T14:55:37: webpack compiled successfully
+2025-07-19T14:55:37: No issues found.
+2025-07-19T14:55:59: Compiling...
+2025-07-19T14:56:00: Compiled successfully!
+2025-07-19T14:56:00: webpack compiled successfully
+2025-07-19T14:56:01: No issues found.
+2025-07-19T14:56:20: Compiling...
+2025-07-19T14:56:22: Compiled successfully!
+2025-07-19T14:56:22: webpack compiled successfully
+2025-07-19T14:56:22: No issues found.
+2025-07-19T14:56:35: Compiling...
+2025-07-19T14:56:37: Compiled successfully!
+2025-07-19T14:56:37: webpack compiled successfully
+2025-07-19T14:56:37: No issues found.
+2025-07-19T14:57:10: 
+2025-07-19T14:57:10: > frontend@0.1.0 start
+2025-07-19T14:57:10: > react-scripts start
+2025-07-19T14:57:10: 
+2025-07-19T14:57:12: Starting the development server...
+2025-07-19T14:57:12: 
+2025-07-19T14:57:15: Compiled successfully!
+2025-07-19T14:57:15: 
+2025-07-19T14:57:15: You can now view frontend in the browser.
+2025-07-19T14:57:15: 
+2025-07-19T14:57:15:   Local:            http://localhost:3000
+2025-07-19T14:57:15:   On Your Network:  http://192.168.1.119:3000
+2025-07-19T14:57:15: 
+2025-07-19T14:57:15: Note that the development build is not optimized.
+2025-07-19T14:57:15: To create a production build, use npm run build.
+2025-07-19T14:57:15: 
+2025-07-19T14:57:15: webpack compiled successfully
+2025-07-19T14:57:15: No issues found.
+2025-07-19T15:00:10: Compiling...
+2025-07-19T15:00:12: Compiled successfully!
+2025-07-19T15:00:12: webpack compiled successfully
+2025-07-19T15:00:12: No issues found.
+2025-07-19T15:00:40: 
+2025-07-19T15:00:40: > frontend@0.1.0 start
+2025-07-19T15:00:40: > react-scripts start
+2025-07-19T15:00:40: 
+2025-07-19T15:00:42: Starting the development server...
+2025-07-19T15:00:42: 
+2025-07-19T15:00:45: Compiled successfully!
+2025-07-19T15:00:45: 
+2025-07-19T15:00:45: You can now view frontend in the browser.
+2025-07-19T15:00:45: 
+2025-07-19T15:00:45:   Local:            http://localhost:3000
+2025-07-19T15:00:45:   On Your Network:  http://192.168.1.119:3000
+2025-07-19T15:00:45: 
+2025-07-19T15:00:45: Note that the development build is not optimized.
+2025-07-19T15:00:45: To create a production build, use npm run build.
+2025-07-19T15:00:45: 
+2025-07-19T15:00:45: webpack compiled successfully
+2025-07-19T15:00:45: No issues found.
+2025-07-19T15:11:29: Compiling...
+2025-07-19T15:11:30: Compiled successfully!
+2025-07-19T15:11:30: webpack compiled successfully
+2025-07-19T15:11:30: Files successfully emitted, waiting for typecheck results...
+2025-07-19T15:11:30: Issues checking in progress...
+2025-07-19T15:11:31: No issues found.
+2025-07-19T15:11:42: Compiling...
+2025-07-19T15:11:44: Compiled with warnings.
+2025-07-19T15:11:44: 
+2025-07-19T15:11:44: [eslint] 
+2025-07-19T15:11:44: src/pages/Results.tsx
+2025-07-19T15:11:44:   Line 119:10:  'cancelDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T15:11:44:   Line 119:28:  'setCancelDialogOpen' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T15:11:44:   Line 120:10:  'resultToCancel' is assigned a value but never used       @typescript-eslint/no-unused-vars
+2025-07-19T15:11:44:   Line 120:26:  'setResultToCancel' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T15:11:44: 
+2025-07-19T15:11:44: Search for the keywords to learn more about each warning.
+2025-07-19T15:11:44: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T15:11:44: 
+2025-07-19T15:11:44: WARNING in [eslint] 
+2025-07-19T15:11:44: src/pages/Results.tsx
+2025-07-19T15:11:44:   Line 119:10:  'cancelDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T15:11:44:   Line 119:28:  'setCancelDialogOpen' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T15:11:44:   Line 120:10:  'resultToCancel' is assigned a value but never used       @typescript-eslint/no-unused-vars
+2025-07-19T15:11:44:   Line 120:26:  'setResultToCancel' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T15:11:44: 
+2025-07-19T15:11:44: webpack compiled with 1 warning
+2025-07-19T15:11:44: No issues found.
+2025-07-19T15:12:02: Compiling...
+2025-07-19T15:12:04: Compiled with warnings.
+2025-07-19T15:12:04: 
+2025-07-19T15:12:04: [eslint] 
+2025-07-19T15:12:04: src/pages/Results.tsx
+2025-07-19T15:12:04:   Line 119:10:  'cancelDialogOpen' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T15:12:04:   Line 120:10:  'resultToCancel' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T15:12:04:   Line 138:9:   'cancelMutation' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T15:12:04: 
+2025-07-19T15:12:04: Search for the keywords to learn more about each warning.
+2025-07-19T15:12:04: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T15:12:04: 
+2025-07-19T15:12:04: WARNING in [eslint] 
+2025-07-19T15:12:04: src/pages/Results.tsx
+2025-07-19T15:12:04:   Line 119:10:  'cancelDialogOpen' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T15:12:04:   Line 120:10:  'resultToCancel' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T15:12:04:   Line 138:9:   'cancelMutation' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T15:12:04: 
+2025-07-19T15:12:04: webpack compiled with 1 warning
+2025-07-19T15:12:04: No issues found.
+2025-07-19T15:12:21: Compiling...
+2025-07-19T15:12:23: Compiled with warnings.
+2025-07-19T15:12:23: 
+2025-07-19T15:12:23: [eslint] 
+2025-07-19T15:12:23: src/pages/Results.tsx
+2025-07-19T15:12:23:   Line 119:10:  'cancelDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T15:12:23:   Line 166:9:   'handleCancelClick' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T15:12:23:   Line 171:9:   'handleCancelConfirm' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T15:12:23:   Line 177:9:   'handleCancelCancel' is assigned a value but never used   @typescript-eslint/no-unused-vars
+2025-07-19T15:12:23: 
+2025-07-19T15:12:23: Search for the keywords to learn more about each warning.
+2025-07-19T15:12:23: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T15:12:23: 
+2025-07-19T15:12:23: WARNING in [eslint] 
+2025-07-19T15:12:23: src/pages/Results.tsx
+2025-07-19T15:12:23:   Line 119:10:  'cancelDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T15:12:23:   Line 166:9:   'handleCancelClick' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T15:12:23:   Line 171:9:   'handleCancelConfirm' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T15:12:23:   Line 177:9:   'handleCancelCancel' is assigned a value but never used   @typescript-eslint/no-unused-vars
+2025-07-19T15:12:23: 
+2025-07-19T15:12:23: webpack compiled with 1 warning
+2025-07-19T15:12:23: No issues found.
+2025-07-19T15:12:40: Compiling...
+2025-07-19T15:12:42: Compiled with warnings.
+2025-07-19T15:12:42: 
+2025-07-19T15:12:42: [eslint] 
+2025-07-19T15:12:42: src/pages/Results.tsx
+2025-07-19T15:12:42:   Line 49:11:   'StopIcon' is defined but never used                      @typescript-eslint/no-unused-vars
+2025-07-19T15:12:42:   Line 120:10:  'cancelDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T15:12:42:   Line 167:9:   'handleCancelClick' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T15:12:42:   Line 172:9:   'handleCancelConfirm' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T15:12:42:   Line 178:9:   'handleCancelCancel' is assigned a value but never used   @typescript-eslint/no-unused-vars
+2025-07-19T15:12:42: 
+2025-07-19T15:12:42: Search for the keywords to learn more about each warning.
+2025-07-19T15:12:42: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T15:12:42: 
+2025-07-19T15:12:42: WARNING in [eslint] 
+2025-07-19T15:12:42: src/pages/Results.tsx
+2025-07-19T15:12:42:   Line 49:11:   'StopIcon' is defined but never used                      @typescript-eslint/no-unused-vars
+2025-07-19T15:12:42:   Line 120:10:  'cancelDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T15:12:42:   Line 167:9:   'handleCancelClick' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T15:12:42:   Line 172:9:   'handleCancelConfirm' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T15:12:42:   Line 178:9:   'handleCancelCancel' is assigned a value but never used   @typescript-eslint/no-unused-vars
+2025-07-19T15:12:42: 
+2025-07-19T15:12:42: webpack compiled with 1 warning
+2025-07-19T15:12:42: No issues found.
+2025-07-19T15:13:01: Compiling...
+2025-07-19T15:13:02: Compiled with warnings.
+2025-07-19T15:13:02: 
+2025-07-19T15:13:02: [eslint] 
+2025-07-19T15:13:02: src/pages/Results.tsx
+2025-07-19T15:13:02:   Line 49:11:   'StopIcon' is defined but never used                      @typescript-eslint/no-unused-vars
+2025-07-19T15:13:02:   Line 120:10:  'cancelDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T15:13:02:   Line 167:9:   'handleCancelClick' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T15:13:02:   Line 172:9:   'handleCancelConfirm' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T15:13:02:   Line 178:9:   'handleCancelCancel' is assigned a value but never used   @typescript-eslint/no-unused-vars
+2025-07-19T15:13:02: 
+2025-07-19T15:13:02: Search for the keywords to learn more about each warning.
+2025-07-19T15:13:02: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T15:13:02: 
+2025-07-19T15:13:02: WARNING in [eslint] 
+2025-07-19T15:13:02: src/pages/Results.tsx
+2025-07-19T15:13:02:   Line 49:11:   'StopIcon' is defined but never used                      @typescript-eslint/no-unused-vars
+2025-07-19T15:13:02:   Line 120:10:  'cancelDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T15:13:02:   Line 167:9:   'handleCancelClick' is assigned a value but never used    @typescript-eslint/no-unused-vars
+2025-07-19T15:13:02:   Line 172:9:   'handleCancelConfirm' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T15:13:02:   Line 178:9:   'handleCancelCancel' is assigned a value but never used   @typescript-eslint/no-unused-vars
+2025-07-19T15:13:02: 
+2025-07-19T15:13:02: webpack compiled with 1 warning
+2025-07-19T15:13:02: No issues found.
+2025-07-19T15:13:47: Compiling...
+2025-07-19T15:13:48: Compiled with warnings.
+2025-07-19T15:13:48: 
+2025-07-19T15:13:48: [eslint] 
+2025-07-19T15:13:48: src/pages/Results.tsx
+2025-07-19T15:13:48:   Line 120:10:  'cancelDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T15:13:48:   Line 172:9:   'handleCancelConfirm' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T15:13:48:   Line 178:9:   'handleCancelCancel' is assigned a value but never used   @typescript-eslint/no-unused-vars
+2025-07-19T15:13:48: 
+2025-07-19T15:13:48: Search for the keywords to learn more about each warning.
+2025-07-19T15:13:48: To ignore, add // eslint-disable-next-line to the line before.
+2025-07-19T15:13:48: 
+2025-07-19T15:13:48: WARNING in [eslint] 
+2025-07-19T15:13:48: src/pages/Results.tsx
+2025-07-19T15:13:48:   Line 120:10:  'cancelDialogOpen' is assigned a value but never used     @typescript-eslint/no-unused-vars
+2025-07-19T15:13:48:   Line 172:9:   'handleCancelConfirm' is assigned a value but never used  @typescript-eslint/no-unused-vars
+2025-07-19T15:13:48:   Line 178:9:   'handleCancelCancel' is assigned a value but never used   @typescript-eslint/no-unused-vars
+2025-07-19T15:13:48: 
+2025-07-19T15:13:48: webpack compiled with 1 warning
+2025-07-19T15:13:48: No issues found.
+2025-07-19T15:14:10: Compiling...
+2025-07-19T15:14:12: Compiled successfully!
+2025-07-19T15:14:12: webpack compiled successfully
+2025-07-19T15:14:12: No issues found.
+2025-07-19T15:14:48: 
+2025-07-19T15:14:48: > frontend@0.1.0 start
+2025-07-19T15:14:48: > react-scripts start
+2025-07-19T15:14:48: 
+2025-07-19T15:14:50: Starting the development server...
+2025-07-19T15:14:50: 
+2025-07-19T15:14:53: Compiled successfully!
+2025-07-19T15:14:53: 
+2025-07-19T15:14:53: You can now view frontend in the browser.
+2025-07-19T15:14:53: 
+2025-07-19T15:14:53:   Local:            http://localhost:3000
+2025-07-19T15:14:53:   On Your Network:  http://192.168.1.119:3000
+2025-07-19T15:14:53: 
+2025-07-19T15:14:53: Note that the development build is not optimized.
+2025-07-19T15:14:53: To create a production build, use npm run build.
+2025-07-19T15:14:53: 
+2025-07-19T15:14:53: webpack compiled successfully
+2025-07-19T15:14:53: No issues found.
