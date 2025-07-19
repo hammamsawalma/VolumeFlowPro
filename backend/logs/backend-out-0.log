@@ -10705,3 +10705,27 @@
 2025-07-19T15:00:40: [32m[nodemon] starting `ts-node src/server.ts`[39m
 2025-07-19T15:00:42: Server running on port 5001
 2025-07-19T15:00:42: Connected to MongoDB
+2025-07-19T15:10:03: [32m[nodemon] restarting due to changes...[39m
+2025-07-19T15:10:03: [32m[nodemon] starting `ts-node src/server.ts`[39m
+2025-07-19T15:10:05: Server running on port 5001
+2025-07-19T15:10:05: Connected to MongoDB
+2025-07-19T15:10:38: [32m[nodemon] restarting due to changes...[39m
+2025-07-19T15:10:38: [32m[nodemon] starting `ts-node src/server.ts`[39m
+2025-07-19T15:10:40: Server running on port 5001
+2025-07-19T15:10:40: Connected to MongoDB
+2025-07-19T15:10:57: [32m[nodemon] restarting due to changes...[39m
+2025-07-19T15:10:57: [32m[nodemon] starting `ts-node src/server.ts`[39m
+2025-07-19T15:10:59: Server running on port 5001
+2025-07-19T15:10:59: Connected to MongoDB
+2025-07-19T15:14:48: 
+2025-07-19T15:14:48: > backend@1.0.0 dev
+2025-07-19T15:14:48: > nodemon src/server.ts
+2025-07-19T15:14:48: 
+2025-07-19T15:14:48: [33m[nodemon] 3.1.10[39m
+2025-07-19T15:14:48: [33m[nodemon] to restart at any time, enter `rs`[39m
+2025-07-19T15:14:48: [33m[nodemon] watching path(s): *.*[39m
+2025-07-19T15:14:48: [33m[nodemon] watching extensions: ts,json[39m
+2025-07-19T15:14:48: [32m[nodemon] starting `ts-node src/server.ts`[39m
+2025-07-19T15:14:50: Server running on port 5001
+2025-07-19T15:14:50: Connected to MongoDB
+2025-07-19T15:15:15: Found 453 USDT perpetual symbols

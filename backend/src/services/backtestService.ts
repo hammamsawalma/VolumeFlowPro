@@ -178,7 +178,7 @@ export class BacktestService {
    */
   private async updateBacktestStatus(
     backtestId: string,
-    status: 'PENDING' | 'RUNNING' | 'COMPLETED' | 'FAILED',
+    status: 'PENDING' | 'RUNNING' | 'COMPLETED' | 'FAILED' | 'CANCELLED',
     progress: number,
     error?: string
   ): Promise<void> {
@@ -258,7 +258,7 @@ export class BacktestService {
   async cancelBacktest(backtestId: string): Promise<boolean> {
     const result = await BacktestResultModel.findOneAndUpdate(
       { id: backtestId, status: { $in: ['PENDING', 'RUNNING'] } },
-      { status: 'FAILED', error: 'Cancelled by user' }
+      { status: 'CANCELLED', error: 'Cancelled by user' }
     );
     return result !== null;
   }

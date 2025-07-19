@@ -81,7 +81,7 @@ export interface BacktestResult {
   };
   createdAt: Date;
   completedAt: Date | null;
-  status: 'PENDING' | 'RUNNING' | 'COMPLETED' | 'FAILED';
+  status: 'PENDING' | 'RUNNING' | 'COMPLETED' | 'FAILED' | 'CANCELLED';
   progress: number;
   error?: string;
 }
