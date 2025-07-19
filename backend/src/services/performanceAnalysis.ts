@@ -14,12 +14,23 @@ export class PerformanceAnalysisService {
     const entryPrice = signal.price;
     const lookforwardCandles = config.lookforwardCandles;
     
+    // Validate inputs
+    if (!signal || !candles || signalIndex < 0 || signalIndex >= candles.length) {
+      console.warn(`Invalid inputs for performance analysis: signalIndex=${signalIndex}, candles.length=${candles?.length}`);
+      return this.createEmptyPerformance(signal, entryPrice);
+    }
+
+    if (entryPrice <= 0) {
+      console.warn(`Invalid entry price: ${entryPrice} for signal ${this.generateSignalId(signal)}`);
+      return this.createEmptyPerformance(signal, entryPrice);
+    }
+    
     // Get the candles to analyze (X candles after the signal)
     const endIndex = Math.min(signalIndex + lookforwardCandles + 1, candles.length);
     const analyzedCandles = candles.slice(signalIndex + 1, endIndex);
     
     if (analyzedCandles.length === 0) {
-      // No data to analyze
+      console.log(`No lookforward data available for signal ${this.generateSignalId(signal)}`);
       return this.createEmptyPerformance(signal, entryPrice);
     }
 
@@ -37,13 +48,19 @@ export class PerformanceAnalysisService {
     for (let i = 0; i < analyzedCandles.length; i++) {
       const candle = analyzedCandles[i];
       
+      // Validate candle data
+      if (!candle || candle.high <= 0 || candle.low <= 0 || candle.high < candle.low) {
+        console.warn(`Invalid candle data at index ${i} for signal ${this.generateSignalId(signal)}`);
+        continue;
+      }
+      
       // For BUY signals, we look for upward movement (drawup) and downward movement (drawdown)
       // For SELL signals, we look for downward movement (drawup) and upward movement (drawdown)
       
       if (signal.type === 'PRIMARY_BUY' || signal.type === 'BASIC_BUY') {
         // BUY signals: drawup is upward price movement, drawdown is downward price movement
-        const highDrawup = candle.high - entryPrice;
-        const lowDrawdown = entryPrice - candle.low;
+        const highDrawup = Math.max(0, candle.high - entryPrice);
+        const lowDrawdown = Math.max(0, entryPrice - candle.low);
         
         if (highDrawup > maxDrawup) {
           maxDrawup = highDrawup;
@@ -59,8 +76,8 @@ export class PerformanceAnalysisService {
         
       } else {
         // SELL signals: drawup is downward price movement, drawdown is upward price movement
-        const lowDrawup = entryPrice - candle.low;
-        const highDrawdown = candle.high - entryPrice;
+        const lowDrawup = Math.max(0, entryPrice - candle.low);
+        const highDrawdown = Math.max(0, candle.high - entryPrice);
         
         if (lowDrawup > maxDrawup) {
           maxDrawup = lowDrawup;
@@ -76,8 +93,18 @@ export class PerformanceAnalysisService {
       }
     }
 
-    // Calculate risk/reward ratio
-    const riskRewardRatio = maxDrawdown > 0 ? maxDrawup / maxDrawdown : maxDrawup > 0 ? Infinity : 0;
+    // Calculate risk/reward ratio with proper handling of edge cases
+    let riskRewardRatio = 0;
+    if (maxDrawdown > 0) {
+      riskRewardRatio = maxDrawup / maxDrawdown;
+    } else if (maxDrawup > 0) {
+      riskRewardRatio = Infinity;
+    }
+
+    // Ensure finite values
+    if (!isFinite(riskRewardRatio)) {
+      riskRewardRatio = maxDrawup > 0 ? 999999 : 0; // Cap infinity at a large number
+    }
     
     // Determine if signal was successful (drawup > drawdown)
     const isSuccessful = maxDrawup > maxDrawdown;

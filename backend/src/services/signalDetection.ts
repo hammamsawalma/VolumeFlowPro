@@ -85,7 +85,7 @@ export class SignalDetectionService {
     currentIndex: number,
     config: BacktestConfig
   ): SignalDetection | null {
-    if (currentIndex < 2) return null;
+    if (currentIndex < 2 || !config.enabledSignals.primaryBuy) return null;
 
     const current = candles[currentIndex];
     const prev1 = candles[currentIndex - 1];
@@ -266,8 +266,19 @@ export class SignalDetectionService {
   ): SignalDetection[] {
     const signals: SignalDetection[] = [];
 
-    // Start from index 2 since we need at least 3 candles for pattern detection
-    for (let i = Math.max(2, config.volumeMaLength); i < candles.length; i++) {
+    // Validate input data
+    if (!candles || candles.length < 3) {
+      console.log(`Insufficient data for ${symbol} ${timeframe}: ${candles?.length || 0} candles`);
+      return signals;
+    }
+
+    // Start from the minimum required index for volume analysis, but not too late
+    // Use the smaller of volumeMaLength and a reasonable maximum (50) to avoid starting too late
+    const startIndex = Math.max(2, Math.min(config.volumeMaLength, 50));
+    
+    console.log(`Processing ${symbol} ${timeframe}: ${candles.length} candles, starting from index ${startIndex}`);
+
+    for (let i = startIndex; i < candles.length; i++) {
       const detectedSignals: (SignalDetection | null)[] = [
         config.enabledSignals.primaryBuy ? this.detectPrimaryBuySignal(candles, i, config) : null,
         config.enabledSignals.basicBuy ? this.detectBasicBuySignal(candles, i, config) : null,
@@ -284,6 +295,7 @@ export class SignalDetectionService {
       });
     }
 
+    console.log(`Found ${signals.length} signals for ${symbol} ${timeframe}`);
     return signals;
   }
 }

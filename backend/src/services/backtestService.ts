@@ -89,6 +89,8 @@ export class BacktestService {
             const startDate = new Date(config.startDate);
             const endDate = new Date(config.endDate);
             
+            console.log(`Fetching data for ${symbol} ${timeframe} from ${startDate.toISOString()} to ${endDate.toISOString()}`);
+            
             const { data: candles, dataRange } = await this.binanceService.getHistoricalDataBatched(
               symbol,
               timeframe,
@@ -97,11 +99,17 @@ export class BacktestService {
             );
 
             if (candles.length === 0) {
-              console.log(`No data available for ${symbol} ${timeframe}`);
+              console.log(`No data available for ${symbol} ${timeframe} - skipping`);
               continue;
             }
 
-            console.log(`Fetched ${candles.length} candles for ${symbol} ${timeframe}`);
+            // Validate data quality
+            if (candles.length < config.volumeMaLength + config.lookforwardCandles) {
+              console.log(`Insufficient data for ${symbol} ${timeframe}: ${candles.length} candles (need at least ${config.volumeMaLength + config.lookforwardCandles})`);
+              continue;
+            }
+
+            console.log(`Fetched ${candles.length} candles for ${symbol} ${timeframe} (${dataRange.start.toISOString()} to ${dataRange.end.toISOString()})`);
 
             // Detect signals
             const signals = this.signalDetectionService.detectSignals(
@@ -114,13 +122,14 @@ export class BacktestService {
             console.log(`Detected ${signals.length} signals for ${symbol} ${timeframe}`);
 
             // Analyze performance for each signal
+            let processedSignals = 0;
             for (let i = 0; i < signals.length; i++) {
               const signal = signals[i];
               
               // Find the signal's index in the candles array
               const signalIndex = candles.findIndex(c => c.timestamp === signal.timestamp);
               
-              if (signalIndex >= 0) {
+              if (signalIndex >= 0 && signalIndex < candles.length - config.lookforwardCandles) {
                 const performance = this.performanceAnalysisService.analyzeSignalPerformance(
                   signal,
                   candles,
@@ -130,8 +139,13 @@ export class BacktestService {
                 
                 allSignals.push(signal);
                 allPerformances.push(performance);
+                processedSignals++;
+              } else {
+                console.log(`Skipping signal at ${new Date(signal.timestamp).toISOString()} - insufficient lookforward data`);
               }
             }
+            
+            console.log(`Processed ${processedSignals}/${signals.length} signals for ${symbol} ${timeframe}`);
 
             completedCombinations++;
             const progress = Math.round((completedCombinations / totalCombinations) * 100);

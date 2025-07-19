@@ -107,7 +107,7 @@ const BacktestResultSchema = new Schema({
   completedAt: { type: Date, default: null },
   status: {
     type: String,
-    enum: ['PENDING', 'RUNNING', 'COMPLETED', 'FAILED'],
+    enum: ['PENDING', 'RUNNING', 'COMPLETED', 'FAILED', 'CANCELLED'],
     required: true,
     default: 'PENDING'
   },
@@ -115,8 +115,7 @@ const BacktestResultSchema = new Schema({
   error: { type: String, default: null }
 });
 
-// Add indexes for better query performance
-BacktestResultSchema.index({ id: 1 });
+// Add indexes for better query performance (id already has unique index)
 BacktestResultSchema.index({ status: 1 });
 BacktestResultSchema.index({ createdAt: -1 });
 BacktestResultSchema.index({ 'config.symbols': 1 });

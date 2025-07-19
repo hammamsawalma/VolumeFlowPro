@@ -1010,3 +1010,21 @@
 2025-07-19T15:14:53: 
 2025-07-19T15:14:53: webpack compiled successfully
 2025-07-19T15:14:53: No issues found.
+2025-07-19T16:36:11: 
+2025-07-19T16:36:11: > frontend@0.1.0 start
+2025-07-19T16:36:11: > react-scripts start
+2025-07-19T16:36:11: 
+2025-07-19T16:36:12: Starting the development server...
+2025-07-19T16:36:12: 
+2025-07-19T16:36:15: Compiled successfully!
+2025-07-19T16:36:15: 
+2025-07-19T16:36:15: You can now view frontend in the browser.
+2025-07-19T16:36:15: 
+2025-07-19T16:36:15:   Local:            http://localhost:3000
+2025-07-19T16:36:15:   On Your Network:  http://192.168.1.119:3000
+2025-07-19T16:36:15: 
+2025-07-19T16:36:15: Note that the development build is not optimized.
+2025-07-19T16:36:15: To create a production build, use npm run build.
+2025-07-19T16:36:15: 
+2025-07-19T16:36:15: webpack compiled successfully
+2025-07-19T16:36:15: No issues found.

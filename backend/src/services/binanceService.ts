@@ -169,10 +169,12 @@ export class BinanceService {
     
     let actualStartTime: number | null = null;
     let actualEndTime: number | null = null;
+    let consecutiveErrors = 0;
+    const maxConsecutiveErrors = 3;
 
     console.log(`Fetching data for ${symbol} from ${startDate.toISOString()} to ${endDate.toISOString()}`);
 
-    while (currentStart < endTime) {
+    while (currentStart < endTime && consecutiveErrors < maxConsecutiveErrors) {
       const currentEnd = Math.min(currentStart + maxBatchTimespan, endTime);
       
       try {
@@ -185,12 +187,35 @@ export class BinanceService {
         );
 
         if (batchData.length > 0) {
-          allCandles.push(...batchData);
-          
-          if (actualStartTime === null) {
-            actualStartTime = batchData[0].timestamp;
+          // Validate data quality
+          const validCandles = batchData.filter(candle => 
+            candle.timestamp > 0 &&
+            candle.open > 0 &&
+            candle.high > 0 &&
+            candle.low > 0 &&
+            candle.close > 0 &&
+            candle.volume >= 0 &&
+            candle.high >= candle.low &&
+            candle.high >= Math.max(candle.open, candle.close) &&
+            candle.low <= Math.min(candle.open, candle.close)
+          );
+
+          if (validCandles.length !== batchData.length) {
+            console.warn(`Filtered out ${batchData.length - validCandles.length} invalid candles for ${symbol} ${timeframe}`);
           }
-          actualEndTime = batchData[batchData.length - 1].timestamp;
+
+          allCandles.push(...validCandles);
+          
+          if (actualStartTime === null && validCandles.length > 0) {
+            actualStartTime = validCandles[0].timestamp;
+          }
+          if (validCandles.length > 0) {
+            actualEndTime = validCandles[validCandles.length - 1].timestamp;
+          }
+          
+          consecutiveErrors = 0; // Reset error counter on success
+        } else {
+          console.warn(`No data returned for ${symbol} ${timeframe} batch starting at ${new Date(currentStart).toISOString()}`);
         }
 
         // Move to next batch
@@ -199,9 +224,18 @@ export class BinanceService {
         // Small delay between requests to be respectful to the API
         await new Promise(resolve => setTimeout(resolve, 100));
         
-      } catch (error) {
-        console.error(`Error fetching batch starting at ${new Date(currentStart).toISOString()}:`, error);
-        break;
+      } catch (error: any) {
+        consecutiveErrors++;
+        console.error(`Error fetching batch ${consecutiveErrors}/${maxConsecutiveErrors} starting at ${new Date(currentStart).toISOString()}:`, error.message);
+        
+        if (consecutiveErrors >= maxConsecutiveErrors) {
+          console.error(`Too many consecutive errors for ${symbol} ${timeframe}, stopping batch fetch`);
+          break;
+        }
+        
+        // Wait longer before retrying after an error
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        currentStart = currentEnd + timeframeMs;
       }
     }
 
@@ -218,6 +252,10 @@ export class BinanceService {
     };
 
     console.log(`Fetched ${uniqueCandles.length} candles for ${symbol}, actual range: ${dataRange.start.toISOString()} to ${dataRange.end.toISOString()}`);
+
+    if (uniqueCandles.length === 0) {
+      console.warn(`No valid data fetched for ${symbol} ${timeframe}`);
+    }
 
     return {
       data: uniqueCandles,
