@@ -88,3 +88,7 @@
 2025-07-19T14:22:29: (Use `node --trace-warnings ...` to show where the warning was created)
 2025-07-19T14:27:03: (node:37472) [MONGOOSE] Warning: Duplicate schema index on {"id":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
 2025-07-19T14:27:03: (Use `node --trace-warnings ...` to show where the warning was created)
+2025-07-19T14:57:12: (node:43075) [MONGOOSE] Warning: Duplicate schema index on {"id":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+2025-07-19T14:57:12: (Use `node --trace-warnings ...` to show where the warning was created)
+2025-07-19T15:00:42: (node:44076) [MONGOOSE] Warning: Duplicate schema index on {"id":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+2025-07-19T15:00:42: (Use `node --trace-warnings ...` to show where the warning was created)
