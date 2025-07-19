@@ -3,7 +3,7 @@ import { CandleData, SignalDetection, SignalPerformance, BacktestConfig } from '
 export class PerformanceAnalysisService {
 
   /**
-   * Analyze signal performance by looking forward X candles
+   * Analyze signal performance by looking forward X candles with enhanced validation
    */
   public analyzeSignalPerformance(
     signal: SignalDetection,
@@ -14,13 +14,13 @@ export class PerformanceAnalysisService {
     const entryPrice = signal.price;
     const lookforwardCandles = config.lookforwardCandles;
     
-    // Validate inputs
+    // Enhanced input validation
     if (!signal || !candles || signalIndex < 0 || signalIndex >= candles.length) {
       console.warn(`Invalid inputs for performance analysis: signalIndex=${signalIndex}, candles.length=${candles?.length}`);
       return this.createEmptyPerformance(signal, entryPrice);
     }
 
-    if (entryPrice <= 0) {
+    if (entryPrice <= 0 || !isFinite(entryPrice)) {
       console.warn(`Invalid entry price: ${entryPrice} for signal ${this.generateSignalId(signal)}`);
       return this.createEmptyPerformance(signal, entryPrice);
     }
@@ -34,6 +34,29 @@ export class PerformanceAnalysisService {
       return this.createEmptyPerformance(signal, entryPrice);
     }
 
+    // Validate lookforward candles
+    const validCandles = analyzedCandles.filter(candle => 
+      candle && 
+      candle.high > 0 && 
+      candle.low > 0 && 
+      candle.close > 0 && 
+      candle.open > 0 &&
+      candle.high >= candle.low &&
+      isFinite(candle.high) && 
+      isFinite(candle.low) && 
+      isFinite(candle.close) && 
+      isFinite(candle.open)
+    );
+
+    if (validCandles.length === 0) {
+      console.warn(`No valid lookforward candles for signal ${this.generateSignalId(signal)}`);
+      return this.createEmptyPerformance(signal, entryPrice);
+    }
+
+    if (validCandles.length < analyzedCandles.length) {
+      console.warn(`Filtered out ${analyzedCandles.length - validCandles.length} invalid lookforward candles for signal ${this.generateSignalId(signal)}`);
+    }
+
     let maxDrawup = 0;
     let maxDrawdown = 0;
     let maxDrawupPercent = 0;
@@ -41,87 +64,124 @@ export class PerformanceAnalysisService {
     let timeToMaxDrawup = 0;
     let timeToMaxDrawdown = 0;
     
-    const finalPrice = analyzedCandles[analyzedCandles.length - 1].close;
+    const finalPrice = validCandles[validCandles.length - 1].close;
     const finalPricePercent = ((finalPrice - entryPrice) / entryPrice) * 100;
 
-    // Analyze each candle in the lookforward period
-    for (let i = 0; i < analyzedCandles.length; i++) {
-      const candle = analyzedCandles[i];
+    // Analyze each valid candle in the lookforward period
+    for (let i = 0; i < validCandles.length; i++) {
+      const candle = validCandles[i];
       
-      // Validate candle data
-      if (!candle || candle.high <= 0 || candle.low <= 0 || candle.high < candle.low) {
-        console.warn(`Invalid candle data at index ${i} for signal ${this.generateSignalId(signal)}`);
+      try {
+        // For BUY signals, we look for upward movement (drawup) and downward movement (drawdown)
+        // For SELL signals, we look for downward movement (drawup) and upward movement (drawdown)
+        
+        if (signal.type === 'PRIMARY_BUY' || signal.type === 'BASIC_BUY') {
+          // BUY signals: drawup is upward price movement, drawdown is downward price movement
+          const highDrawup = Math.max(0, candle.high - entryPrice);
+          const lowDrawdown = Math.max(0, entryPrice - candle.low);
+          
+          if (highDrawup > maxDrawup) {
+            maxDrawup = highDrawup;
+            maxDrawupPercent = (highDrawup / entryPrice) * 100;
+            timeToMaxDrawup = i + 1; // +1 because we start from next candle
+          }
+          
+          if (lowDrawdown > maxDrawdown) {
+            maxDrawdown = lowDrawdown;
+            maxDrawdownPercent = (lowDrawdown / entryPrice) * 100;
+            timeToMaxDrawdown = i + 1;
+          }
+          
+        } else {
+          // SELL signals: drawup is downward price movement, drawdown is upward price movement
+          const lowDrawup = Math.max(0, entryPrice - candle.low);
+          const highDrawdown = Math.max(0, candle.high - entryPrice);
+          
+          if (lowDrawup > maxDrawup) {
+            maxDrawup = lowDrawup;
+            maxDrawupPercent = (lowDrawup / entryPrice) * 100;
+            timeToMaxDrawup = i + 1;
+          }
+          
+          if (highDrawdown > maxDrawdown) {
+            maxDrawdown = highDrawdown;
+            maxDrawdownPercent = (highDrawdown / entryPrice) * 100;
+            timeToMaxDrawdown = i + 1;
+          }
+        }
+      } catch (error: any) {
+        console.warn(`Error analyzing candle ${i} for signal ${this.generateSignalId(signal)}: ${error.message}`);
         continue;
       }
-      
-      // For BUY signals, we look for upward movement (drawup) and downward movement (drawdown)
-      // For SELL signals, we look for downward movement (drawup) and upward movement (drawdown)
-      
-      if (signal.type === 'PRIMARY_BUY' || signal.type === 'BASIC_BUY') {
-        // BUY signals: drawup is upward price movement, drawdown is downward price movement
-        const highDrawup = Math.max(0, candle.high - entryPrice);
-        const lowDrawdown = Math.max(0, entryPrice - candle.low);
-        
-        if (highDrawup > maxDrawup) {
-          maxDrawup = highDrawup;
-          maxDrawupPercent = (highDrawup / entryPrice) * 100;
-          timeToMaxDrawup = i + 1; // +1 because we start from next candle
-        }
-        
-        if (lowDrawdown > maxDrawdown) {
-          maxDrawdown = lowDrawdown;
-          maxDrawdownPercent = (lowDrawdown / entryPrice) * 100;
-          timeToMaxDrawdown = i + 1;
-        }
-        
-      } else {
-        // SELL signals: drawup is downward price movement, drawdown is upward price movement
-        const lowDrawup = Math.max(0, entryPrice - candle.low);
-        const highDrawdown = Math.max(0, candle.high - entryPrice);
-        
-        if (lowDrawup > maxDrawup) {
-          maxDrawup = lowDrawup;
-          maxDrawupPercent = (lowDrawup / entryPrice) * 100;
-          timeToMaxDrawup = i + 1;
-        }
-        
-        if (highDrawdown > maxDrawdown) {
-          maxDrawdown = highDrawdown;
-          maxDrawdownPercent = (highDrawdown / entryPrice) * 100;
-          timeToMaxDrawdown = i + 1;
-        }
-      }
     }
 
-    // Calculate risk/reward ratio with proper handling of edge cases
+    // Enhanced risk/reward ratio calculation with realistic approach
     let riskRewardRatio = 0;
-    if (maxDrawdown > 0) {
+    let isPerfectSignal = false;
+    
+    // Set minimum thresholds for meaningful movements (0.1%)
+    const minMovementThreshold = 0.1;
+    const meaningfulDrawup = maxDrawupPercent >= minMovementThreshold;
+    const meaningfulDrawdown = maxDrawdownPercent >= minMovementThreshold;
+    
+    if (meaningfulDrawdown && meaningfulDrawup) {
+      // Both risk and reward exist - calculate normal R/R ratio
       riskRewardRatio = maxDrawup / maxDrawdown;
-    } else if (maxDrawup > 0) {
-      riskRewardRatio = Infinity;
+    } else if (meaningfulDrawup && !meaningfulDrawdown) {
+      // Only reward, no risk - perfect signal (exclude from R/R averaging)
+      riskRewardRatio = 0; // Will be excluded from averaging
+      isPerfectSignal = true;
+    } else if (meaningfulDrawdown && !meaningfulDrawup) {
+      // Only risk, no reward - failed signal
+      riskRewardRatio = 0;
+    } else {
+      // No meaningful movement in either direction
+      riskRewardRatio = 0;
     }
 
-    // Ensure finite values
-    if (!isFinite(riskRewardRatio)) {
-      riskRewardRatio = maxDrawup > 0 ? 999999 : 0; // Cap infinity at a large number
+    // Ensure finite and reasonable values
+    if (!isFinite(riskRewardRatio) || riskRewardRatio < 0) {
+      riskRewardRatio = 0;
     }
     
-    // Determine if signal was successful (drawup > drawdown)
-    const isSuccessful = maxDrawup > maxDrawdown;
+    // Cap extremely high ratios to reasonable levels
+    if (riskRewardRatio > 100) {
+      riskRewardRatio = 100; // Cap at 100:1 ratio
+    }
+    
+    // Determine if signal was successful with enhanced logic
+    let isSuccessful = false;
+    
+    if (maxDrawup > 0 && maxDrawdown > 0) {
+      // Both movements exist, compare them
+      isSuccessful = maxDrawup > maxDrawdown;
+    } else if (maxDrawup > 0 && maxDrawdown === 0) {
+      // Only positive movement, definitely successful
+      isSuccessful = true;
+    } else if (maxDrawup === 0 && maxDrawdown > 0) {
+      // Only negative movement, definitely unsuccessful
+      isSuccessful = false;
+    } else {
+      // No significant movement in either direction
+      isSuccessful = false;
+    }
 
-    return {
+    // Validate final results
+    const result: SignalPerformance = {
       signalId: this.generateSignalId(signal),
-      maxDrawup,
-      maxDrawdown,
-      maxDrawupPercent,
-      maxDrawdownPercent,
+      maxDrawup: isFinite(maxDrawup) ? maxDrawup : 0,
+      maxDrawdown: isFinite(maxDrawdown) ? maxDrawdown : 0,
+      maxDrawupPercent: isFinite(maxDrawupPercent) ? maxDrawupPercent : 0,
+      maxDrawdownPercent: isFinite(maxDrawdownPercent) ? maxDrawdownPercent : 0,
       riskRewardRatio,
       isSuccessful,
       timeToMaxDrawup,
       timeToMaxDrawdown,
-      finalPrice,
-      finalPricePercent
+      finalPrice: isFinite(finalPrice) ? finalPrice : entryPrice,
+      finalPricePercent: isFinite(finalPricePercent) ? finalPricePercent : 0
     };
+
+    return result;
   }
 
   /**
@@ -151,7 +211,7 @@ export class PerformanceAnalysisService {
   }
 
   /**
-   * Calculate summary statistics for all signals
+   * Calculate summary statistics for all signals with corrected R/R averaging
    */
   public calculateSummaryStatistics(performances: SignalPerformance[]): {
     totalSignals: number;
@@ -162,6 +222,7 @@ export class PerformanceAnalysisService {
     avgDrawdown: number;
     bestSignal: SignalPerformance | null;
     worstSignal: SignalPerformance | null;
+    perfectSignals: number;
   } {
     if (performances.length === 0) {
       return {
@@ -172,7 +233,8 @@ export class PerformanceAnalysisService {
         avgDrawup: 0,
         avgDrawdown: 0,
         bestSignal: null,
-        worstSignal: null
+        worstSignal: null,
+        perfectSignals: 0
       };
     }
 
@@ -180,24 +242,44 @@ export class PerformanceAnalysisService {
     const successfulSignals = performances.filter(p => p.isSuccessful).length;
     const successRate = (successfulSignals / totalSignals) * 100;
 
-    // Calculate averages
-    const avgRiskReward = performances.reduce((sum, p) => {
-      return sum + (isFinite(p.riskRewardRatio) ? p.riskRewardRatio : 0);
-    }, 0) / totalSignals;
+    // Enhanced R/R calculation: Only include signals with both meaningful risk and reward
+    const validRiskRewards = performances
+      .filter(p => {
+        // Only include signals with both drawup and drawdown > 0.1%
+        const hasRisk = p.maxDrawdownPercent >= 0.1;
+        const hasReward = p.maxDrawupPercent >= 0.1;
+        const validRatio = p.riskRewardRatio > 0 && p.riskRewardRatio < 100 && isFinite(p.riskRewardRatio);
+        return hasRisk && hasReward && validRatio;
+      })
+      .map(p => p.riskRewardRatio);
+
+    // Count perfect signals (drawup > 0.1% but drawdown < 0.1%)
+    const perfectSignals = performances.filter(p => 
+      p.maxDrawupPercent >= 0.1 && p.maxDrawdownPercent < 0.1
+    ).length;
+
+    // Calculate realistic average R/R (only from signals with both risk and reward)
+    const avgRiskReward = validRiskRewards.length > 0 
+      ? validRiskRewards.reduce((sum, rr) => sum + rr, 0) / validRiskRewards.length
+      : 0;
 
     const avgDrawup = performances.reduce((sum, p) => sum + p.maxDrawupPercent, 0) / totalSignals;
     const avgDrawdown = performances.reduce((sum, p) => sum + p.maxDrawdownPercent, 0) / totalSignals;
 
-    // Find best and worst signals
-    const bestSignal = performances.reduce((best, current) => {
+    // Find best and worst signals (excluding perfect signals for realistic comparison)
+    const realisticPerformances = performances.filter(p => p.riskRewardRatio < 999999);
+    
+    const bestSignal = realisticPerformances.reduce((best, current) => {
       if (!best) return current;
       return current.riskRewardRatio > best.riskRewardRatio ? current : best;
     }, null as SignalPerformance | null);
 
-    const worstSignal = performances.reduce((worst, current) => {
+    const worstSignal = realisticPerformances.reduce((worst, current) => {
       if (!worst) return current;
       return current.riskRewardRatio < worst.riskRewardRatio ? current : worst;
     }, null as SignalPerformance | null);
+
+    console.log(`R/R Calculation: ${validRiskRewards.length} valid signals, ${perfectSignals} perfect signals, avg R/R: ${avgRiskReward.toFixed(4)}`);
 
     return {
       totalSignals,
@@ -207,7 +289,8 @@ export class PerformanceAnalysisService {
       avgDrawup,
       avgDrawdown,
       bestSignal,
-      worstSignal
+      worstSignal,
+      perfectSignals
     };
   }
 

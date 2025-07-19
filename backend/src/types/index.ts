@@ -78,6 +78,7 @@ export interface BacktestResult {
     avgDrawdown: number;
     bestSignal: SignalPerformance | null;
     worstSignal: SignalPerformance | null;
+    perfectSignals: number;
   };
   createdAt: Date;
   completedAt: Date | null;

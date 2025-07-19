@@ -47,6 +47,7 @@ import {
   ArrowDownward as ArrowDownwardIcon,
   Delete as DeleteIcon,
   Stop as StopIcon,
+  CandlestickChart as ChartIcon,
 } from '@mui/icons-material';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { 
@@ -57,7 +58,8 @@ import {
   getSignalTypeColor,
   getSignalTypeIcon 
 } from '../services/api';
-import { BacktestResult, FilterOptions } from '../types';
+import { BacktestResult, FilterOptions, SignalDetection } from '../types';
+import ChartModal from '../components/ChartModal/ChartModal';
 
 // Chart imports
 import {
@@ -119,6 +121,8 @@ const Results: React.FC = () => {
   const [resultToDelete, setResultToDelete] = useState<BacktestResult | null>(null);
   const [cancelDialogOpen, setCancelDialogOpen] = useState(false);
   const [resultToCancel, setResultToCancel] = useState<BacktestResult | null>(null);
+  const [chartModalOpen, setChartModalOpen] = useState(false);
+  const [selectedSignal, setSelectedSignal] = useState<SignalDetection | null>(null);
 
   const queryClient = useQueryClient();
 
@@ -708,7 +712,7 @@ const Results: React.FC = () => {
                         </TableCell>
                         <TableCell>
                           <Typography variant="body2">
-                            {formatDate(result.createdAt)}
+                            {formatDate(new Date(result.createdAt).getTime())}
                           </Typography>
                         </TableCell>
                         <TableCell>
@@ -1080,6 +1084,7 @@ const Results: React.FC = () => {
                               <SortableTableCell sortKey="maxDrawdownPercent">Max Drawdown</SortableTableCell>
                               <SortableTableCell sortKey="riskRewardRatio">R/R Ratio</SortableTableCell>
                               <SortableTableCell sortKey="isSuccessful">Success</SortableTableCell>
+                              <TableCell>Chart</TableCell>
                             </TableRow>
                           </TableHead>
                           <TableBody>
@@ -1135,6 +1140,20 @@ const Results: React.FC = () => {
                                       <Chip label="❓ Unknown" color="default" size="small" />
                                     )}
                                   </TableCell>
+                                  <TableCell>
+                                    <Tooltip title="View Chart">
+                                      <IconButton
+                                        size="small"
+                                        onClick={() => {
+                                          setSelectedSignal(signal);
+                                          setChartModalOpen(true);
+                                        }}
+                                        color="primary"
+                                      >
+                                        <ChartIcon />
+                                      </IconButton>
+                                    </Tooltip>
+                                  </TableCell>
                                 </TableRow>
                               ))}
                           </TableBody>
@@ -1185,7 +1204,7 @@ const Results: React.FC = () => {
           {resultToDelete && (
             <Box sx={{ mt: 2, p: 2, bgcolor: 'grey.100', borderRadius: 1 }}>
               <Typography variant="body2" color="text.secondary">
-                <strong>Created:</strong> {formatDate(resultToDelete.createdAt)}
+                <strong>Created:</strong> {formatDate(new Date(resultToDelete.createdAt).getTime())}
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 <strong>Symbols:</strong> {resultToDelete.config.symbols.length} symbols
@@ -1235,7 +1254,7 @@ const Results: React.FC = () => {
           {resultToCancel && (
             <Box sx={{ mt: 2, p: 2, bgcolor: 'grey.100', borderRadius: 1 }}>
               <Typography variant="body2" color="text.secondary">
-                <strong>Created:</strong> {formatDate(resultToCancel.createdAt)}
+                <strong>Created:</strong> {formatDate(new Date(resultToCancel.createdAt).getTime())}
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 <strong>Symbols:</strong> {resultToCancel.config.symbols.length} symbols
@@ -1267,6 +1286,23 @@ const Results: React.FC = () => {
           </Button>
         </DialogActions>
       </Dialog>
+
+      {/* Chart Modal */}
+      {selectedSignal && (
+        <ChartModal
+          isOpen={chartModalOpen}
+          onClose={() => {
+            setChartModalOpen(false);
+            setSelectedSignal(null);
+          }}
+          symbol={selectedSignal.symbol}
+          timeframe={selectedSignal.timeframe}
+          signalTimestamp={selectedSignal.timestamp}
+          signalType={selectedSignal.type}
+          signalPrice={selectedSignal.price}
+          candleData={selectedSignal.candleData}
+        />
+      )}
     </Box>
   );
 };

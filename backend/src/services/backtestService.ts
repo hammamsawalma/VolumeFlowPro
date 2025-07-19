@@ -36,7 +36,8 @@ export class BacktestService {
         avgDrawup: 0,
         avgDrawdown: 0,
         bestSignal: null,
-        worstSignal: null
+        worstSignal: null,
+        perfectSignals: 0
       },
       createdAt: new Date(),
       completedAt: null,
@@ -58,7 +59,7 @@ export class BacktestService {
   }
 
   /**
-   * Run the actual backtest process
+   * Run the actual backtest process with enhanced error handling and validation
    */
   private async runBacktest(backtestId: string): Promise<void> {
     console.log(`Starting backtest ${backtestId}`);
@@ -76,8 +77,25 @@ export class BacktestService {
       const allSignals: SignalDetection[] = [];
       const allPerformances: SignalPerformance[] = [];
 
-      const totalCombinations = config.symbols.length * config.timeframes.length;
-      let completedCombinations = 0;
+      // Enhanced tracking
+      const processingStats = {
+        totalCombinations: config.symbols.length * config.timeframes.length,
+        completedCombinations: 0,
+        skippedCombinations: 0,
+        failedCombinations: 0,
+        totalSignalsDetected: 0,
+        totalSignalsProcessed: 0,
+        totalSignalsSkipped: 0,
+        skipReasons: new Map<string, number>()
+      };
+
+      console.log(`Processing ${processingStats.totalCombinations} symbol-timeframe combinations`);
+
+      // Calculate minimum required candles for validation
+      const minRequiredCandles = Math.max(
+        config.volumeMaLength,
+        config.volumeStdLength
+      ) + config.lookforwardCandles + 3;
 
       // Process each symbol-timeframe combination
       for (const symbol of config.symbols) {
@@ -85,33 +103,29 @@ export class BacktestService {
           try {
             console.log(`Processing ${symbol} ${timeframe}`);
 
-            // Fetch historical data
             const startDate = new Date(config.startDate);
             const endDate = new Date(config.endDate);
             
-            console.log(`Fetching data for ${symbol} ${timeframe} from ${startDate.toISOString()} to ${endDate.toISOString()}`);
-            
-            const { data: candles, dataRange } = await this.binanceService.getHistoricalDataBatched(
+            // Use AGGRESSIVE data fetching with ZERO-TOLERANCE validation
+            const dataResult = await this.binanceService.getHistoricalDataBatchedWithValidation(
               symbol,
               timeframe,
               startDate,
-              endDate
+              endDate,
+              minRequiredCandles
             );
 
-            if (candles.length === 0) {
-              console.log(`No data available for ${symbol} ${timeframe} - skipping`);
+            if (!dataResult.success) {
+              console.log(`❌ SKIPPING ${symbol} ${timeframe}: ${dataResult.skipReason}`);
+              processingStats.skippedCombinations++;
+              this.updateSkipReason(processingStats.skipReasons, dataResult.skipReason || 'Unknown error');
               continue;
             }
 
-            // Validate data quality
-            if (candles.length < config.volumeMaLength + config.lookforwardCandles) {
-              console.log(`Insufficient data for ${symbol} ${timeframe}: ${candles.length} candles (need at least ${config.volumeMaLength + config.lookforwardCandles})`);
-              continue;
-            }
+            const candles = dataResult.data;
+            console.log(`✅ AGGRESSIVE FETCH SUCCESS for ${symbol} ${timeframe}: ${candles.length} candles (Quality: ${dataResult.dataQuality.qualityScore.toFixed(1)}%)`);
 
-            console.log(`Fetched ${candles.length} candles for ${symbol} ${timeframe} (${dataRange.start.toISOString()} to ${dataRange.end.toISOString()})`);
-
-            // Detect signals
+            // Detect signals with validation
             const signals = this.signalDetectionService.detectSignals(
               candles,
               symbol,
@@ -119,17 +133,40 @@ export class BacktestService {
               config
             );
 
+            processingStats.totalSignalsDetected += signals.length;
             console.log(`Detected ${signals.length} signals for ${symbol} ${timeframe}`);
 
-            // Analyze performance for each signal
+            // Analyze performance for each signal with validation
             let processedSignals = 0;
-            for (let i = 0; i < signals.length; i++) {
-              const signal = signals[i];
-              
-              // Find the signal's index in the candles array
-              const signalIndex = candles.findIndex(c => c.timestamp === signal.timestamp);
-              
-              if (signalIndex >= 0 && signalIndex < candles.length - config.lookforwardCandles) {
+            let skippedSignals = 0;
+
+            for (const signal of signals) {
+              try {
+                // Find the signal's index in the candles array
+                const signalIndex = candles.findIndex(c => c.timestamp === signal.timestamp);
+                
+                if (signalIndex < 0) {
+                  console.warn(`Signal timestamp not found in candles for ${symbol} ${timeframe}`);
+                  skippedSignals++;
+                  continue;
+                }
+
+                // Validate if signal can be analyzed
+                const signalValidation = this.signalDetectionService.validateSignalForAnalysis(
+                  signal,
+                  candles,
+                  signalIndex,
+                  config
+                );
+
+                if (!signalValidation.canAnalyze) {
+                  console.log(`Skipping signal at ${new Date(signal.timestamp).toISOString()}: ${signalValidation.reason}`);
+                  skippedSignals++;
+                  this.updateSkipReason(processingStats.skipReasons, signalValidation.reason || 'Signal validation failed');
+                  continue;
+                }
+
+                // Analyze performance
                 const performance = this.performanceAnalysisService.analyzeSignalPerformance(
                   signal,
                   candles,
@@ -140,28 +177,55 @@ export class BacktestService {
                 allSignals.push(signal);
                 allPerformances.push(performance);
                 processedSignals++;
-              } else {
-                console.log(`Skipping signal at ${new Date(signal.timestamp).toISOString()} - insufficient lookforward data`);
+
+              } catch (error: any) {
+                console.error(`Error analyzing signal for ${symbol} ${timeframe}:`, error.message);
+                skippedSignals++;
+                this.updateSkipReason(processingStats.skipReasons, `Signal analysis error: ${error.message}`);
               }
             }
             
-            console.log(`Processed ${processedSignals}/${signals.length} signals for ${symbol} ${timeframe}`);
-
-            completedCombinations++;
-            const progress = Math.round((completedCombinations / totalCombinations) * 100);
+            processingStats.totalSignalsProcessed += processedSignals;
+            processingStats.totalSignalsSkipped += skippedSignals;
             
-            // Update progress
-            await this.updateBacktestStatus(backtestId, 'RUNNING', progress);
+            console.log(`Processed ${processedSignals}/${signals.length} signals for ${symbol} ${timeframe} (skipped: ${skippedSignals})`);
 
-          } catch (error) {
-            console.error(`Error processing ${symbol} ${timeframe}:`, error);
+            processingStats.completedCombinations++;
+
+          } catch (error: any) {
+            console.error(`Error processing ${symbol} ${timeframe}:`, error.message);
+            processingStats.failedCombinations++;
+            this.updateSkipReason(processingStats.skipReasons, `Processing error: ${error.message}`);
             // Continue with other combinations even if one fails
           }
+
+          // Update progress
+          const totalProcessed = processingStats.completedCombinations + processingStats.skippedCombinations + processingStats.failedCombinations;
+          const progress = Math.round((totalProcessed / processingStats.totalCombinations) * 100);
+          await this.updateBacktestStatus(backtestId, 'RUNNING', progress);
         }
       }
 
       // Calculate summary statistics
       const summary = this.performanceAnalysisService.calculateSummaryStatistics(allPerformances);
+
+      // Log comprehensive processing statistics
+      console.log(`\n=== Backtest ${backtestId} Processing Summary ===`);
+      console.log(`Total combinations: ${processingStats.totalCombinations}`);
+      console.log(`Completed: ${processingStats.completedCombinations}`);
+      console.log(`Skipped: ${processingStats.skippedCombinations}`);
+      console.log(`Failed: ${processingStats.failedCombinations}`);
+      console.log(`Signals detected: ${processingStats.totalSignalsDetected}`);
+      console.log(`Signals processed: ${processingStats.totalSignalsProcessed}`);
+      console.log(`Signals skipped: ${processingStats.totalSignalsSkipped}`);
+      console.log(`Success rate: ${summary.successRate.toFixed(2)}%`);
+      
+      if (processingStats.skipReasons.size > 0) {
+        console.log(`\nSkip reasons:`);
+        for (const [reason, count] of processingStats.skipReasons.entries()) {
+          console.log(`  - ${reason}: ${count}`);
+        }
+      }
 
       // Update final results
       await BacktestResultModel.findOneAndUpdate(
@@ -172,19 +236,35 @@ export class BacktestService {
           summary,
           completedAt: new Date(),
           status: 'COMPLETED',
-          progress: 100
+          progress: 100,
+          processingStats: {
+            totalCombinations: processingStats.totalCombinations,
+            completedCombinations: processingStats.completedCombinations,
+            skippedCombinations: processingStats.skippedCombinations,
+            failedCombinations: processingStats.failedCombinations,
+            totalSignalsDetected: processingStats.totalSignalsDetected,
+            totalSignalsProcessed: processingStats.totalSignalsProcessed,
+            totalSignalsSkipped: processingStats.totalSignalsSkipped,
+            skipReasons: Object.fromEntries(processingStats.skipReasons)
+          }
         }
       );
 
       console.log(`Backtest ${backtestId} completed successfully`);
-      console.log(`Total signals: ${allSignals.length}`);
-      console.log(`Success rate: ${summary.successRate.toFixed(2)}%`);
 
     } catch (error: any) {
       console.error(`Backtest ${backtestId} failed:`, error);
       await this.updateBacktestStatus(backtestId, 'FAILED', 0, error.message);
       throw error;
     }
+  }
+
+  /**
+   * Helper method to update skip reason statistics
+   */
+  private updateSkipReason(skipReasons: Map<string, number>, reason: string): void {
+    const count = skipReasons.get(reason) || 0;
+    skipReasons.set(reason, count + 1);
   }
 
   /**
@@ -415,8 +495,8 @@ export class BacktestService {
     }
 
     // Check numeric values
-    if (config.lookforwardCandles < 1 || config.lookforwardCandles > 1000) {
-      errors.push('Lookforward candles must be between 1 and 1000');
+    if (config.lookforwardCandles < 1 || config.lookforwardCandles > 10000) {
+      errors.push('Lookforward candles must be between 1 and 10000');
     }
 
     if (config.volumeMaLength < 1 || config.volumeMaLength > 2000) {

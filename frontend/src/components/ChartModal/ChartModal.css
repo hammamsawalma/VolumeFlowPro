@@ -1,0 +1,405 @@
+/* Chart Modal Overlay */
+.chart-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1400;
+  padding: 20px;
+}
+
+/* Chart Modal Container */
+.chart-modal {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 90vw;
+  height: 85vh;
+  max-width: 1200px;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Chart Modal Header */
+.chart-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e1e5e9;
+  background: #f8f9fa;
+  border-radius: 12px 12px 0 0;
+}
+
+.chart-modal-title h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.signal-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.signal-type {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.signal-type.primary-buy {
+  background: #e8f5e8;
+  color: #2e7d32;
+}
+
+.signal-type.basic-buy {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.signal-type.primary-sell {
+  background: #ffebee;
+  color: #d32f2f;
+}
+
+.signal-type.basic-sell {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.signal-price {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.signal-time {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.chart-modal-close {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #6c757d;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.chart-modal-close:hover {
+  background: #f1f3f4;
+  color: #495057;
+}
+
+/* Chart Modal Content */
+.chart-modal-content {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.chart-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Loading State */
+.chart-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #6c757d;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.chart-loading p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Error State */
+.chart-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #dc3545;
+  text-align: center;
+  padding: 20px;
+}
+
+.chart-error p {
+  margin: 0 0 16px 0;
+  font-size: 1rem;
+}
+
+.chart-error-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-error-actions button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  min-width: 80px;
+}
+
+.chart-error-actions button:hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+}
+
+.chart-error-actions button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.chart-error-actions button:last-child {
+  background: #6c757d;
+}
+
+.chart-error-actions button:last-child:hover {
+  background: #5a6268;
+}
+
+/* Chart Modal Footer */
+.chart-modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #e1e5e9;
+  background: #f8f9fa;
+  border-radius: 0 0 12px 12px;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  color: #495057;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.legend-color.buy {
+  background: #26a69a;
+}
+
+.legend-color.sell {
+  background: #ef5350;
+}
+
+.legend-color.pattern {
+  background: #4caf50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chart-modal-overlay {
+    padding: 10px;
+  }
+  
+  .chart-modal {
+    width: 95vw;
+    height: 90vh;
+    border-radius: 8px;
+  }
+  
+  .chart-modal-header {
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .chart-modal-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .chart-modal-title h3 {
+    font-size: 1.25rem;
+  }
+  
+  .signal-info {
+    gap: 8px;
+  }
+  
+  .signal-type {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+  }
+  
+  .signal-price {
+    font-size: 0.875rem;
+  }
+  
+  .signal-time {
+    font-size: 0.75rem;
+  }
+  
+  .chart-modal-footer {
+    padding: 12px 16px;
+  }
+  
+  .chart-legend {
+    gap: 12px;
+    font-size: 0.75rem;
+  }
+  
+  .legend-color {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-modal {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+  
+  .chart-modal-header {
+    padding: 12px;
+  }
+  
+  .chart-modal-title h3 {
+    font-size: 1.1rem;
+  }
+  
+  .chart-modal-close {
+    width: 32px;
+    height: 32px;
+    font-size: 1.5rem;
+  }
+  
+  .signal-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+
+/* Dark mode support (if needed) */
+@media (prefers-color-scheme: dark) {
+  .chart-modal {
+    background: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  .chart-modal-header,
+  .chart-modal-footer {
+    background: #2a2a2a;
+    border-color: #404040;
+  }
+  
+  .chart-modal-title h3 {
+    color: #ffffff;
+  }
+  
+  .signal-price {
+    color: #ffffff;
+  }
+  
+  .signal-time {
+    color: #b0b0b0;
+  }
+  
+  .chart-modal-close {
+    color: #b0b0b0;
+  }
+  
+  .chart-modal-close:hover {
+    background: #404040;
+    color: #ffffff;
+  }
+  
+  .chart-loading {
+    color: #b0b0b0;
+  }
+  
+  .loading-spinner {
+    border-color: #404040;
+    border-top-color: #007bff;
+  }
+  
+  .legend-item {
+    color: #b0b0b0;
+  }
+}

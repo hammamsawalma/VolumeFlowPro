@@ -379,9 +379,29 @@ const Configuration: React.FC = () => {
                   value={config.lookforwardCandles || 24}
                   onChange={(e) => setConfig(prev => ({ 
                     ...prev, 
-                    lookforwardCandles: Math.max(1, Math.min(100, parseInt(e.target.value) || 24))
+                    lookforwardCandles: Math.max(1, Math.min(10000, parseInt(e.target.value) || 24))
                   }))}
-                  inputProps={{ min: 1, max: 100, step: 1 }}
+                  inputProps={{ min: 1, max: 10000, step: 1 }}
+                  size="small"
+                  sx={{ width: 120 }}
+                />
+              </Box>
+
+              <Box sx={{ mb: 3 }}>
+                <Typography gutterBottom>
+                  Body Ratio Threshold: {config.bodyRatioThreshold}
+                </Typography>
+                <Typography variant="body2" color="text.secondary" paragraph>
+                  Minimum body ratio required for candles in signal patterns. Higher values require stronger candle bodies.
+                </Typography>
+                <TextField
+                  type="number"
+                  value={config.bodyRatioThreshold || 0.61}
+                  onChange={(e) => setConfig(prev => ({ 
+                    ...prev, 
+                    bodyRatioThreshold: Math.max(0.1, Math.min(1.0, parseFloat(e.target.value) || 0.61))
+                  }))}
+                  inputProps={{ min: 0.1, max: 1.0, step: 0.01 }}
                   size="small"
                   sx={{ width: 120 }}
                 />
@@ -420,7 +440,7 @@ const Configuration: React.FC = () => {
                 </Box>
                 <Box>
                   <Typography variant="body2" color="text.secondary">Body Ratio Threshold</Typography>
-                  <Typography variant="h6">0.61</Typography>
+                  <Typography variant="h6">{config.bodyRatioThreshold || 0.61}</Typography>
                 </Box>
               </Box>
             </Paper>

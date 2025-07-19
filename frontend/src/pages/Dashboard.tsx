@@ -295,7 +295,7 @@ const Dashboard: React.FC = () => {
                         secondary={
                           <Box>
                             <Typography variant="body2" color="text.secondary">
-                              Created: {formatDate(backtest.createdAt)}
+                              Created: {formatDate(new Date(backtest.createdAt).getTime())}
                             </Typography>
                             {backtest.status === 'RUNNING' && (
                               <Box sx={{ mt: 1 }}>

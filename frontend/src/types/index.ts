@@ -78,9 +78,10 @@ export interface BacktestResult {
     avgDrawdown: number;
     bestSignal: SignalPerformance | null;
     worstSignal: SignalPerformance | null;
+    perfectSignals: number;
   };
-  createdAt: string;
-  completedAt: string | null;
+  createdAt: Date;
+  completedAt: Date | null;
   status: 'PENDING' | 'RUNNING' | 'COMPLETED' | 'FAILED' | 'CANCELLED';
   progress: number;
   error?: string;
