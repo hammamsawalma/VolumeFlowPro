@@ -512,7 +512,7 @@ export class SignalDetectionService {
   }
 
   /**
-   * Detect all signals with ZERO-TOLERANCE data validation
+   * Detect all signals with 3-Phase data validation approach
    */
   public detectSignals(
     candles: CandleData[],
@@ -523,64 +523,50 @@ export class SignalDetectionService {
     const signals: SignalDetection[] = [];
     const requestId = Math.random().toString(36).substr(2, 9);
     
-    console.log(`🔍 [${requestId}] ZERO-TOLERANCE SIGNAL DETECTION: ${symbol} ${timeframe}`);
+    console.log(`🔍 [${requestId}] 3-PHASE SIGNAL DETECTION: ${symbol} ${timeframe}`);
 
-    // Step 1: Calculate exact data requirements
-    const requirements = this.completeDataValidator.calculateSignalDataRequirements(config);
-    console.log(`📊 [${requestId}] Data requirements: ${requirements.totalRequired} total candles (${requirements.historicalCandles} historical + ${requirements.patternCandles} pattern + ${requirements.lookforwardCandles} lookforward + ${requirements.bufferCandles} buffer)`);
-
-    // Step 2: ZERO-TOLERANCE dataset validation
-    const datasetReport = this.completeDataValidator.validateCompleteDataset(
-      candles, 
-      requirements, 
-      symbol, 
-      timeframe
-    );
-
-    if (!datasetReport.isComplete) {
-      console.log(`❌ [${requestId}] DATASET VALIDATION FAILED: ${datasetReport.skipReason}`);
-      console.log(`📋 [${requestId}] Recommendations: ${datasetReport.recommendations.join(', ')}`);
-      return signals; // Return empty array - ZERO TOLERANCE
-    }
-
-    console.log(`✅ [${requestId}] DATASET VALIDATION PASSED: ${datasetReport.totalAvailable} candles, ${datasetReport.qualityScore}% quality`);
-
-    // Step 3: Calculate processing range with complete data validation
-    const startIndex = requirements.historicalCandles + requirements.patternCandles - 1;
-    const endIndex = candles.length - requirements.lookforwardCandles - requirements.bufferCandles;
-    
-    console.log(`🎯 [${requestId}] Processing range: index ${startIndex} to ${endIndex} (${endIndex - startIndex + 1} potential signals)`);
-
-    if (startIndex >= endIndex) {
-      console.log(`❌ [${requestId}] INSUFFICIENT PROCESSING RANGE: startIndex=${startIndex}, endIndex=${endIndex}`);
+    // Phase 1: Validate basic data requirements for pattern detection
+    const phase1Validation = this.validatePhase1Requirements(candles, requestId);
+    if (!phase1Validation.success) {
+      console.log(`❌ [${requestId}] PHASE 1 FAILED: ${phase1Validation.reason}`);
       return signals;
     }
 
-    // Step 4: Process each potential signal with individual validation
+    // Phase 2: Validate volume analysis requirements
+    const volumeLookback = Math.max(config.volumeMaLength, config.volumeStdLength);
+    const phase2Validation = this.validatePhase2Requirements(candles, volumeLookback, requestId);
+    if (!phase2Validation.success) {
+      console.log(`❌ [${requestId}] PHASE 2 FAILED: ${phase2Validation.reason}`);
+      return signals;
+    }
+
+    // Phase 3: Validate forward analysis requirements
+    const phase3Validation = this.validatePhase3Requirements(candles, volumeLookback, config.lookforwardCandles, requestId);
+    if (!phase3Validation.success) {
+      console.log(`❌ [${requestId}] PHASE 3 FAILED: ${phase3Validation.reason}`);
+      return signals;
+    }
+
+    console.log(`✅ [${requestId}] ALL 3 PHASES PASSED - Processing ${candles.length} candles`);
+
+    // Calculate processing range
+    const startIndex = volumeLookback + 2; // +2 for pattern detection (need 3 candles, 0-indexed)
+    const endIndex = candles.length - config.lookforwardCandles;
+    
+    console.log(`🎯 [${requestId}] Processing range: index ${startIndex} to ${endIndex} (${endIndex - startIndex} potential signals)`);
+
+    if (startIndex >= endIndex) {
+      console.log(`❌ [${requestId}] NO PROCESSING RANGE: startIndex=${startIndex}, endIndex=${endIndex}`);
+      return signals;
+    }
+
+    // Process each potential signal
     let processedSignals = 0;
-    let skippedSignals = 0;
-    const signalReports: DataCompletenessReport[] = [];
+    let confirmedSignals = 0;
 
-    for (let i = startIndex; i <= endIndex; i++) {
+    for (let i = startIndex; i < endIndex; i++) {
       try {
-        // Step 4a: Validate individual signal data requirements BEFORE detection
-        const signalValidation = this.completeDataValidator.validateSignalDataRequirements(
-          candles,
-          i,
-          requirements,
-          symbol,
-          timeframe
-        );
-
-        signalReports.push(signalValidation);
-
-        if (!signalValidation.isComplete) {
-          console.log(`⚠️ [${requestId}] Signal at index ${i} SKIPPED: ${signalValidation.skipReason}`);
-          skippedSignals++;
-          continue; // ZERO TOLERANCE - skip this signal
-        }
-
-        // Step 4b: Attempt signal detection (only if data validation passed)
+        // Attempt signal detection for all enabled signal types
         const detectedSignals: (SignalDetection | null)[] = [
           config.enabledSignals.primaryBuy ? this.detectPrimaryBuySignal(candles, i, config) : null,
           config.enabledSignals.basicBuy ? this.detectBasicBuySignal(candles, i, config) : null,
@@ -588,7 +574,7 @@ export class SignalDetectionService {
           config.enabledSignals.basicSell ? this.detectBasicSellSignal(candles, i, config) : null,
         ];
 
-        // Step 4c: Process detected signals with final validation
+        // Process detected signals
         detectedSignals.forEach(signal => {
           if (signal) {
             // Final validation: Ensure signal has complete data for performance analysis
@@ -598,10 +584,10 @@ export class SignalDetectionService {
               signal.symbol = symbol;
               signal.timeframe = timeframe;
               signals.push(signal);
+              confirmedSignals++;
               console.log(`✅ [${requestId}] Signal CONFIRMED: ${signal.type} at ${new Date(signal.timestamp).toISOString()}`);
             } else {
-              console.log(`❌ [${requestId}] Signal REJECTED: ${signal.type} - ${finalValidation.reason}`);
-              skippedSignals++;
+              console.log(`⚠️ [${requestId}] Signal REJECTED: ${signal.type} - ${finalValidation.reason}`);
             }
           }
         });
@@ -610,30 +596,119 @@ export class SignalDetectionService {
 
       } catch (error: any) {
         console.error(`💥 [${requestId}] Error processing signal at index ${i}: ${error.message}`);
-        skippedSignals++;
         // Continue processing other signals - don't let one error stop the entire process
       }
     }
 
-    // Step 5: Generate comprehensive validation report
-    const validationReport = this.completeDataValidator.generateValidationReport(
-      symbol,
-      timeframe,
-      datasetReport,
-      signalReports
-    );
-
-    console.log(`📊 [${requestId}] ZERO-TOLERANCE PROCESSING COMPLETE:`);
-    console.log(`   - Processed: ${processedSignals} potential signals`);
-    console.log(`   - Confirmed: ${signals.length} valid signals`);
-    console.log(`   - Skipped: ${skippedSignals} signals (incomplete data)`);
-    console.log(`   - Success Rate: ${processedSignals > 0 ? ((signals.length / processedSignals) * 100).toFixed(1) : 0}%`);
-
-    // Log detailed report for debugging
-    if (process.env.NODE_ENV === 'development') {
-      console.log(`\n${validationReport}\n`);
-    }
+    console.log(`📊 [${requestId}] 3-PHASE PROCESSING COMPLETE:`);
+    console.log(`   - Processed: ${processedSignals} potential signal positions`);
+    console.log(`   - Confirmed: ${confirmedSignals} valid signals`);
+    console.log(`   - Success Rate: ${processedSignals > 0 ? ((confirmedSignals / processedSignals) * 100).toFixed(1) : 0}%`);
 
     return signals;
+  }
+
+  /**
+   * Phase 1: Validate basic data requirements for pattern detection
+   */
+  private validatePhase1Requirements(candles: CandleData[], requestId: string): {
+    success: boolean;
+    reason?: string;
+  } {
+    console.log(`📊 [${requestId}] Phase 1: Validating basic pattern detection requirements`);
+
+    if (!candles || candles.length < 3) {
+      const reason = `Phase 1: Insufficient data for pattern detection: ${candles?.length || 0} candles (minimum 3 required)`;
+      console.error(`❌ [${requestId}] ${reason}`);
+      return { success: false, reason };
+    }
+
+    // Validate data quality
+    const invalidCandles = candles.filter(candle => 
+      !candle || 
+      candle.open <= 0 || 
+      candle.high <= 0 || 
+      candle.low <= 0 || 
+      candle.close <= 0 || 
+      candle.volume < 0 ||
+      candle.high < candle.low ||
+      candle.timestamp <= 0
+    );
+
+    if (invalidCandles.length > candles.length * 0.05) { // More than 5% invalid
+      const reason = `Phase 1: Too many invalid candles: ${invalidCandles.length}/${candles.length} (${((invalidCandles.length / candles.length) * 100).toFixed(1)}%)`;
+      console.error(`❌ [${requestId}] ${reason}`);
+      return { success: false, reason };
+    }
+
+    console.log(`✅ [${requestId}] Phase 1 SUCCESS: ${candles.length} candles, ${((candles.length - invalidCandles.length) / candles.length * 100).toFixed(1)}% valid`);
+    return { success: true };
+  }
+
+  /**
+   * Phase 2: Validate volume analysis requirements
+   */
+  private validatePhase2Requirements(
+    candles: CandleData[],
+    volumeLookbackCandles: number,
+    requestId: string
+  ): {
+    success: boolean;
+    reason?: string;
+  } {
+    console.log(`📈 [${requestId}] Phase 2: Validating volume analysis requirements (${volumeLookbackCandles} lookback)`);
+
+    const requiredForVolumeAnalysis = volumeLookbackCandles + 3; // +3 for pattern detection
+    
+    if (candles.length < requiredForVolumeAnalysis) {
+      const reason = `Phase 2: Insufficient data for volume analysis: need ${requiredForVolumeAnalysis}, have ${candles.length}`;
+      console.error(`❌ [${requestId}] ${reason}`);
+      return { success: false, reason };
+    }
+
+    // Validate volume data quality
+    const validVolumeCandles = candles.filter(c => c.volume >= 0 && isFinite(c.volume));
+    if (validVolumeCandles.length < requiredForVolumeAnalysis) {
+      const reason = `Phase 2: Insufficient valid volume data: need ${requiredForVolumeAnalysis}, have ${validVolumeCandles.length}`;
+      console.error(`❌ [${requestId}] ${reason}`);
+      return { success: false, reason };
+    }
+
+    console.log(`✅ [${requestId}] Phase 2 SUCCESS: Volume analysis requirements met`);
+    return { success: true };
+  }
+
+  /**
+   * Phase 3: Validate forward analysis requirements
+   */
+  private validatePhase3Requirements(
+    candles: CandleData[],
+    volumeLookbackCandles: number,
+    lookforwardCandles: number,
+    requestId: string
+  ): {
+    success: boolean;
+    reason?: string;
+  } {
+    console.log(`🔮 [${requestId}] Phase 3: Validating forward analysis requirements (${lookforwardCandles} lookforward)`);
+
+    // Calculate usable candles for signal detection
+    const usableForSignals = candles.length - volumeLookbackCandles - 3; // -3 for pattern detection
+    
+    if (usableForSignals <= 0) {
+      const reason = `Phase 3: No usable candles for signal detection after volume lookback`;
+      console.error(`❌ [${requestId}] ${reason}`);
+      return { success: false, reason };
+    }
+
+    // Check if we have enough forward data for performance analysis
+    if (usableForSignals < lookforwardCandles) {
+      const reason = `Phase 3: Insufficient forward data: need ${lookforwardCandles} lookforward candles, can only analyze ${usableForSignals}`;
+      console.error(`❌ [${requestId}] ${reason}`);
+      return { success: false, reason };
+    }
+
+    console.log(`✅ [${requestId}] Phase 3 SUCCESS: Forward analysis requirements met (${usableForSignals} usable candles)`);
+    return { success: true };
   }
 }

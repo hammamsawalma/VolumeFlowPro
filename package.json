@@ -1,6 +1,6 @@
 {
   "name": "volume-backtest-app",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Volume Pattern Backtest Application - Full Stack",
   "main": "ecosystem.config.js",
   "scripts": {

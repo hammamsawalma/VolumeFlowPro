@@ -228,7 +228,128 @@ export class BinanceService {
   }
 
   /**
-   * Get historical data in batches to handle large date ranges
+   * Fetch exact data range with parallel batch processing - Phase 1 Implementation
+   */
+  async fetchExactRange(
+    symbol: string,
+    timeframe: string,
+    startTime: number,
+    endTime: number
+  ): Promise<{ data: CandleData[], dataRange: { start: Date, end: Date } }> {
+    const requestId = Math.random().toString(36).substr(2, 9);
+    console.log(`🎯 [${requestId}] EXACT RANGE FETCH: ${symbol} ${timeframe} from ${new Date(startTime).toISOString()} to ${new Date(endTime).toISOString()}`);
+
+    // Calculate exact requirements
+    const timeframeMs = this.getTimeframeInMs(timeframe);
+    const totalTimespan = endTime - startTime;
+    const expectedCandles = Math.ceil(totalTimespan / timeframeMs);
+    
+    console.log(`📊 [${requestId}] Expected candles: ${expectedCandles}`);
+
+    // Calculate batches needed
+    const batchSize = 1500; // Binance limit
+    const batches: Array<{ start: number; end: number; index: number }> = [];
+    let currentStart = startTime;
+    let batchIndex = 0;
+
+    while (currentStart < endTime) {
+      const batchEndTime = Math.min(currentStart + (batchSize * timeframeMs), endTime);
+      batches.push({ 
+        start: currentStart, 
+        end: batchEndTime, 
+        index: batchIndex 
+      });
+      currentStart = batchEndTime;
+      batchIndex++;
+    }
+
+    console.log(`🔄 [${requestId}] Created ${batches.length} batches for parallel fetching`);
+
+    // Fetch all batches in parallel with controlled concurrency
+    const maxConcurrent = Math.min(5, batches.length); // Max 5 concurrent requests
+    const batchPromises: Promise<{ data: CandleData[]; batchIndex: number }>[] = [];
+
+    for (let i = 0; i < batches.length; i += maxConcurrent) {
+      const batchGroup = batches.slice(i, i + maxConcurrent);
+      
+      const groupPromises = batchGroup.map(async (batch) => {
+        try {
+          await this.rateLimit();
+          const data = await this.getHistoricalData(
+            symbol,
+            timeframe,
+            batch.start,
+            batch.end,
+            batchSize
+          );
+          return { data, batchIndex: batch.index };
+        } catch (error: any) {
+          console.error(`❌ [${requestId}] Batch ${batch.index} failed: ${error.message}`);
+          throw error;
+        }
+      });
+
+      batchPromises.push(...groupPromises);
+      
+      // Small delay between batch groups to respect rate limits
+      if (i + maxConcurrent < batches.length) {
+        await new Promise(resolve => setTimeout(resolve, 200));
+      }
+    }
+
+    // Wait for all batches to complete
+    const results = await Promise.allSettled(batchPromises);
+    
+    // Process results
+    const successfulBatches: Array<{ data: CandleData[]; batchIndex: number }> = [];
+    const failedBatches: number[] = [];
+
+    results.forEach((result, index) => {
+      if (result.status === 'fulfilled') {
+        successfulBatches.push(result.value);
+      } else {
+        failedBatches.push(index);
+        console.error(`❌ [${requestId}] Batch ${index} failed: ${result.reason.message}`);
+      }
+    });
+
+    if (failedBatches.length > 0) {
+      throw new Error(`Failed to fetch ${failedBatches.length}/${batches.length} batches for ${symbol}`);
+    }
+
+    // Combine and sort all candles
+    const allCandles = successfulBatches
+      .sort((a, b) => a.batchIndex - b.batchIndex) // Sort by batch order
+      .flatMap(batch => batch.data)
+      .filter(candle => candle.timestamp >= startTime && candle.timestamp <= endTime) // Exact range filter
+      .sort((a, b) => a.timestamp - b.timestamp);
+
+    // Remove duplicates
+    const uniqueCandles = allCandles.filter((candle, index, arr) => 
+      index === 0 || candle.timestamp !== arr[index - 1].timestamp
+    );
+
+    // Validate we got the expected amount (allow 5% tolerance for market gaps)
+    const minExpected = Math.floor(expectedCandles * 0.95);
+    if (uniqueCandles.length < minExpected) {
+      throw new Error(`Insufficient data for ${symbol}: got ${uniqueCandles.length}, expected at least ${minExpected}`);
+    }
+
+    const dataRange = {
+      start: uniqueCandles.length > 0 ? new Date(uniqueCandles[0].timestamp) : new Date(startTime),
+      end: uniqueCandles.length > 0 ? new Date(uniqueCandles[uniqueCandles.length - 1].timestamp) : new Date(endTime)
+    };
+
+    console.log(`✅ [${requestId}] SUCCESS: ${uniqueCandles.length} candles fetched (${((uniqueCandles.length / expectedCandles) * 100).toFixed(1)}% of expected)`);
+
+    return {
+      data: uniqueCandles,
+      dataRange
+    };
+  }
+
+  /**
+   * Legacy method - now uses optimized fetchExactRange
    */
   async getHistoricalDataBatched(
     symbol: string,
@@ -236,110 +357,7 @@ export class BinanceService {
     startDate: Date,
     endDate: Date
   ): Promise<{ data: CandleData[], dataRange: { start: Date, end: Date } }> {
-    const allCandles: CandleData[] = [];
-    const batchSize = 1500;
-    
-    // Calculate timeframe in milliseconds
-    const timeframeMs = this.getTimeframeInMs(timeframe);
-    const maxBatchTimespan = batchSize * timeframeMs;
-    
-    let currentStart = startDate.getTime();
-    const endTime = endDate.getTime();
-    
-    let actualStartTime: number | null = null;
-    let actualEndTime: number | null = null;
-    let consecutiveErrors = 0;
-    const maxConsecutiveErrors = 3;
-
-    console.log(`Fetching data for ${symbol} from ${startDate.toISOString()} to ${endDate.toISOString()}`);
-
-    while (currentStart < endTime && consecutiveErrors < maxConsecutiveErrors) {
-      const currentEnd = Math.min(currentStart + maxBatchTimespan, endTime);
-      
-      try {
-        const batchData = await this.getHistoricalData(
-          symbol,
-          timeframe,
-          currentStart,
-          currentEnd,
-          batchSize
-        );
-
-        if (batchData.length > 0) {
-          // Validate data quality
-          const validCandles = batchData.filter(candle => 
-            candle.timestamp > 0 &&
-            candle.open > 0 &&
-            candle.high > 0 &&
-            candle.low > 0 &&
-            candle.close > 0 &&
-            candle.volume >= 0 &&
-            candle.high >= candle.low &&
-            candle.high >= Math.max(candle.open, candle.close) &&
-            candle.low <= Math.min(candle.open, candle.close)
-          );
-
-          if (validCandles.length !== batchData.length) {
-            console.warn(`Filtered out ${batchData.length - validCandles.length} invalid candles for ${symbol} ${timeframe}`);
-          }
-
-          allCandles.push(...validCandles);
-          
-          if (actualStartTime === null && validCandles.length > 0) {
-            actualStartTime = validCandles[0].timestamp;
-          }
-          if (validCandles.length > 0) {
-            actualEndTime = validCandles[validCandles.length - 1].timestamp;
-          }
-          
-          consecutiveErrors = 0; // Reset error counter on success
-        } else {
-          console.warn(`No data returned for ${symbol} ${timeframe} batch starting at ${new Date(currentStart).toISOString()}`);
-        }
-
-        // Move to next batch
-        currentStart = currentEnd + timeframeMs;
-        
-        // Small delay between requests to be respectful to the API
-        await new Promise(resolve => setTimeout(resolve, 100));
-        
-      } catch (error: any) {
-        consecutiveErrors++;
-        console.error(`Error fetching batch ${consecutiveErrors}/${maxConsecutiveErrors} starting at ${new Date(currentStart).toISOString()}:`, error.message);
-        
-        if (consecutiveErrors >= maxConsecutiveErrors) {
-          console.error(`Too many consecutive errors for ${symbol} ${timeframe}, stopping batch fetch`);
-          break;
-        }
-        
-        // Wait longer before retrying after an error
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        currentStart = currentEnd + timeframeMs;
-      }
-    }
-
-    // Remove duplicates and sort by timestamp
-    const uniqueCandles = allCandles
-      .filter((candle, index, arr) => 
-        index === 0 || candle.timestamp !== arr[index - 1].timestamp
-      )
-      .sort((a, b) => a.timestamp - b.timestamp);
-
-    const dataRange = {
-      start: actualStartTime ? new Date(actualStartTime) : startDate,
-      end: actualEndTime ? new Date(actualEndTime) : endDate
-    };
-
-    console.log(`Fetched ${uniqueCandles.length} candles for ${symbol}, actual range: ${dataRange.start.toISOString()} to ${dataRange.end.toISOString()}`);
-
-    if (uniqueCandles.length === 0) {
-      console.warn(`No valid data fetched for ${symbol} ${timeframe}`);
-    }
-
-    return {
-      data: uniqueCandles,
-      dataRange
-    };
+    return this.fetchExactRange(symbol, timeframe, startDate.getTime(), endDate.getTime());
   }
 
   /**
@@ -937,5 +955,375 @@ export class BinanceService {
     
     // Final score
     return Math.max(0, completenessScore - gapPenalty);
+  }
+
+  /**
+   * 3-Phase Data Fetching - Main entry point for optimized data fetching
+   */
+  async fetch3PhaseData(
+    symbol: string,
+    timeframe: string,
+    startDate: Date,
+    endDate: Date,
+    volumeLookbackCandles: number,
+    lookforwardCandles: number
+  ): Promise<{
+    success: boolean;
+    data?: CandleData[];
+    dataRange?: { start: Date; end: Date };
+    skipReason?: string;
+    phases: {
+      phase1: { success: boolean; reason?: string };
+      phase2: { success: boolean; reason?: string };
+      phase3: { success: boolean; reason?: string };
+    };
+  }> {
+    const requestId = Math.random().toString(36).substr(2, 9);
+    console.log(`🔄 [${requestId}] 3-PHASE FETCH: ${symbol} ${timeframe}`);
+
+    try {
+      // Phase 1: Fetch main OHLC data for the requested period
+      const phase1Result = await this.fetchPhase1Data(symbol, timeframe, startDate, endDate, requestId);
+      if (!phase1Result.success) {
+        return {
+          success: false,
+          skipReason: phase1Result.reason,
+          phases: {
+            phase1: { success: false, reason: phase1Result.reason },
+            phase2: { success: false, reason: 'Skipped due to Phase 1 failure' },
+            phase3: { success: false, reason: 'Skipped due to Phase 1 failure' }
+          }
+        };
+      }
+
+      // Phase 2: Validate volume analysis requirements
+      const phase2Result = this.validatePhase2Requirements(phase1Result.data!, volumeLookbackCandles, requestId);
+      if (!phase2Result.success) {
+        return {
+          success: false,
+          skipReason: phase2Result.reason,
+          phases: {
+            phase1: { success: true },
+            phase2: { success: false, reason: phase2Result.reason },
+            phase3: { success: false, reason: 'Skipped due to Phase 2 failure' }
+          }
+        };
+      }
+
+      // Phase 3: Validate forward analysis requirements
+      const phase3Result = this.validatePhase3Requirements(phase1Result.data!, volumeLookbackCandles, lookforwardCandles, requestId);
+      if (!phase3Result.success) {
+        return {
+          success: false,
+          skipReason: phase3Result.reason,
+          phases: {
+            phase1: { success: true },
+            phase2: { success: true },
+            phase3: { success: false, reason: phase3Result.reason }
+          }
+        };
+      }
+
+      console.log(`✅ [${requestId}] ALL 3 PHASES SUCCESSFUL: ${phase1Result.data!.length} candles`);
+
+      return {
+        success: true,
+        data: phase1Result.data,
+        dataRange: phase1Result.dataRange,
+        phases: {
+          phase1: { success: true },
+          phase2: { success: true },
+          phase3: { success: true }
+        }
+      };
+
+    } catch (error: any) {
+      const errorResult = this.handleBinanceError(error, symbol);
+      return {
+        success: false,
+        skipReason: errorResult.reason,
+        phases: {
+          phase1: { success: false, reason: errorResult.reason },
+          phase2: { success: false, reason: 'Skipped due to error' },
+          phase3: { success: false, reason: 'Skipped due to error' }
+        }
+      };
+    }
+  }
+
+  /**
+   * Phase 1: Fetch main OHLC data for pattern detection
+   */
+  private async fetchPhase1Data(
+    symbol: string,
+    timeframe: string,
+    startDate: Date,
+    endDate: Date,
+    requestId: string
+  ): Promise<{
+    success: boolean;
+    data?: CandleData[];
+    dataRange?: { start: Date; end: Date };
+    reason?: string;
+  }> {
+    console.log(`📊 [${requestId}] Phase 1: Fetching main OHLC data`);
+
+    try {
+      const result = await this.fetchExactRange(symbol, timeframe, startDate.getTime(), endDate.getTime());
+      
+      // Validate minimum data requirements (at least 3 candles for pattern detection)
+      if (result.data.length < 3) {
+        return {
+          success: false,
+          reason: `Phase 1: Insufficient data for pattern detection: ${result.data.length} candles (minimum 3 required)`
+        };
+      }
+
+      console.log(`✅ [${requestId}] Phase 1 SUCCESS: ${result.data.length} candles`);
+      return {
+        success: true,
+        data: result.data,
+        dataRange: result.dataRange
+      };
+
+    } catch (error: any) {
+      console.error(`❌ [${requestId}] Phase 1 FAILED: ${error.message}`);
+      return {
+        success: false,
+        reason: `Phase 1: ${error.message}`
+      };
+    }
+  }
+
+  /**
+   * Phase 2: Validate volume analysis requirements (610 candles lookback)
+   */
+  private validatePhase2Requirements(
+    candles: CandleData[],
+    volumeLookbackCandles: number,
+    requestId: string
+  ): {
+    success: boolean;
+    reason?: string;
+  } {
+    console.log(`📈 [${requestId}] Phase 2: Validating volume analysis requirements (${volumeLookbackCandles} lookback)`);
+
+    // Check if we have enough historical data for volume analysis
+    const requiredForVolumeAnalysis = volumeLookbackCandles + 3; // +3 for pattern detection
+    
+    if (candles.length < requiredForVolumeAnalysis) {
+      const reason = `Phase 2: Insufficient data for volume analysis: need ${requiredForVolumeAnalysis}, have ${candles.length}`;
+      console.error(`❌ [${requestId}] ${reason}`);
+      return { success: false, reason };
+    }
+
+    // Validate that we have enough valid volume data
+    const validVolumeCandles = candles.filter(c => c.volume >= 0 && isFinite(c.volume));
+    if (validVolumeCandles.length < requiredForVolumeAnalysis) {
+      const reason = `Phase 2: Insufficient valid volume data: need ${requiredForVolumeAnalysis}, have ${validVolumeCandles.length}`;
+      console.error(`❌ [${requestId}] ${reason}`);
+      return { success: false, reason };
+    }
+
+    console.log(`✅ [${requestId}] Phase 2 SUCCESS: Volume analysis requirements met`);
+    return { success: true };
+  }
+
+  /**
+   * Phase 3: Validate forward analysis requirements
+   */
+  private validatePhase3Requirements(
+    candles: CandleData[],
+    volumeLookbackCandles: number,
+    lookforwardCandles: number,
+    requestId: string
+  ): {
+    success: boolean;
+    reason?: string;
+  } {
+    console.log(`🔮 [${requestId}] Phase 3: Validating forward analysis requirements (${lookforwardCandles} lookforward)`);
+
+    // Calculate usable candles for signal detection
+    const usableForSignals = candles.length - volumeLookbackCandles - 3; // -3 for pattern detection
+    
+    if (usableForSignals <= 0) {
+      const reason = `Phase 3: No usable candles for signal detection after volume lookback`;
+      console.error(`❌ [${requestId}] ${reason}`);
+      return { success: false, reason };
+    }
+
+    // Check if we have enough forward data for performance analysis
+    if (usableForSignals < lookforwardCandles) {
+      const reason = `Phase 3: Insufficient forward data: need ${lookforwardCandles} lookforward candles, can only analyze ${usableForSignals}`;
+      console.error(`❌ [${requestId}] ${reason}`);
+      return { success: false, reason };
+    }
+
+    console.log(`✅ [${requestId}] Phase 3 SUCCESS: Forward analysis requirements met (${usableForSignals} usable candles)`);
+    return { success: true };
+  }
+
+  /**
+   * Handle Binance API errors with specific error codes and appropriate actions
+   */
+  private handleBinanceError(error: any, symbol: string): {
+    reason: string;
+    shouldSkip: boolean;
+    shouldRetry: boolean;
+  } {
+    const response = error.response;
+    
+    if (!response) {
+      // Network error
+      return {
+        reason: `Network error for ${symbol}: ${error.message}`,
+        shouldSkip: true,
+        shouldRetry: false
+      };
+    }
+    
+    switch (response.status) {
+      case 400:
+        if (response.data?.code === -1121) {
+          // Invalid symbol
+          return {
+            reason: `Invalid symbol: ${symbol}`,
+            shouldSkip: true,
+            shouldRetry: false
+          };
+        } else if (response.data?.code === -1100) {
+          // Illegal characters in parameter
+          return {
+            reason: `Invalid parameters for ${symbol}`,
+            shouldSkip: true,
+            shouldRetry: false
+          };
+        }
+        return {
+          reason: `Bad request for ${symbol}: ${response.data?.msg || 'Unknown error'}`,
+          shouldSkip: true,
+          shouldRetry: false
+        };
+        
+      case 404:
+        return {
+          reason: `No data available for ${symbol}`,
+          shouldSkip: true,
+          shouldRetry: false
+        };
+        
+      case 429:
+        // Rate limit exceeded
+        return {
+          reason: `Rate limited for ${symbol}`,
+          shouldSkip: false,
+          shouldRetry: true
+        };
+        
+      case 500:
+      case 502:
+      case 503:
+        // Server errors
+        return {
+          reason: `Server error for ${symbol} (${response.status})`,
+          shouldSkip: false,
+          shouldRetry: true
+        };
+        
+      default:
+        return {
+          reason: `Unknown error for ${symbol}: ${response.status} - ${response.data?.msg || 'Unknown'}`,
+          shouldSkip: true,
+          shouldRetry: false
+        };
+    }
+  }
+
+  /**
+   * Process multiple symbols with 3-phase validation and smart error handling
+   */
+  async processSymbolsWith3PhaseValidation(
+    symbols: string[],
+    timeframe: string,
+    startDate: Date,
+    endDate: Date,
+    volumeLookbackCandles: number,
+    lookforwardCandles: number
+  ): Promise<{
+    successful: Array<{ symbol: string; data: CandleData[]; dataRange: { start: Date; end: Date } }>;
+    skipped: Array<{ symbol: string; reason: string }>;
+    retryable: Array<{ symbol: string; reason: string }>;
+    summary: {
+      total: number;
+      successful: number;
+      skipped: number;
+      retryable: number;
+      successRate: number;
+    };
+  }> {
+    const results = {
+      successful: [] as Array<{ symbol: string; data: CandleData[]; dataRange: { start: Date; end: Date } }>,
+      skipped: [] as Array<{ symbol: string; reason: string }>,
+      retryable: [] as Array<{ symbol: string; reason: string }>
+    };
+
+    console.log(`🚀 Processing ${symbols.length} symbols with 3-phase validation`);
+
+    for (const symbol of symbols) {
+      try {
+        const result = await this.fetch3PhaseData(
+          symbol,
+          timeframe,
+          startDate,
+          endDate,
+          volumeLookbackCandles,
+          lookforwardCandles
+        );
+
+        if (result.success) {
+          results.successful.push({
+            symbol,
+            data: result.data!,
+            dataRange: result.dataRange!
+          });
+          console.log(`✅ ${symbol}: SUCCESS - ${result.data!.length} candles`);
+        } else {
+          results.skipped.push({
+            symbol,
+            reason: result.skipReason!
+          });
+          console.log(`⏭️  ${symbol}: SKIPPED - ${result.skipReason}`);
+        }
+
+      } catch (error: any) {
+        const errorResult = this.handleBinanceError(error, symbol);
+        
+        if (errorResult.shouldRetry) {
+          results.retryable.push({
+            symbol,
+            reason: errorResult.reason
+          });
+          console.log(`🔄 ${symbol}: RETRYABLE - ${errorResult.reason}`);
+        } else {
+          results.skipped.push({
+            symbol,
+            reason: errorResult.reason
+          });
+          console.log(`⏭️  ${symbol}: SKIPPED - ${errorResult.reason}`);
+        }
+      }
+    }
+
+    const summary = {
+      total: symbols.length,
+      successful: results.successful.length,
+      skipped: results.skipped.length,
+      retryable: results.retryable.length,
+      successRate: symbols.length > 0 ? (results.successful.length / symbols.length) * 100 : 0
+    };
+
+    console.log(`📊 Processing Summary: ${summary.successful}/${summary.total} successful (${summary.successRate.toFixed(1)}%)`);
+
+    return { ...results, summary };
   }
 }
