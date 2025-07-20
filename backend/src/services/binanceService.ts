@@ -5,35 +5,63 @@ export class BinanceService {
   private baseUrl = 'https://fapi.binance.com';
   private requestCount = 0;
   private lastRequestTime = 0;
-  private readonly RATE_LIMIT = 1200; // requests per minute
+  private lastRequestTimestamp = 0;
+  private readonly RATE_LIMIT = 300; // requests per minute (much more conservative)
   private readonly RATE_LIMIT_WINDOW = 60000; // 1 minute in ms
-  private readonly MAX_RETRIES = 3;
-  private readonly RETRY_DELAYS = [1000, 2000, 4000]; // exponential backoff in ms
+  private readonly MIN_REQUEST_INTERVAL = 250; // minimum 250ms between requests
+  private readonly BURST_LIMIT = 5; // max requests per 5-second window
+  private readonly BURST_WINDOW = 5000; // 5 seconds in ms
+  private readonly MAX_RETRIES = 5;
+  private readonly RETRY_DELAYS = [2000, 5000, 15000, 30000, 60000]; // much longer delays
+  private burstRequestTimes: number[] = [];
 
   /**
-   * Rate limiting to avoid API bans
+   * Enhanced rate limiting to avoid API bans with conservative approach
    */
   private async rateLimit(): Promise<void> {
     const now = Date.now();
     
-    // Reset counter if more than 1 minute has passed
+    // 1. Enforce minimum interval between requests (250ms)
+    const timeSinceLastRequest = now - this.lastRequestTimestamp;
+    if (timeSinceLastRequest < this.MIN_REQUEST_INTERVAL) {
+      const waitTime = this.MIN_REQUEST_INTERVAL - timeSinceLastRequest;
+      console.log(`⏱️  Request spacing: waiting ${waitTime}ms`);
+      await new Promise(resolve => setTimeout(resolve, waitTime));
+    }
+    
+    // 2. Burst protection - max 5 requests per 5 seconds
+    this.burstRequestTimes = this.burstRequestTimes.filter(time => now - time < this.BURST_WINDOW);
+    if (this.burstRequestTimes.length >= this.BURST_LIMIT) {
+      const oldestRequest = Math.min(...this.burstRequestTimes);
+      const waitTime = this.BURST_WINDOW - (now - oldestRequest) + 100; // +100ms buffer
+      console.log(`🚦 Burst protection: waiting ${waitTime}ms (${this.burstRequestTimes.length}/${this.BURST_LIMIT} requests in window)`);
+      await new Promise(resolve => setTimeout(resolve, waitTime));
+      // Clean up old requests after waiting
+      this.burstRequestTimes = this.burstRequestTimes.filter(time => Date.now() - time < this.BURST_WINDOW);
+    }
+    
+    // 3. Overall rate limit protection (300 requests per minute)
     if (now - this.lastRequestTime > this.RATE_LIMIT_WINDOW) {
       this.requestCount = 0;
       this.lastRequestTime = now;
     }
 
-    // If we're approaching the rate limit, wait
-    if (this.requestCount >= this.RATE_LIMIT - 10) {
+    if (this.requestCount >= this.RATE_LIMIT - 20) { // More conservative buffer (was -10)
       const waitTime = this.RATE_LIMIT_WINDOW - (now - this.lastRequestTime);
       if (waitTime > 0) {
-        console.log(`Rate limit approaching, waiting ${waitTime}ms`);
+        console.log(`📊 Rate limit protection: waiting ${waitTime}ms (${this.requestCount}/${this.RATE_LIMIT} requests used)`);
         await new Promise(resolve => setTimeout(resolve, waitTime));
         this.requestCount = 0;
         this.lastRequestTime = Date.now();
       }
     }
 
+    // Update counters
     this.requestCount++;
+    this.lastRequestTimestamp = Date.now();
+    this.burstRequestTimes.push(this.lastRequestTimestamp);
+    
+    console.log(`🔄 API Request ${this.requestCount}/${this.RATE_LIMIT} (burst: ${this.burstRequestTimes.length}/${this.BURST_LIMIT})`);
   }
 
   /**
@@ -120,12 +148,26 @@ export class BinanceService {
         const delay = this.RETRY_DELAYS[attempt] || this.RETRY_DELAYS[this.RETRY_DELAYS.length - 1];
         console.warn(`${context}: Attempt ${attempt + 1} failed, retrying in ${delay}ms. Error: ${error.message}`);
         
-        // Special handling for rate limits
-        if (error.response?.status === 429) {
+        // Special handling for rate limits and API bans
+        if (error.response?.status === 429 || error.response?.status === 418) {
           const retryAfter = error.response.headers['retry-after'];
-          const waitTime = retryAfter ? parseInt(retryAfter) * 1000 : delay * 2;
-          console.log(`Rate limited, waiting ${waitTime}ms before retry`);
+          let waitTime = delay * 2; // Default fallback
+          
+          if (retryAfter) {
+            waitTime = parseInt(retryAfter) * 1000; // Convert seconds to milliseconds
+          } else if (error.response?.status === 418) {
+            // For 418 "I'm a teapot" (Binance rate limit), use much longer delay
+            waitTime = Math.max(60000, delay * 4); // At least 1 minute
+          }
+          
+          console.log(`🚫 Rate limited (${error.response.status}): waiting ${Math.round(waitTime/1000)}s before retry`);
+          console.log(`📝 Error details: ${error.response?.data?.msg || error.message}`);
           await new Promise(resolve => setTimeout(resolve, waitTime));
+        } else if (error.response?.status >= 500) {
+          // Server errors - use longer delays
+          const serverErrorDelay = delay * 2;
+          console.log(`🔧 Server error (${error.response.status}): waiting ${Math.round(serverErrorDelay/1000)}s before retry`);
+          await new Promise(resolve => setTimeout(resolve, serverErrorDelay));
         } else {
           await new Promise(resolve => setTimeout(resolve, delay));
         }
@@ -266,7 +308,7 @@ export class BinanceService {
     console.log(`🔄 [${requestId}] Created ${batches.length} batches for parallel fetching`);
 
     // Fetch all batches in parallel with controlled concurrency
-    const maxConcurrent = Math.min(5, batches.length); // Max 5 concurrent requests
+    const maxConcurrent = Math.min(2, batches.length); // Max 2 concurrent requests (more conservative)
     const batchPromises: Promise<{ data: CandleData[]; batchIndex: number }>[] = [];
 
     for (let i = 0; i < batches.length; i += maxConcurrent) {
@@ -1209,6 +1251,14 @@ export class BinanceService {
         return {
           reason: `No data available for ${symbol}`,
           shouldSkip: true,
+          shouldRetry: false
+        };
+        
+      case 418:
+        // Binance "I'm a teapot" - IP banned due to rate limiting
+        return {
+          reason: `IP banned for excessive requests: ${symbol} - ${response.data?.msg || 'Rate limit exceeded'}`,
+          shouldSkip: true, // Skip for now, IP is banned
           shouldRetry: false
         };
         
