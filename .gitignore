@@ -3,23 +3,30 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
 
 # Production builds
 backend/dist/
 frontend/build/
+build/
+dist/
 
-# Environment variables
+# Environment variables (CRITICAL - NEVER COMMIT THESE)
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+!.env.example
+backend/.env
+frontend/.env
 
-# Logs
+# Logs (NEVER COMMIT LOG FILES)
 logs/
 *.log
 backend/logs/
 frontend/logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
 # Runtime data
 pids
@@ -29,33 +36,40 @@ pids
 
 # Coverage directory used by tools like istanbul
 coverage/
+*.lcov
 
 # nyc test coverage
 .nyc_output
 
-# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+# Grunt intermediate storage
 .grunt
 
-# Bower dependency directory (https://bower.io/)
+# Bower dependency directory
 bower_components
 
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (https://nodejs.org/api/addons.html)
+# Compiled binary addons
 build/Release
 
 # Dependency directories
 jspm_packages/
 
-# TypeScript v1 declaration files
-typings/
+# TypeScript cache
+*.tsbuildinfo
 
 # Optional npm cache directory
 .npm
 
 # Optional eslint cache
 .eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
 
 # Optional REPL history
 .node_repl_history
@@ -66,24 +80,27 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env
-
-# parcel-bundler cache (https://parceljs.org/)
+# parcel-bundler cache
 .cache
 .parcel-cache
 
-# next.js build output
+# Next.js build output
 .next
+out
 
-# nuxt.js build output
+# Nuxt.js build / generate output
 .nuxt
+dist
 
-# vuepress build output
+# Gatsby files
+.cache/
+public
+
+# Vuepress build output
 .vuepress/dist
 
 # Serverless directories
-.serverless
+.serverless/
 
 # FuseBox cache
 .fusebox/
@@ -93,6 +110,9 @@ typings/
 
 # TernJS port file
 .tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
 
 # IDE files
 .vscode/
@@ -110,14 +130,19 @@ typings/
 ehthumbs.db
 Thumbs.db
 
-# PM2 logs
+# PM2 logs and ecosystem files (keep ecosystem.config.js but ignore logs)
 pm2.log
+*.pid
 
 # Temporary files
 *.tmp
 *.temp
 
-# Package lock files (keep only one)
-# Uncomment the one you want to ignore
+# Test files that shouldn't be committed
+test-*.js
+!test-suite.js
+
+# Package lock files - keeping both for now
+# Uncomment one of these if you want to standardize:
 # package-lock.json
 # yarn.lock
